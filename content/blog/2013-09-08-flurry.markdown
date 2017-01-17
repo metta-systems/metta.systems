@@ -1,0 +1,49 @@
+---
+date: 2013-09-08T00:00:00Z
+title: Flurry
+layout: post
+categories: [metta, uvvy, c++, structured secure streams]
+---
+To continue work on the structured streams transport I decided to get rid of the XDR data representation, as well as slightly awkward `boost.serialization` library.
+
+Boost.serialization is very nice and robust, but it has some quirks, like not being able to save things by value.
+
+``` cpp
+ar << true << false << "Hell yeah"; // Cannot do this
+```
+
+I encountered a very nice library called [msgpack](https://github.com/berkus/msgpack). It provided quite efficient packing of small integers and looked reasonably simple. But the C++ wrappers it provided around the C core were extremely horrendous - their main purpose seems to be for RPC mechanisms where you define and transfer tuples of given types. Making it serialize a bunch of simple fields and then load them back seemed extra hard.
+
+The library seems to be in transition to [msgpackv5](https://gist.github.com/frsyuki/5432559) but itself doesn't support all of the features outlined there.
+
+I decided to make a simple and very dumb serializer to msgpackv5 format from the ground up. The default implementation supports several types from ints and strings to `boost::optional<T>` and some STL containers.
+
+If your type consists of a series of supported types, it's easy to serialize it as well, just define two shift operators similar to how iostreams work.
+
+``` c++
+inline flurry::iarchive&
+operator >> (flurry::iarchive& in, my_type& value)
+{
+    in >> value.member1 >> value.member2;
+    return in;
+}
+
+inline flurry::oarchive&
+operator << (flurry::oarchive& out, my_type const& value)
+{
+    out << value.member1 << value.member2;
+    return out;
+}
+```
+
+It has a few downsides, which I didn't yet get to fixing:
+
+ * requires public access to value members, although you can always declare the operators as friends.
+
+It also has some nice properties:
+
+ * having defined the above, container types like `std::vector<my_type>` are automagically supported.
+
+Of course this is still work in progress and I expect it to slightly change, maybe move away from msgpackv5 specification a bit - it seems to have some illogical cases.
+
+The current implementation is available as part of arsenal library [here](https://github.com/berkus/libarsenal). [Unit test](https://github.com/berkus/libarsenal/blob/master/tests/test_flurry.cpp) shows how to use it. And the [spec](https://github.com/berkus/libarsenal/blob/master/doc/flurry_serialization.txt) will have the latest details about the data format.
