@@ -14,4 +14,4 @@ At the moment I'm working on the extension of meddler that allows to generate in
 
 Next up is actual introspection interface - how to know what format a particular data type is and how to marshal/unmarshal it for the purpose of interchange and operations calls on interfaces.
 
-See [this little](https://hackpad.com/TG6xM5Wxz6u#Metta---mashable-techdemo-storyboard) script for the possible demo storyboard.
+See [this little script](/notes/Metta-mashable-techdemo-storyboard) for the possible demo storyboard.
