@@ -75,9 +75,7 @@ To prevent DDoSing the packets are cryptographically signed and verified by the 
 
 A number of techniques reviewed here should be sufficient to let client software find bootstrap nodes without painful configuration. In case all automatic ways fail there's still a fallback through user-defined connection points.
 
-{% pullquote %}
-I would rather {" like to hear your ideas for other methods "} not covered here. Post in the comments, write on twitter, github, friendfeed or email. There must be some novel methods I haven't heard of.
-{% endpullquote %}
+I would rather like to hear your ideas for other methods not covered here. Post in the comments, write on twitter, github, friendfeed or email. There must be some novel methods I haven't heard of.
 
   [1]: http://en.wikipedia.org/wiki/Kademlia "Kademlia"
   [2]: http://en.wikipedia.org/wiki/Chord_(peer-to-peer) "Chord"

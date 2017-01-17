@@ -20,7 +20,8 @@ NAT library has learned to read current router mappings and figuring out if it n
 Voice services are now extracted into a separate library called VoiceBox. Voicebox provides a "processing chain" structure for capturing, compressing, sending, receiving, decompressing and playing back audio frames. It also provides a simple jitterbuffer to fight delivery inconsistencies.
 
 Very simple capture chain looks like this:
-`rtaudio_source->packetizer->opus_encode_sink->packet_sink`
+
+    rtaudio_source->packetizer->opus_encode_sink->packet_sink
 
 `rtaudio_source` is a hardware capture abstraction, implemented via RtAudio callback mechanism.
 `packetizer` is a simple synchronisation class, providing glue between the two threads - one controlled by rtaudio hardware thread and one driven by the packet sink. It provides a synchronised queue for passing packets.
@@ -29,15 +30,15 @@ Very simple capture chain looks like this:
 
 This chain is fairly flexible, for example to provide audio data from a file you'd use a very simple setup driven by the packet_sink:
 
-`file_read_sink->packet_sink`
+    file_read_sink->packet_sink
 
-`file_read_sink` simply reads from a source file in a loop as long as packet_sink continues to request more packets.
-Of course, it's very simple to provide OPUS-encoded frames from a file, just plug in an encoder:
+`file_read_sink` simply reads from a source file in a loop as long as packet_sink continues to request more packets. It's very simple to provide OPUS-encoded frames from a file, just plug in an encoder:
 
-`file_read_sink->opus_encode_sink->packet_sink`
+    file_read_sink->opus_encode_sink->packet_sink
 
 The same way it works for the playback chain:
-`packet_source->jitterbuffer->opus_decode_sink->rtaudio_sink`
+
+    packet_source->jitterbuffer->opus_decode_sink->rtaudio_sink
 
 Here the `packet_source` receives packets from an `sss::stream` and puts it into the jitterbuffer.
 `jitterbuffer` provides queueing, packet reordering, lost packet compensation and timing control. Just like packetizer in the capture chain it provides synchronisation between network-driven packet_source and audio hardware-driven rtaudio_sink threads.
@@ -46,11 +47,11 @@ Here the `packet_source` receives packets from an `sss::stream` and puts it into
 
 The chain is also flexible, it's possible to transmit raw uncompressed audio or play directly from file into the output device (this is a nice way to implement for example ringtones):
 
-`file_read_sink->rtaudio_sink`
+    file_read_sink->rtaudio_sink
 
 It will be possible to read or convert different types of files in the future, once more sources and sinks are implemented, as an example:
 
-`file_read_sink->mp3_decode_sink->repacketizer->opus_encode_sink->file_write_sink`
+    file_read_sink->mp3_decode_sink->repacketizer->opus_encode_sink->file_write_sink
 
 Repacketizer is necessary here because mp3 frame size may not match that of an OPUS encoder. Repacketizer does not need to implement synchronisation because the whole chain consists only of sinks.
 

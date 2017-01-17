@@ -4,7 +4,7 @@ title: NAT woes
 layout: post
 categories: [metta, upnp, nat traversal, nat, hole punching]
 ---
-There's a slight fault with metta-grabber not quite punching through home routers' NAT. While the UDP punching technique described by Bryan Ford should generally work, it doesn't account for the port change hence the announced endpoint addresses as seen by the regserver are invalid. Responses don't go back because the reply port number is different from what router's NAT assigns.
+There's a slight fault with uvvy not quite punching through home routers' NAT. While the UDP punching technique described by Bryan Ford should generally work, it doesn't account for the port change hence the announced endpoint addresses as seen by the regserver are invalid. Responses don't go back because the reply port number is different from what router's NAT assigns.
 
 I tried using UPnP to open some more ports, but it doesn't change the fact that advertised endpoints are still invalid. Now the upcoming change is to record external IP and port of the instance as reported by the router's UPnP protocol into yet another endpoint and forward that to the regserver. Another nice addition would be to enable Bonjour discovery of the nodes on the local network, which hopefully would already be connected to the regserver and can forward our endpoint information.
 

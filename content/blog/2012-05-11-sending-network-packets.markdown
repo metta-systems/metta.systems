@@ -12,7 +12,7 @@ So, after some fiddling I was able to send a packet and receive it through the b
 
 Here's the screen dump of the sent and then received broadcast packet.
 
-{% highlight console %}
+``` console
 IRQ11 enabled.
 Finished initializing NE2000 with MAC b0:c4:20:00:00:00.
 Received irq: 0x0000000b
@@ -23,4 +23,4 @@ Received packet with status 33 of length 68, next packet at 82
 0x004f0064  ff ff ff ff ff ff 28 cf  da 00 99 f5 00 10 48 65  ......(.......He
 0x004f0074  6c 6c 6f 20 6e 65 74 20  77 6f 72 6c 64 21 00 00  llo net world!..
 0x004f0094  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  ................
-{% endhighlight %}
+```

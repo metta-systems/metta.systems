@@ -5,8 +5,7 @@ title: A historical moment
 tags: [osdev, arm, startup]
 ---
 
-{{< highlight console >}}
-<pre>
+``` console
 OMAP3 beagleboard.org # mmcinit
 OMAP3 beagleboard.org # fatload mmc 0 0x82000000 kernel.bin
 reading kernel.bin
@@ -15,5 +14,4 @@ OMAP3 beagleboard.org # go 0x8200024c
 ## Starting application at 0x8200024C ...
 hello, world!
 ## Application terminated, rc = 0x0
-</pre>
-{{< /highlight >}}
+```

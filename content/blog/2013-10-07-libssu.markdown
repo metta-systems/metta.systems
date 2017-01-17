@@ -4,10 +4,10 @@ title: libSSS progress
 layout: post
 categories: [metta, uvvy, c++, structured secure streams, c++11, boost]
 ---
-[Structured Secure Streams](https://github.com/berkus/libsss) library is getting in shape. With C++11 and Boost it's relatively simple to write even without the tremendous help of Qt. Although I had to write some helpers which are factored into a separate library - grab [arsenal](https://github.com/berkus/libarsenal) if you want - some nice things there are `byte_array`, `settings_provider`, binary literals, `hash_combine`, `make_unique`, `contains()` predicate, base32 encoder-decoder and opaque big/little endian integer types.
+[Structured Secure Streams](https://github.com/berkus/libsss) library is getting in shape. With C++11 and Boost it's relatively simple to write even without the tremendous help of Qt. Although I had to write some helpers which are factored into a separate library - grab [arsenal](https://github.com/berkus/libarsenal) if you want - some nice things there are `byte_array`, `settings_provider`, binary literals, `hash_combine`, `make_unique`, `contains()` predicate, base32 encoder-decoder and [opaque big/little endian integer](https://github.com/berkus/libarsenal/blob/master/include/arsenal/opaque_endian.h) types.
 
 For example:
-{% highlight c++ %}
+``` cpp
 big_uint32_t magic = 0xabbadead;
 // magic will store data in network byte order in memory,
 // and convert it as necessary for operations. You don't
@@ -21,7 +21,7 @@ byte_array data{'h','e','l','l','o'};
 auto hell = data.left(4);
 
 // And so on...
-{% endhighlight %}
+```
 
 But enough about support libs, one of the major milestones is the ability to set up an encrypted connection between two endpoints. This works reliably in the simulator, which is another good feature. In the simulator you can define link properties, such as packet propagation delay, loss rate between 0.0 and 1.0, set up host network of arbitrary complexity. It currently requires manual set up of every link between the hosts, but I hope to simplify that a bit using some network configuration helpers.
 
