@@ -1,0 +1,33 @@
+baseurl = "https://atta-metta.net/"
+languageCode = "en-us"
+theme = "hyde"
+title = "Metta"
+enableEmoji = true
+googleAnalytics = "UA-45168329-1"
+PygmentsCodeFences = true
+PygmentsStyle = "perldoc"
+
+[params]
+  Subtitle = "Egocentric internets nexus"
+  Description = "alternative decentralized internet"
+  Author = "Berkus"
+  GitHubUser = "berkus"
+  SidebarRecentLimit = 5
+  themeColor = "theme-base-0e"
+  layoutReverse = true
+  disqusShortname = "attametta"
+
+[permalinks]
+    posts = "/blog/:year/:month/:day/:filename/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[[menu.main]]
+    name = "GitHub"
+    url ="https://github.com/atta-metta"
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
