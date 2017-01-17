@@ -9,7 +9,7 @@ PygmentsStyle = "perldoc"
 
 [params]
   Subtitle = "Egocentric internets nexus"
-  Description = "alternative decentralized internet"
+  Description = "decentralized internets"
   Author = "Berkus"
   GitHubUser = "berkus"
   SidebarRecentLimit = 5
