@@ -1,33 +1,36 @@
 baseurl = "https://atta-metta.net/"
 languageCode = "en-us"
-theme = "hyde"
+theme = "hyde-x"
 title = "Metta"
-enableEmoji = true
-googleAnalytics = "UA-45168329-1"
-PygmentsCodeFences = true
-PygmentsStyle = "perldoc"
+disqusShortname = "attametta"
+paginate = 5
+
+[author]
+  name = "Metta"
 
 [params]
-  Subtitle = "Egocentric internets nexus"
-  Description = "decentralized internets"
-  Author = "Berkus"
-  GitHubUser = "berkus"
-  SidebarRecentLimit = 5
-  themeColor = "theme-base-0e"
-  layoutReverse = true
-  disqusShortname = "attametta"
+  theme = "theme-base-0e"
+  highlight = "xcode"
+
+  tagline = "decentralized internets"
+
+  googleAnalytics = "UA-45168329-1"
+  truncate = false
+
+  github = "https://github.com/atta-metta"
+
+  rss = true
+
+  # Optional additional custom CSS file URL, will override other styles.
+  customCSS = "/css/overrides.css"
+
+  # Default page metadata, used when the specific page doesn't set its own.
+  defaultDescription = "Status updates on Metta development"
+  defaultKeywords = "devlog,blog,metta,decentralised,peer-to-peer"
 
 [permalinks]
-    posts = "/blog/:year/:month/:day/:filename/"
+  post = "/blog/:year/:month/:day/:filename/"
 
 [taxonomies]
-  tag = "tags"
   category = "categories"
-  series = "series"
-
-[[menu.main]]
-    name = "GitHub"
-    url ="https://github.com/atta-metta"
-[[menu.main]]
-    name = "RSS"
-    url = "/index.xml"
+  tag = "tags"
