@@ -10,7 +10,7 @@ paginate = 5
 
 [params]
   theme = "theme-base-0e"
-  highlight = "xcode"
+  highlight = "zenburn"
 
   tagline = "decentralized internets"
 
