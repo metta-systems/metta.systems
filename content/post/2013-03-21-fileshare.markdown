@@ -1,5 +1,5 @@
 ---
-date: 2013-03-21T00:00:00Z
+date: 2013-03-21
 title: File sharing design considerations
 categories: [uvvy, file sharing, content distribution]
 ---

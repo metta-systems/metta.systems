@@ -1,5 +1,5 @@
 ---
-date: 2012-03-25T00:00:00Z
+date: 2012-03-25
 title: Optimizations
 categories: [metta, llvm, sse]
 ---

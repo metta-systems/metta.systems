@@ -1,5 +1,5 @@
 ---
-date: 2009-12-30T00:00:00Z
+date: 2009-12-30
 title: To remain the web weavers
 categories: [exocortex, metta, quote]
 ---

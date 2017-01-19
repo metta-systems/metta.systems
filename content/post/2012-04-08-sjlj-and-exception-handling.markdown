@@ -1,5 +1,5 @@
 ---
-date: 2012-04-08T00:00:00Z
+date: 2012-04-08
 title: sjlj and exception handling
 categories: [metta, osdev, llvm, exceptions]
 ---

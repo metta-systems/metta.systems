@@ -1,5 +1,5 @@
 ---
-date: 2012-07-16T00:00:00Z
+date: 2012-07-16
 title: Graphic dependency resolution
 categories: [metta, tools, issue tracking]
 ---

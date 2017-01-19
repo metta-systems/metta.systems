@@ -1,5 +1,5 @@
 ---
-date: 2012-12-24T00:00:00Z
+date: 2012-12-24
 title: assocfs note
 categories: [metta, assocfs, content addressable storage, git model, non-hierarchical filesystem]
 ---

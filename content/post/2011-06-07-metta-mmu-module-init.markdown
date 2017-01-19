@@ -1,5 +1,5 @@
 ---
-date: 2011-06-07T00:00:00Z
+date: 2011-06-07
 title: Metta MMU module init
 categories: [metta, startup, memory]
 ---

@@ -1,5 +1,5 @@
 ---
-date: 2013-12-13T00:00:00Z
+date: 2013-12-13
 title: Derived intelligence
 categories: [exocortex, metta, quote]
 ---

@@ -1,5 +1,5 @@
 ---
-date: 2014-01-21T00:00:00Z
+date: 2014-01-21
 title: Anti-Mac Interface quote
 categories: [exocortex, metta, agents, quote]
 ---

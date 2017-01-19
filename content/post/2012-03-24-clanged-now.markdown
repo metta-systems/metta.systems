@@ -1,5 +1,5 @@
 ---
-date: 2012-03-24T00:00:00Z
+date: 2012-03-24
 title: Clanged now
 categories: [metta, cross-compiling, llvm]
 ---

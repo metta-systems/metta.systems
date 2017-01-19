@@ -1,5 +1,5 @@
 ---
-date: 2013-10-07T00:00:00Z
+date: 2013-10-07
 title: libSSS progress
 categories: [metta, uvvy, c++, structured secure streams, c++11, boost, libsss]
 ---

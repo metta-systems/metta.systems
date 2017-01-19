@@ -1,5 +1,5 @@
 ---
-date: 2013-09-08T00:00:00Z
+date: 2013-09-08
 title: Flurry
 categories: [metta, uvvy, c++, structured secure streams]
 ---

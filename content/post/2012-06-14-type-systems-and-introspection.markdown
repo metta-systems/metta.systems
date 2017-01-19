@@ -1,5 +1,5 @@
 ---
-date: 2012-06-14T00:00:00Z
+date: 2012-06-14
 title: Type systems and introspection
 categories: [metta, startup, coding, reflection, self-aware, introspection]
 ---

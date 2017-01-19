@@ -1,5 +1,5 @@
 ---
-date: 2013-05-23T00:00:00Z
+date: 2013-05-23
 title: Compiling LLVM trunk
 categories: [compilers, clang, llvm, trunk, howto]
 ---

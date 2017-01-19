@@ -1,5 +1,5 @@
 ---
-date: 2010-07-23T00:00:00Z
+date: 2010-07-23
 title: Metta progress report one
 categories: [metta, osdev]
 ---

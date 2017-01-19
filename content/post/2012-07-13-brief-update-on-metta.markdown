@@ -1,5 +1,5 @@
 ---
-date: 2012-07-13T00:00:00Z
+date: 2012-07-13
 title: Brief update on Metta
 categories: [metta, toolchain, clang, llvm, type system]
 ---

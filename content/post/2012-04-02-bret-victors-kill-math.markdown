@@ -1,5 +1,5 @@
 ---
-date: 2012-04-02T00:00:00Z
+date: 2012-04-02
 title: Bret Victor's Kill Math
 categories: [bret victor, link]
 ---

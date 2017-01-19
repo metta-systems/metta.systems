@@ -1,5 +1,5 @@
 ---
-date: 2012-05-11T00:00:00Z
+date: 2012-05-11
 title: Sending network packets
 categories: [osdev, network]
 ---

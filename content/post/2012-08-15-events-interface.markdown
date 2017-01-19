@@ -1,5 +1,5 @@
 ---
-date: 2012-08-15T00:00:00Z
+date: 2012-08-15
 title: Events interface
 categories: [metta, ansa, distributed architecture, events, synchronisation, fawn, nemesis]
 ---

@@ -1,5 +1,5 @@
 ---
-date: 2012-12-09T00:00:00Z
+date: 2012-12-09
 title: NAT update
 categories: [metta, upnp, nat traversal, nat, hole punching]
 ---
