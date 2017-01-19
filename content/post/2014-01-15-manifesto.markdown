@@ -1,9 +1,6 @@
 ---
 date: 2014-01-15T15:40:00Z
 title: "Manifesto"
-author: Berkus
-comments: true
-published: true
 weight: 100
 ---
 ### Metta

@@ -1,9 +1,6 @@
 ---
 date: 2013-12-28T15:15:00Z
 title: "Progress report: Audio services, congestion control"
-author: Berkus
-comments: true
-published: true
 categories: [report, libsss, nat, voicebox, security]
 ---
 ### Progress report

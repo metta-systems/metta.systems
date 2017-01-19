@@ -1,6 +1,5 @@
 ---
 date: 2011-04-23T00:00:00Z
-draft: false
 title: A historical moment
 tags: [osdev, arm, startup]
 ---

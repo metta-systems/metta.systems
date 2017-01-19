@@ -1,9 +1,6 @@
 ---
 date: 2013-10-30T14:47:00Z
 title: "Using libsss for communication"
-author: Berkus
-comments: true
-published: true
 categories: [libsss, communication, howto, uvvy]
 ---
 ### Introduction
