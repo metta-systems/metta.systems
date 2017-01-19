@@ -1,7 +1,7 @@
 ---
 date: 2012-04-02T00:00:00Z
 title: Bret Victor's Kill Math
-categories: [bret victor]
+categories: [bret victor, link]
 ---
 [Bret Victors Kill Math](http://worrydream.com/KillMath/)
 

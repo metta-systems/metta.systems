@@ -1,7 +1,7 @@
 ---
 date: 2012-04-08T00:00:00Z
 title: sjlj and exception handling
-categories: [metta, clang, llvm, longjmp, exceptions]
+categories: [metta, osdev, llvm, exceptions]
 ---
 Of course, the clang's implementation of `setjmp` is very generic and uses quite an abstraction of program state, which makes it hardly suitable for the ad-hoc local exception support I'm using. Since my requirements for setjmp were quite simple (just give me back my damn registers and stack frame), I went and implemented a very custom-tailored versions `__sjljeh_setjmp` and `__sjljeh_longjmp` which do just what I need.
 
