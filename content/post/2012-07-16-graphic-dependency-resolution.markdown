@@ -1,7 +1,6 @@
 ---
 date: 2012-07-16T00:00:00Z
 title: Graphic dependency resolution
-layout: post
 categories: [metta, tools, issue tracking]
 ---
 I needed to quickly check how much of Nemesis support has to be ported over before I can start launching some basic domains.

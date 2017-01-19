@@ -1,6 +1,5 @@
 ---
 date: 2013-12-28T15:15:00Z
-layout: post
 title: "Progress report: Audio services, congestion control"
 author: Berkus
 comments: true

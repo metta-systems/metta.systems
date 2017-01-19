@@ -1,6 +1,5 @@
 ---
 date: 2013-10-30T14:47:00Z
-layout: post
 title: "Using libsss for communication"
 author: Berkus
 comments: true

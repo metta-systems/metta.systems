@@ -1,7 +1,6 @@
 ---
 date: 2012-05-11T00:00:00Z
 title: Sending network packets
-layout: post
 categories: [osdev, network]
 ---
 A little sidetrack into the world of PCI probing and NE2000 network card emulation.

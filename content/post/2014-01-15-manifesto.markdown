@@ -1,6 +1,5 @@
 ---
 date: 2014-01-15T15:40:00Z
-layout: post
 title: "Manifesto"
 author: Berkus
 comments: true

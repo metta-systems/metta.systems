@@ -1,6 +1,5 @@
 ---
 date: 2013-10-25T00:00:00Z
-layout: post
 title: "Bootstrapping node problem"
 author: Berkus
 date: 2013-10-25T17:34:00Z

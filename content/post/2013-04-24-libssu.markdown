@@ -1,7 +1,6 @@
 ---
 date: 2013-04-24T00:00:00Z
 title: libsss or where to go from SST?
-layout: post
 categories: [metta, uvvy, c++, structured secure streams]
 ---
 In the mean time, I'm slowly rewriting Bryan Ford's SST (Structured Streams Transport) library, using modern C++ and boost.asio, in the hopes that it will be easier to port to Metta. I called it libsss (Structured Secure Streams).

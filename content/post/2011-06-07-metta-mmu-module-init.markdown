@@ -1,7 +1,6 @@
 ---
 date: 2011-06-07T00:00:00Z
 title: Metta MMU module init
-layout: post
 categories: [metta, startup, memory]
 ---
 ### MMU initialisation

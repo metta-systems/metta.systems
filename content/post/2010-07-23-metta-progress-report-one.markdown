@@ -1,7 +1,6 @@
 ---
 date: 2010-07-23T00:00:00Z
 title: Metta progress report one
-layout: post
 categories: [metta]
 ---
 I have cleaned up the booting mess more or less and now my loader is able to enter the **root domain** - the startup component, which initialises all other components in order and passes control on to userspace loader component, which is supposed to finish system initialisation by starting up all user interface services.

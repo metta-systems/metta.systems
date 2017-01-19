@@ -1,7 +1,6 @@
 ---
 date: 2012-12-24T00:00:00Z
 title: assocfs note
-layout: post
 categories: [metta, assocfs, content addressable storage, git model, non-hierarchical filesystem]
 ---
 While I'm still dabbling with fixing some SSS issues here and there I thought I'd post an old excerpt from assocfs design document.

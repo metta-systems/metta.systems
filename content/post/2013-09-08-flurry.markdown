@@ -1,7 +1,6 @@
 ---
 date: 2013-09-08T00:00:00Z
 title: Flurry
-layout: post
 categories: [metta, uvvy, c++, structured secure streams]
 ---
 To continue work on the structured streams transport I decided to get rid of the XDR data representation, as well as slightly awkward `boost.serialization` library.

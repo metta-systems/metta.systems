@@ -1,7 +1,6 @@
 ---
 date: 2013-05-23T00:00:00Z
 title: Compiling LLVM trunk
-layout: post
 categories: [compilers, clang, llvm, trunk, howto]
 ---
 Just a very simple thing to try and build Clang with polly, LLVM, libcxx, lldb and lld from trunk. Isn't it?

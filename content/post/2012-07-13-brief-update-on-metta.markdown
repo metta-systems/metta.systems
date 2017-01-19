@@ -1,7 +1,6 @@
 ---
 date: 2012-07-13T00:00:00Z
 title: Brief update on Metta
-layout: post
 categories: [metta, toolchain, clang, llvm, type system]
 ---
 I've been working on toolchain building script, now at least on Macs it's possible to build a standalone toolchain for building Metta and you can download it and try to build it yourself. All necessary details are descibed on [SourceCheckout wiki page](https://github.com/berkus/metta/blob/master/README.md). There is followup work to remove dependency on binutils and gcc (gcc will probably go first, then once lld is mature enough I could get rid of ld/gold).
