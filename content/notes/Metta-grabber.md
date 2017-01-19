@@ -2,7 +2,7 @@
 date: 2016-03-07
 title: Metta grabber (uvvy)
 categories: [metta]
-type: post
+type: note
 ---
 (Disclaimer: здесь и далее читать как «для меня», «в моём сегодняшнем понимании» и т.п.)
 
