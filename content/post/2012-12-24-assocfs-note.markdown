@@ -5,8 +5,6 @@ categories: [metta, assocfs, content addressable storage, git model, non-hierarc
 ---
 While I'm still dabbling with fixing some SSS issues here and there I thought I'd post an old excerpt from assocfs design document.
 
-This is something that I'm doing with my assocfs.
-
 It's a non-hierarchical filesystem - in other words, associative filesystem. It's basically a huge graph database. Every object is addressed by its hash (content addressable, like git), knowing the hash you can find it on disk. For more conventional searches (for those who does not know or does not care about the hash) there is metadata - attributes, drawn from an ontology and associated with a particular hashed blob.
 
 This gives a few interesting properties:
