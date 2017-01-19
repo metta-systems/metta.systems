@@ -1,5 +1,9 @@
-# Metta architecture
-
+---
+date: 2016-03-07
+title: Metta architecture
+categories: [metta]
+type: post
+---
 System works as a federation of autonomous services distributed onto different machines across the network.
 
 The API between these services are described using interfaces. Each interface has a certain specific semantic. Interfaces also specify points at which separation of work could happen, where one service could delegate the work to another without bothering too much about where this service is located and how this work will be arranged.
