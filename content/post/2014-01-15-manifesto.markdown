@@ -1,8 +1,10 @@
 ---
-date: 2014-01-15T15:40:00Z
-title: "Manifesto"
-weight: 100
+date: 2014-01-15T15:40:00
+title: Manifesto
+menu: main
 ---
+
+
 ### Metta
 
 Rewind and replay.
