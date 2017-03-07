@@ -36,8 +36,6 @@ There are building blocks in form of underlying substrate libraries ([libsupport
 
 ### Support or contact
 
-There's [a new website](http://atta-metta.net) with more fundamental articles on Metta-related matters.
-
 Ping [@berkus](https://github.com/berkus) if you have any questions or ideas.
 
 Be free!
