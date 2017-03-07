@@ -1,7 +1,8 @@
 ---
 date: 2012-02-05
 title: Magic Ink
-categories: [metta, bret victor, link]
+categories: [metta, bret victor]
+type: link
 ---
 [Magic Ink](http://worrydream.com/MagicInk/)
 

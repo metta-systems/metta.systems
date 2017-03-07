@@ -1,7 +1,8 @@
 ---
 date: 2014-01-21
 title: Anti-Mac Interface quote
-categories: [exocortex, metta, agents, quote]
+categories: [exocortex, metta, agents]
+type: quote
 ---
 > A computer environment in which both humans and computer-based agents have active roles implies a mixed locus of control. The user's environment will no longer be completely stable, and the user will no longer be totally in control. For general sanity, users still need to determine the balance of control in the different parts of their environment, they need the means to find out what their agents have been up to, and they need mechanisms for navigating in the wider networked world;
 
