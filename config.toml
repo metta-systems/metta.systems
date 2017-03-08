@@ -3,7 +3,7 @@ languageCode = "en-us"
 theme = "hyde-x"
 title = "Metta"
 disqusShortname = "attametta"
-paginate = 5
+paginate = 15
 
 [author]
   name = "Metta"
@@ -15,7 +15,7 @@ paginate = 5
   tagline = "decentralized internets"
 
   googleAnalytics = "UA-45168329-1"
-  truncate = false
+  truncate = true
 
   github = "https://github.com/atta-metta"
 
