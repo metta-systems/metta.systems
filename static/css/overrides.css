@@ -14,3 +14,11 @@
 .post-title {
     font-family: denmark;
 }
+
+.posts .quote {
+    background-color: #eef;
+}
+
+.posts .link {
+    background-color: #eef;
+}
