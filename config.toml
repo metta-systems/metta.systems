@@ -1,4 +1,4 @@
-baseurl = "https://atta-metta.net/"
+baseurl = "https://metta.systems/"
 languageCode = "en-us"
 theme = "hyde-x"
 title = "Metta"
@@ -17,7 +17,7 @@ paginate = 15
   googleAnalytics = "UA-45168329-1"
   truncate = true
 
-  github = "https://github.com/atta-metta"
+  github = "https://github.com/metta-systems"
 
   rss = true
 
