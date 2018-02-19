@@ -4,6 +4,7 @@ theme = "hyde-x"
 title = "Metta"
 disqusShortname = "attametta"
 paginate = 15
+debug = false
 
 [author]
   name = "Metta"
@@ -26,7 +27,7 @@ paginate = 15
 
   # Default page metadata, used when the specific page doesn't set its own.
   defaultDescription = "Status updates on Metta development"
-  defaultKeywords = "devlog,blog,metta,decentralised,peer-to-peer"
+  defaultKeywords = "devlog,blog,metta,decentralised,peer-to-peer,vesper,rust"
 
 [permalinks]
   post = "/blog/:filename/"
