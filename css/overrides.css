@@ -1,0 +1,24 @@
+.theme-base-0e .pagination > .active > a {
+    color: #fff;
+}
+
+@font-face {
+    font-family: denmark;
+    src: url('/fonts/denmark.woff') format('woff'), url('/fonts/denmark.ttf') format('truetype');
+}
+
+.sidebar-about h1 {
+    font-family: denmark;
+}
+
+.post-title {
+    font-family: denmark;
+}
+
+.posts .quote {
+    background-color: #eef;
+}
+
+.posts .link {
+    background-color: #eef;
+}
