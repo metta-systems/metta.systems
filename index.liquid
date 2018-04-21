@@ -1,9 +1,8 @@
+title: Front page
 layout: default.liquid
 ---
-## Blog!
-
+<div class="posts">
 {% for post in collections.posts.pages %}
-#### {{post.title}}
-
-[{{ post.title }}]({{ post.permalink }})
+{% include "post.liquid" %}
 {% endfor %}
+</div>

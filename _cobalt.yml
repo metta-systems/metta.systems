@@ -7,5 +7,4 @@ posts:
   rss: rss.xml
   default:
     permalink: /blog/{{parent}}/{{name}}{{ext}}
-syntax_highlight:
-  theme: base16-ocean.dark # @todo "zenburn"
+    layout: post.liquid

@@ -1,27 +1,26 @@
+{% comment %}
+This is a post in index feed, with link to post itself and shortened version if enabled.
+{% endcomment %}
+{% assign content = post.content %}
+{% include "reading_time.liquid" %}
+<div class="post">
+  <h1 class="post-title">
+    <a href="{{ post.permalink }}">{{ post.title }}</a>
+  </h1>
+  <span class="post-date">{% if post.is_draft %}Unpublished draft{% else %}{{ post.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read &middot; <a href="{{ post.permalink }}#disqus_thread">Comments</a>
 
-{% paginate collection.posts by site.data.params.paginate %}
-  {% for post in collection.posts %}
-    <div class="post">
-      <h1 class="post-title">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </h1>
-      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if not .Site.Params.hideReadingTime }} &middot; {{ .ReadingTime }} minute read{{ end }}{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
-      {{ if isset .Params "categories" }}
-      <br/>
-      {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-      {{ end }}</span>
-      {{ if eq .Site.Params.truncate false }}
-      {{ .Content }}
-      {{ else if .Description }}
-      <p>{{ .Description }}</p>
-      <a href="{{ .Permalink }}">Read On &rarr;</a>
-      {{ else }}
-      {{ .Summary }}
-      {{ if .Truncated }}<a href="{{ .Permalink }}">Read On &rarr;</a>{{ end }}
-      {{ end }}
-    </div>
-    {{ end }}
-    {{ template "_internal/pagination.html" . }}
-  </div>
-  {% endfor %}
-{% endpaginate %}
+  {% comment %}if post.categories.count > 0{% endcomment %}
+  <br/>
+  {% for cat in post.categories %}<a class="label" href="{{ "/categories/" }}{{ cat | escape }}">{{ cat }}</a>{% endfor %}
+
+  </span>
+  {% if site.data.params.truncate == false %}
+  {{ post.content }}
+  {% elsif post.description != "" %}
+  <p>{{ post.description }}</p>
+  <a href="{{ post.permalink }}">Read more &rarr;</a>
+  {% else %}
+  {{ post.excerpt }}
+  <a href="{{ post.permalink }}">Read more &rarr;</a>
+  {% endif %}
+</div>
