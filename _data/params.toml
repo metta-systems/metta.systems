@@ -13,6 +13,16 @@ googleAnalytics = "UA-45168329-1"
 truncate = true
 
 github = "https://github.com/metta-systems"
+# Dunno how to deal with undefined variables in liquid, so just define them as empty for now
+# @todo and @fixme
+bitbucket = ""
+stackOverflow = ""
+linkedin = ""
+googleplus = ""
+facebook = ""
+twitter = ""
+youtube = ""
+flattr = ""
 
 # Optional additional custom CSS file URL, will override other styles.
 customCSS = "/css/overrides.css"
