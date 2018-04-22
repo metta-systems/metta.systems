@@ -1,9 +1,12 @@
-+++
-date = "2017-01-18"
-title = "License"
-description = "License for the contents of this website and blog"
-keywords = ["license", "blog", "code"]
-+++
+published_date: 2017-01-18 00:00:00 +0200
+title: License
+description: License for the contents of this website and blog
+categories:
+    - license
+    - blog
+    - code
+layout: post.liquid
+---
 ### Content license
 
 All non-code blog content is licensed under [Creative Commons BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/3.0/).
