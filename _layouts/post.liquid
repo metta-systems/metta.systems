@@ -14,7 +14,7 @@
         </span>
 
         <h1 class="post-title">{{ page.title }}</h1>
-        <span class="post-date">{% if page.is_draft %}Unpublished draft{% else %}{{ page.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read &middot; <a href="{{ page.permalink }}#disqus_thread">Comments</a>
+        <span class="post-date">{% if page.is_draft %}Unpublished draft{% else %}{{ page.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read{% if site.data.params.disqusShortname %} &middot; <a href="{{ page.permalink }}#disqus_thread">Comments</a>{% endif %}
 
         {% comment %}if post.categories.count > 0{% endcomment %}
         <br/>
@@ -23,8 +23,10 @@
         </span>
         {{ page.content }}
     </div>
+    {% if site.data.params.disqusShortname %}<div id="disqus_thread"></div>{% endif %}
 </div>
 
+{% if site.data.params.disqusShortname %}
 <script type="text/javascript">
 var disqus_shortname = '{{ site.data.params.disqusShortname }}';
 (function () {
@@ -34,4 +36,16 @@ var disqus_shortname = '{{ site.data.params.disqusShortname }}';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
 </script>
+
+<script type="text/javascript">
+    var disqus_shortname = '{{ site.data.params.disqusShortname }}';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+{% endif %}
 {% include "foot.liquid" %}
