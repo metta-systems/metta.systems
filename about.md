@@ -1,8 +1,10 @@
-+++
-date = "2009-12-30"
-title = "About"
-categories = ["exocortex", "metta"]
-+++
+published_date: "2009-12-30 00:00:00 +0000"
+title: "About"
+categories:
+    - exocortex
+    - metta
+layout: post.liquid
+---
 ### What I'm working on and why
 
 My biggest project so far is Metta - a humane, social and multimedia OS. While multimedia and social are pretty much all over the place, humane part is still unexplored widely.
