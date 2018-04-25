@@ -15,7 +15,7 @@ Hugo setup used a variation of [Hyde-X](https://github.com/zyro/hyde-x), turns o
 
 I then started dropping in some of my blog posts and trying to render them properly. I ran into a few problems.
 
-1. Hugo templates are much more advanced than the simple Liquid templating. They are also much better documented. I did not find how to check for variable existence in Liquid, for instance, my simple attempts just failed with "key not found" errors.
+1. Hugo templates are much more advanced than the simple Liquid templating. They are also much better documented. I did not find how to check for variable existence in Liquid, for instance, my simple attempts just failed with "key not found" errors. (update: As of Cobalt 0.12 this is now fixed)
 2. Things like `ReadingTime` were missing. I went and implemented it in Cobalt binary but then a kind soul on [gitter](https://gitter.im/cobalt-org/cobalt.rs) showed me the [non-intrusive way](https://github.com/booyaa/booyaa.github.io/blob/source/_includes/post.liquid#L11), which I turned into a [simple include](https://github.com/metta-systems/metta.systems/blob/master/_includes/reading_time.liquid) and can use it with a [couple lines of extra code](https://github.com/metta-systems/metta.systems/blob/master/_layouts/post.liquid#L2-L3) in templates. This is where Hugo's Shortcodes might've been handy.
 3. The frontmatter was for some reason delimited using only one `---` at the end, not a pair of such delimiters - this is hardly a big problem, but caused some frustration and I lost frontmatter syntax highlighting in Sublime. I suspect there isn't really a technical reason to do it like this - cobalt's jekyll importer can parse standard frontmatter just fine.
 
