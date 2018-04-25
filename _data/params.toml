@@ -1,7 +1,7 @@
 languageCode = "en-us"
 
 disqusShortname = "attametta"
-paginate = 15
+#paginate = 15
 
 theme = "hyde-x"
 theme_style = "theme-base-0e"
