@@ -1,0 +1,12 @@
+
+site:
+  title: Metta
+  description: Status updates on Metta development
+  base_url: https://metta.systems/
+posts:
+  rss: rss.xml
+  default:
+    permalink: /blog/{{parent}}/{{name}}{{ext}}
+    layout: post.liquid
+# syntax_highlight must be disabled - we use hljs instead
+# configuration is in `_data/params.toml`

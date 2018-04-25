@@ -1,8 +1,0 @@
-[submodule "themes/hyde"]
-	path = themes/hyde
-	url = https://github.com/spf13/hyde.git
-	branch = master
-[submodule "themes/hyde-x"]
-	path = themes/hyde-x
-	url = https://github.com/zyro/hyde-x.git
-	branch = master

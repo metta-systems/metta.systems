@@ -1,0 +1,26 @@
+{% include "head.liquid" %}
+{% assign content = page.content %}
+{% include "reading_time.liquid" %}
+<div class="content container">
+    <div class="post">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <span class="post-date">{% if page.is_draft %}Unpublished draft{% else %}{{ page.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read &middot; <a href="{{ page.permalink }}#disqus_thread">Comments</a>
+
+        {% comment %}if post.categories.count > 0{% endcomment %}
+        <br/>
+        {% for cat in page.categories %}<a class="label" href="{{ "/categories/" }}{{ cat | escape }}">{{ cat }}</a>{% endfor %}
+
+        </span>
+        {{ page.content }}
+    </div>
+</div>
+
+<script type="text/javascript">
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//{{ site.data.params.disqusShortname }}.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+{% include "foot.liquid" %}

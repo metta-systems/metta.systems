@@ -1,0 +1,31 @@
+languageCode = "en-us"
+
+disqusShortname = "attametta"
+paginate = 15
+
+theme = "hyde-x"
+theme_style = "theme-base-0e"
+highlight = "zenburn"
+
+tagline = "decentralized internets"
+
+googleAnalytics = "UA-45168329-1"
+truncate = true
+
+github = "https://github.com/metta-systems"
+# Dunno how to deal with undefined variables in liquid, so just define them as empty for now
+# @todo and @fixme
+bitbucket = ""
+stackOverflow = ""
+linkedin = ""
+googleplus = ""
+facebook = ""
+twitter = ""
+youtube = ""
+flattr = ""
+
+# Optional additional custom CSS file URL, will override other styles.
+customCSS = "/css/overrides.css"
+
+# Default page metadata, used when the specific page doesn't set its own.
+defaultKeywords = "devlog,blog,metta,decentralised,peer-to-peer,vesper,rust"

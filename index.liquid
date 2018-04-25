@@ -1,0 +1,8 @@
+title: Front page
+layout: default.liquid
+---
+<div class="posts">
+{% for post in collections.posts.pages %}
+{% include "post.liquid" %}
+{% endfor %}
+</div>

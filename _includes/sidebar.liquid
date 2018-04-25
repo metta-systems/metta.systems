@@ -1,0 +1,45 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>{{ site.title }}</h1>
+      <p class="lead">{{ site.data.params.tagline | escape }}</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="{{ "/" }}">Blog</a></li>
+      <li class="sidebar-nav-item"><a href="{{ "/manifesto.html" }}">Manifesto</a></li>
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      {% if site.data.params.github != "" %}<a href="{{ site.data.params.github }}"><i class="fa fa-github-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.bitbucket != "" %}<a href="{{ site.data.params.bitbucket }}"><i class="fa fa-bitbucket-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.stackOverflow != "" %}<a href="{{ site.data.params.stackOverflow }}"><i class="fa fa-stack-overflow fa-3x"></i></a>{% endif %}
+      {% if site.data.params.linkedin != "" %}<a href="{{ site.data.params.linkedin }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.googleplus != "" %}<a href="{{ site.data.params.googleplus }}"><i class="fa fa-google-plus-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.facebook != "" %}<a href="{{ site.data.params.facebook }}"><i class="fa fa-facebook-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.twitter != "" %}<a href="{{ site.data.params.twitter }}"><i class="fa fa-twitter-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.youtube != "" %}<a href="{{ site.data.params.youtube }}"><i class="fa fa-youtube-square fa-3x"></i></a>{% endif %}
+      {% if collections.posts.rss != "" %}<a href="/{{ collections.posts.rss }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{% endif %}
+      </li>
+    </ul>
+
+    {% if site.data.params.flattr != "" %}
+    <p><script id='flattr'>
+      (function(id){
+        var s = document.getElementById(id);
+        var f = document.createElement('iframe');
+        f.src = '//api.flattr.com/button/view/?uid={{ site.data.params.flattr }}&button=compact&url={{ site.base_url }}&title={{ site.title }}';
+        f.title = 'Flattr';
+        f.height = 20;
+        f.width = 110;
+        f.style.borderWidth = 0;
+        s.parentNode.insertBefore(f, s);
+      })('flattr');
+    </script></p>
+    {% endif %}
+
+    <p>Copyright &copy; {{ 2018 }} <a href="{{ "/license.html" }}">License</a><br/>
+       Powered by <a href="http://cobalt.rs">Cobalt</a> and <a href="https://github.com/zyro/hyde-x"><nobr>Hyde-X</nobr></a>-based theme</p>
+  </div>
+</div>
