@@ -6,7 +6,7 @@ site:
 posts:
   rss: rss.xml
   default:
-    permalink: /blog/{{parent}}/{{name}}{{ext}}
+    permalink: /{{parent}}/{{name}}{{ext}}
     layout: post.liquid
 # syntax_highlight must be disabled - we use hljs instead
 # configuration is in `_data/params.toml`
