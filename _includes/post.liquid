@@ -16,7 +16,7 @@ This is a post in index feed, with link to post itself and shortened version if 
   </span>
   {% if site.data.params.truncate == false %}
   {{ post.content }}
-  {% elsif post.description %}
+  {% elsif post.description != "" %}
   <p>{{ post.description }}</p>
   <a href="{{ post.permalink }}">Read more &rarr;</a>
   {% else %}
