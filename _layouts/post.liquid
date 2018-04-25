@@ -3,6 +3,16 @@
 {% include "reading_time.liquid" %}
 <div class="content container">
     <div class="post">
+        <span class="post-date">
+{% if page.previous %}
+        <a class="label" href="/{{page.previous.permalink}}">&laquo; {{page.previous.title}}</a>
+{% endif %}
+        <a class="label" href="{{ "/" }}">up</a>
+{% if page.next %}
+        <a class="label" href="/{{page.next.permalink}}">{{page.next.title}} &raquo;</a>
+{% endif %}
+        </span>
+
         <h1 class="post-title">{{ page.title }}</h1>
         <span class="post-date">{% if page.is_draft %}Unpublished draft{% else %}{{ page.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read &middot; <a href="{{ page.permalink }}#disqus_thread">Comments</a>
 
