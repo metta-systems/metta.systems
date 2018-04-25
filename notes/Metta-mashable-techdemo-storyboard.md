@@ -1,7 +1,8 @@
 published_date: 2016-03-07 00:00:00 +0200
 title: Metta - mashable techdemo storyboard
-categories: [metta]
-#layout: note
+categories:
+    - metta
+layout: note.liquid
 ---
 Fire up console, we'll use two consoles for this demo - one will run the streaming video server, another will be our client. The
 

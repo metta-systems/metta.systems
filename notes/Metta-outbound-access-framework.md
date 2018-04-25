@@ -1,7 +1,8 @@
 published_date: 2016-03-07 00:00:00 +0200
 title: Metta outbound access framework
-categories: [metta]
-#layout: note
+categories:
+    - metta
+layout: note.liquid
 ---
 ## Постановка вопроса
 

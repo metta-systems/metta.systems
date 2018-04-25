@@ -1,9 +1,10 @@
 published_date: 2012-08-07 00:00:00 +0200
 title: Meddle Grammar
-categories: [metta, idl]
-#layout: note
+categories:
+    - metta
+    - idl
+layout: note.liquid
 ---
-
 ## Types
 
 Built-in types include `int8`, `int16`, `int32`, `int64` for signed integer types of given bit size, `card16`, `card32`, `card64` for unsigned integer types with given size, `octet` for 8-bit bytes, `float` and `double` for single and double precision floating point numbers, `boolean` for true and false, and types `integer` and `cardinal` with generic unspecified bit size for use in non-local interfaces, these two types will be marshalled to a transport type of necessary size to represent the value.

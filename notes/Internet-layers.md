@@ -1,7 +1,8 @@
 published_date: 2016-03-07 00:00:00 +0200
 title: Слои интернетов
-categories: [metta]
-#layout: note
+categories:
+    - metta
+layout: note.liquid
 ---
 (беркус: я болдом выделяю понравившуюся терминологию, чтобы было за что зацепиться)
 

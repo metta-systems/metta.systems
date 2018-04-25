@@ -1,7 +1,8 @@
 published_date: 2016-03-07 00:00:00 +0200
 title: Metta grabber (uvvy)
-categories: [metta]
-#layout: note
+categories:
+    - metta
+layout: note.liquid
 ---
 (Disclaimer: здесь и далее читать как «для меня», «в моём сегодняшнем понимании» и т.п.)
 
