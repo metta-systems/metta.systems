@@ -1,4 +1,4 @@
-published_date: "2197-01-01 00:00:00 +0000"
+published_date: "3000-01-01 00:00:00 +0000"
 title: Hi and welcome to Metta hub!
 ---
 Here we develop decentralised communication systems for the future, called Metta nodes or uvvies. You can join in by helping us develop, document, promote and use the software.
