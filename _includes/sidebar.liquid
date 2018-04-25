@@ -12,19 +12,19 @@
 
     <ul class="sidebar-nav">
       <li class="sidebar-nav-item">
-      {% if site.data.params.github != "" %}<a href="{{ site.data.params.github }}"><i class="fa fa-github-square fa-3x"></i></a>{% endif %}
-      {% if site.data.params.bitbucket != "" %}<a href="{{ site.data.params.bitbucket }}"><i class="fa fa-bitbucket-square fa-3x"></i></a>{% endif %}
-      {% if site.data.params.stackOverflow != "" %}<a href="{{ site.data.params.stackOverflow }}"><i class="fa fa-stack-overflow fa-3x"></i></a>{% endif %}
-      {% if site.data.params.linkedin != "" %}<a href="{{ site.data.params.linkedin }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{% endif %}
-      {% if site.data.params.googleplus != "" %}<a href="{{ site.data.params.googleplus }}"><i class="fa fa-google-plus-square fa-3x"></i></a>{% endif %}
-      {% if site.data.params.facebook != "" %}<a href="{{ site.data.params.facebook }}"><i class="fa fa-facebook-square fa-3x"></i></a>{% endif %}
-      {% if site.data.params.twitter != "" %}<a href="{{ site.data.params.twitter }}"><i class="fa fa-twitter-square fa-3x"></i></a>{% endif %}
-      {% if site.data.params.youtube != "" %}<a href="{{ site.data.params.youtube }}"><i class="fa fa-youtube-square fa-3x"></i></a>{% endif %}
-      {% if collections.posts.rss != "" %}<a href="/{{ collections.posts.rss }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.github %}<a href="{{ site.data.params.github }}"><i class="fa fa-github-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.bitbucket %}<a href="{{ site.data.params.bitbucket }}"><i class="fa fa-bitbucket-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.stackOverflow %}<a href="{{ site.data.params.stackOverflow }}"><i class="fa fa-stack-overflow fa-3x"></i></a>{% endif %}
+      {% if site.data.params.linkedin %}<a href="{{ site.data.params.linkedin }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.googleplus %}<a href="{{ site.data.params.googleplus }}"><i class="fa fa-google-plus-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.facebook %}<a href="{{ site.data.params.facebook }}"><i class="fa fa-facebook-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.twitter %}<a href="{{ site.data.params.twitter }}"><i class="fa fa-twitter-square fa-3x"></i></a>{% endif %}
+      {% if site.data.params.youtube %}<a href="{{ site.data.params.youtube }}"><i class="fa fa-youtube-square fa-3x"></i></a>{% endif %}
+      {% if collections.posts.rss %}<a href="/{{ collections.posts.rss }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{% endif %}
       </li>
     </ul>
 
-    {% if site.data.params.flattr != "" %}
+    {% if site.data.params.flattr %}
     <p><script id='flattr'>
       (function(id){
         var s = document.getElementById(id);
