@@ -3,7 +3,7 @@ title: Reboot to Rust
 categories:
     - rust
     - osdev
-    - xargo
+    - cargo-xargo
 ---
 ### Fast forward four years...
 

@@ -2,8 +2,8 @@ published_date: 2013-03-21 00:00:00 +0300
 title: File sharing design considerations
 categories:
     - uvvy
-    - file sharing
-    - content distribution
+    - file-sharing
+    - content-distribution
 ---
 Some issues that need tackling in design of file sharing (see [Brendan's post here](http://forum.osdev.org/viewtopic.php?p=220878#p220878)):
 

@@ -2,8 +2,8 @@ published_date: 2018-02-19 21:29:58 +0200
 title: Xargo Build with Sublime
 categories:
     - rust
-    - xargo
-    - sublime
+    - cargo-xargo
+    - sublime-text
     - osdev
 ---
 ### How to build your xargo package in Sublime

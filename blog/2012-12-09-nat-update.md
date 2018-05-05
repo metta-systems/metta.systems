@@ -2,10 +2,7 @@ published_date: 2012-12-09 00:00:00 +0200
 title: NAT update
 categories:
     - metta
-    - upnp
-    - nat traversal
     - nat
-    - hole punching
 ---
 Turns out the problem was on the server side setup. After moving the server to Amazon EC2 cloud and setting up UDP firewall rules punching started working. At least that takes some burden off my shoulders. The regserver connection is not very robust, that should probably be modified to force-reconnect the session once you open the search window again.
 

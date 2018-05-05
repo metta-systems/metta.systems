@@ -1,7 +1,7 @@
 published_date: 2013-10-30 14:47:00 +0000
 title: "Using libsss for communication"
 categories:
-    - libsss
+    - structured-secure-streams
     - communication
     - howto
     - uvvy

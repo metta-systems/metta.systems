@@ -4,7 +4,6 @@ categories:
     - compilers
     - clang
     - llvm
-    - trunk
     - howto
 ---
 Just a very simple thing to try and build Clang with polly, LLVM, libcxx, lldb and lld from trunk. Isn't it?

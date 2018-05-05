@@ -2,6 +2,7 @@ title: Useful cargo commands
 categories:
   - rust
   - tools
+  - cargo-xargo
 published_date: "2018-04-30 23:51:59 +0000"
 is_draft: false
 ---

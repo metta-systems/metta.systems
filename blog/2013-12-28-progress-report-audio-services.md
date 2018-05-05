@@ -2,7 +2,7 @@ published_date: 2013-12-28 15:15:00 +0000
 title: "Progress report: Audio services, congestion control"
 categories:
     - report
-    - libsss
+    - structured-secure-streams
     - nat
     - voicebox
     - security

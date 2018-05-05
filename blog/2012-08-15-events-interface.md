@@ -3,7 +3,7 @@ title: Events interface
 categories:
     - metta
     - ansa
-    - distributed architecture
+    - distributed-architecture
     - events
     - synchronisation
     - fawn
