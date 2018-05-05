@@ -3,6 +3,7 @@ title: Metta outbound access framework
 categories:
     - metta
 layout: note.liquid
+permalink: /{{parent}}/{{name}}
 ---
 ## Постановка вопроса
 

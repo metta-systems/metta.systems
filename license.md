@@ -6,6 +6,7 @@ categories:
     - blog
     - code
 layout: post.liquid
+permalink: /{{parent}}/{{name}}
 ---
 ### Content license
 

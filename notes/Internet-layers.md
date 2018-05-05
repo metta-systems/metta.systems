@@ -3,6 +3,7 @@ title: Слои интернетов
 categories:
     - metta
 layout: note.liquid
+permalink: /{{parent}}/{{name}}
 ---
 (беркус: я болдом выделяю понравившуюся терминологию, чтобы было за что зацепиться)
 

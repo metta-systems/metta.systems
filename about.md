@@ -4,6 +4,7 @@ categories:
     - exocortex
     - metta
 layout: post.liquid
+permalink: /{{parent}}/{{name}}
 ---
 ### What I'm working on and why
 

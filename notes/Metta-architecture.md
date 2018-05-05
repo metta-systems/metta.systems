@@ -3,6 +3,7 @@ title: Metta architecture
 categories:
     - metta
 layout: note.liquid
+permalink: /{{parent}}/{{name}}
 ---
 System works as a federation of autonomous services distributed onto different machines across the network.
 

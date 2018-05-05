@@ -1,6 +1,7 @@
 published_date: 2014-01-15 15:40:00 +0200
 title: Manifesto
 layout: post.liquid
+permalink: /{{parent}}/{{name}}
 ---
 ### Metta
 
