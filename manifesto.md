@@ -49,6 +49,6 @@ It won't get any better - unless we work it to be. You can observe the trend, th
 
 Metta works right now.
 
-Join us on [github](https://github.com/berkus/metta). Bring in your ideas and thoughts, help us re-decentralise the internet, take our data back, break out from all forms of control by design. Be free!
+Join us on [github](https://github.com/metta-systems/metta). Bring in your ideas and thoughts, help us re-decentralise the internet, take our data back, break out from all forms of control by design. Be free!
 
 मेता
