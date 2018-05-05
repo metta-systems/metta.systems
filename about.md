@@ -3,7 +3,7 @@ title: "About"
 categories:
     - exocortex
     - metta
-layout: post.liquid
+layout: note.liquid
 permalink: /{{parent}}/{{name}}
 ---
 ### What I'm working on and why

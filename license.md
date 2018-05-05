@@ -5,7 +5,7 @@ categories:
     - license
     - blog
     - code
-layout: post.liquid
+layout: note.liquid
 permalink: /{{parent}}/{{name}}
 ---
 ### Content license
