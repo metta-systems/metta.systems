@@ -3,7 +3,6 @@ title: Metta grabber (uvvy)
 categories:
     - metta
 layout: note.liquid
-permalink: /{{parent}}/{{name}}
 ---
 (Disclaimer: здесь и далее читать как «для меня», «в моём сегодняшнем понимании» и т.п.)
 

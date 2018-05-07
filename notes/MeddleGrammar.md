@@ -4,7 +4,6 @@ categories:
     - metta
     - idl
 layout: note.liquid
-permalink: /{{parent}}/{{name}}
 ---
 ## Types
 

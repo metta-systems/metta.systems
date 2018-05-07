@@ -3,7 +3,6 @@ title: Metta - mashable techdemo storyboard
 categories:
     - metta
 layout: note.liquid
-permalink: /{{parent}}/{{name}}
 ---
 Fire up console, we'll use two consoles for this demo - one will run the streaming video server, another will be our client. The
 
