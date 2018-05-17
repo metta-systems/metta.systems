@@ -39,4 +39,11 @@ Some additional cargo commands exist to provide unprecedented level of support a
 [cargo-fix](https://github.com/rust-lang-nursery/rustfix) - automatically apply fix-it suggestions from rustc and clippy to entire project. For better effect, run `cargo clean` first, then `cargo fix --clippy`.
 
 [cargo-release](https://github.com/sunng87/cargo-release) - for when you're ready to share your crate with the world, automates mundane release tasks - bumping versions, tagging repo, updating docs, etc.
- 
+
+[version-sync](https://github.com/mgeisler/version-sync) - keep your version number in documentation and elsewhere in sync with version specified in Cargo.toml
+
+[cargo-generate](https://github.com/ashleygwilliams/cargo-generate) - generate cargo project from a given template.
+
+[cargo-geiger](https://github.com/anderejd/cargo-geiger) - count number of `unsafe` operations in crate and its dependencies.
+
+[cargo-xbuild](https://github.com/rust-osdev/cargo-xbuild) - a replacement for xargo (which is now in maintenance mode).
