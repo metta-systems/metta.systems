@@ -7,7 +7,7 @@ This is a post in index feed, with link to post itself and shortened version if 
   <h1 class="post-title">
     <a href="{{ post.permalink }}">{{ post.title }}</a>
   </h1>
-  <span class="post-date">{% if post.is_draft %}Unpublished draft{% else %}{{ post.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read &middot; <a href="{{ post.permalink }}#disqus_thread">Comments</a>
+  <span class="post-date">{% if post.is_draft %}Unpublished draft{% else %}{{ post.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read{% if site.data.params.utterances %} &middot; <a href="/{{ post.permalink }}#comments">Comments</a>{% endif %}
 
   {% comment %}if post.categories.count > 0{% endcomment %}
   <br/>

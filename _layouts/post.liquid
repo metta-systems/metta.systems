@@ -14,7 +14,7 @@
         </span>
 
         <h1 class="post-title">{{ page.title }}</h1>
-        <span class="post-date">{% if page.is_draft %}Unpublished draft{% else %}{{ page.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read{% if site.data.params.utterances %} &middot; <a href="{{ page.permalink }}#comments">Comments</a>{% endif %}
+        <span class="post-date">{% if page.is_draft %}Unpublished draft{% else %}{{ page.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read{% if site.data.params.utterances %} &middot; <a href="#comments">Comments</a>{% endif %}
 
         {% comment %}if post.categories.count > 0{% endcomment %}
         <br/>
