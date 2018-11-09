@@ -1,6 +1,9 @@
 languageCode = "en-us"
 
-disqusShortname = "attametta"
+utterances = "metta-systems/metta.systems"
+utterancesMapping = "url"
+utterancesTheme = "github-light"
+
 #paginate = 15
 
 theme = "hyde-x"
