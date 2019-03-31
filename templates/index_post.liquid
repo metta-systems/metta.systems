@@ -1,0 +1,24 @@
+{# This is a post in index feed, with link to post itself and shortened version if enabled. #}
+{% assign content = post.content %}
+{% include "reading_time.liquid" %}
+<div class="post">
+  <h1 class="post-title">
+    <a href="{{ post.permalink }}">{{ post.title }}</a>
+  </h1>
+  <span class="post-date">{% if post.draft %}Unpublished draft{% else %}{{ post.published_date | date: "%-d %B %Y" }}{% endif %} &middot; {{ reading_time }} read{% if site.data.params.utterances %} &middot; <a href="/{{ post.permalink }}#comments">Comments</a>{% endif %}
+
+  {% comment %}if post.categories.count > 0{% endcomment %}
+  <br/>
+  {% for cat in post.categories %}<a class="label" href="{{ "/categories/" }}{{ cat | escape }}">{{ cat }}</a>{% endfor %}
+
+  </span>
+  {% if site.data.params.truncate == false %}
+  {{ post.content }}
+  {% elsif post.description != "" %}
+  <p>{{ post.description }}</p>
+  <a href="{{ post.permalink }}">Read more &rarr;</a>
+  {% else %}
+  {{ post.excerpt }}
+  <a href="{{ post.permalink }}">Read more &rarr;</a>
+  {% endif %}
+</div>

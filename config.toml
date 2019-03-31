@@ -1,0 +1,55 @@
+# The URL the site will be built for
+base_url = "https://metta.systems"
+title = "Metta"
+description = "decentralized internets"
+# description = "Status updates on Metta development"
+
+theme = "hyde-x"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# syntax_highlight must be disabled - we use hljs instead, see `highlight` in [extra]
+highlight_code = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+default_language = "en"
+
+taxonomies = [
+    {name = "categories", paginate_by = 50},
+]
+
+generate_rss = true
+
+[extra]
+# Put all your custom variables here
+languageCode = "en"
+
+utterances = "metta-systems/metta.systems"
+utterancesMapping = "url"
+utterancesTheme = "github-light"
+
+#paginate = 15
+
+hyde_theme = "theme-base-0e"
+hyde_reverse = false
+hyde_links = [
+    {url = "/", name = "Blog"},
+    {url = "/manifesto", name = "Manifesto"},
+]
+
+highlight = "zenburn"
+
+# tagline = "decentralized internets"
+
+googleAnalytics = "UA-45168329-1"
+truncate = true
+
+hydex_github = "https://github.com/metta-systems"
+
+# Optional additional custom CSS file URL, will override other styles.
+customCSS = "/css/overrides.css"
+
+# Default page metadata, used when the specific page doesn't set its own.
+defaultKeywords = "devlog,blog,metta,decentralised,peer-to-peer,vesper,rust"

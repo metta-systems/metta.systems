@@ -1,5 +1,0 @@
-permalink: /categories/@cat@
-layout: default.liquid
----
-{% assign filter_cat = "@cat@" %}
-{% include "category.liquid" %}

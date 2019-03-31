@@ -1,10 +1,10 @@
-published_date: 2014-01-23 00:00:00 +0200
-title: Personal device cluster management
-is_draft: true
-categories:
-    - naming
-    - personal device cluster
----
++++
+date = 2014-01-23T00:00:00+02:00
+title = "Personal device cluster management"
+draft = true
+[taxonomies]
+categories = ["naming","personal device cluster"]
++++
 ### Managing a network of devices
 
 People have more than one device usually, typical usage includes a laptop, a desktop, a cellphone,

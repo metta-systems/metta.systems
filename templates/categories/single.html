@@ -1,0 +1,20 @@
+{% extends "page.html" %}
+
+{% block title %}
+Category {{ term.name | title }} &middot; {{ config.title }}
+{% endblock title %}
+
+{% block content %}
+<a href={{ paginator.first }}>|&lt;</a>&nbsp;<a href={{ paginator.previous }}>&lt;&lt;</a>&nbsp;{{ paginator.current_index }} of {{ paginator.number_pagers }}&nbsp;<a href={{ paginator.next }}>&gt;&gt;</a>&nbsp;<a href={{ paginator.last }}>&gt;|</a>
+
+<h1>Posts in category <span class="label">{{ term.name }}</span></h1>
+
+<ul>
+{% for page in paginator.pages %}
+<li>
+    <a href={{ page.permalink }}>{{ page.title }}</a>
+    {% include "categories/post-title-list.html" %}
+</li>
+{% endfor %}
+</ul>
+{% endblock content %}

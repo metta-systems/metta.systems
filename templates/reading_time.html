@@ -1,0 +1,9 @@
+{% macro reading_time() %}
+    {% if page.reading_time == 0 %}
+        less than a minute
+    {% elif page.reading_time == 1 %}
+        about a minute
+    {% else %}
+        {{ page.reading_time }} minutes
+    {% endif %}
+{% endmacro reading_time %}

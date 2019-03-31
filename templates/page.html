@@ -1,0 +1,26 @@
+{% extends "hyde-x/templates/page.html" %}
+{% import "reading_time.html" as helper %}
+{% block content %}
+    <div class="post">
+        <span class="post-date">
+{% if page.earlier %}
+        <a class="label" href="{{page.earlier.permalink}}">&laquo; {{page.earlier.title}}</a>
+{% endif %}
+        <a class="label" href="{{ "/" }}">up</a>
+{% if page.later %}
+        <a class="label" href="{{page.later.permalink}}">{{page.later.title}} &raquo;</a>
+{% endif %}
+        </span>
+
+        <h1 class="post-title">{{ page.title }}</h1>
+        <span class="post-date">{% if page.draft %}Unpublished draft{% else %}{{ page.date | date(format="%-d %B %Y") }}{% endif %} &middot; {{ helper::reading_time() }} read{% if config.extra.utterances %} &middot; <a href="#comments">Comments</a>{% endif %}
+
+        <br/>
+        {% include "categories/post-title-list.html" %}
+        </span>
+        {{ page.content | safe }}
+    </div>
+    {% if config.extra.utterances %}
+    {% include "utterances.html" %}
+    {% endif %}
+{% endblock content %}

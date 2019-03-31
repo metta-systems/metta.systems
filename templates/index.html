@@ -1,0 +1,8 @@
+{% extends "hyde-x/templates/index.html" %}
+{% block title %}
+{% if page.title %}
+{{ page.title }} &middot; {{ config.title }}
+{% else %}
+{{ config.title }}
+{% endif %}
+{% endblock title %}
