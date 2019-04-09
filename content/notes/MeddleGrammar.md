@@ -12,6 +12,8 @@ The types `int8`, `int16`, `int32`, `int64`, `card16`, `card32`, `card64` are co
 
 Custom types can be `enum`, `set`, `range`, `type` alias, `sequence`, `array` and `record`.
 
+<!-- more -->
+
 #### enum
 
 Enum simply lists identifiers in some common group. Numeric values are assigned to names automatically in order of declaration.

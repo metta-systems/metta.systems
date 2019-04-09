@@ -8,6 +8,8 @@ categories = ["report","structured-secure-streams","nat","voicebox","security"]
 
 It's been a while since last update, so I wanted to show a little bit of what's happening in the repositories.
 
+<!-- more -->
+
 #### NAT
 
 NAT library has learned to read current router mappings and figuring out if it needs to add a mapping for itself. It also learned to not step on other instance's toes so I can successfully run two or more client apps from behind the same firewall.

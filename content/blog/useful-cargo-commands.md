@@ -6,6 +6,8 @@ categories = ["rust","tools","cargo-xargo"]
 +++
 Some additional cargo commands exist to provide unprecedented level of support and extensibility to regular cargo. Here's a list of commands I use (will be updated over time, last update 2018-05-01):
 
+<!-- more -->
+
 [cargo-edit](https://github.com/killercup/cargo-edit) -  `cargo add`, `cargo rm`, `cargo upgrade` Cargo.toml dependencies.
 
 [cargo-watch](https://github.com/passcod/cargo-watch) - add a `cargo watch` command to monitor and rebuild source in case of changes.

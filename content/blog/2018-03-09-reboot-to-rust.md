@@ -16,6 +16,8 @@ So the primary targets are `x86_64` and `aarch64`. And I'm going to start by col
 
 Let's go.
 
+<!-- more -->
+
 ### Hardware
 
 RPi3 by default does not have LED controls, so our next targets could be talking to mini-UART connected through the GPIO pins and talking to VideoCore IV processor and outputting data directly on screen.

@@ -10,6 +10,8 @@ Using git, because cloning a git repo with full history is still faster than che
 
 These instructions are not for copy-paste, they show general idea and should work with minor changes.
 
+<!-- more -->
+
 ``` console
 $ mkdir workspace && cd workspace
 $ git clone http://llvm.org/git/llvm.git

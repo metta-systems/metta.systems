@@ -10,6 +10,8 @@ Fire up console, we'll use two consoles for this demo - one will run the streami
 
 prompt denotes a command line where you enter your commands.
 
+<!-- more -->
+
 ## Server console
 
 Start monger. Monger is interactive tool for exploring running services and installed interfaces and mashing them together.

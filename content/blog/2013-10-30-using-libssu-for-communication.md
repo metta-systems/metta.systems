@@ -12,6 +12,8 @@ SSS is based on experimental, unfinished project under UIA - [SST](http://pdos.c
 
 SSS is an experimental transport protocol designed to address the needs of modern applications that need to juggle many asynchronous communication activities in parallel, such as downloading different parts of a web page simultaneously and playing multiple audio and video streams at once.
 
+<!-- more -->
+
 ### Features of SSS
 
 ![](/images/streams.png)

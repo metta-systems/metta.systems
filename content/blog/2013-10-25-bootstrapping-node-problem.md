@@ -10,6 +10,8 @@ Absolutely every network needs a way to find a node's peers, for establishing co
 
 Overlay networks based on DHT or similar mechanisms ([Kademlia][1], [Chord][2]) use peer nodes to figure this information out. Usually in such network you have a node ID, 128 or 160 bits in length, which uniquely identifies the node and node's position in routing tables. Based on this ID you simply look up the IP address. But wait, look it up from where?
 
+<!-- more -->
+
 Turns out to be able to find any peer's IP address you already need to be connected to the overlay network. Or have some other way of figuring out at least one, first, bootstrapping IP address of a node inside that network.
 
 ![Dr. Martens boots](/images/Dr_Martens.jpg)

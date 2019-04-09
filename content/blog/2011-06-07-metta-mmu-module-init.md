@@ -10,6 +10,8 @@ First off, we start by loading the needed modules - `mmu_mod`, `frames_mod` and 
 
 `mmu_mod` will allocate and map the first chunk of memory to use. It does so without knowing much about memory allocation - just takes a first fit chunk from the physical memory map, passed to us by the bootloader. Parts of this memory will be used by `frames_mod` and `heap_mod` as well, so we need a way to know how much memory they would need.
 
+<!-- more -->
+
 We need `frames_mod` to tell us, how much it needs to manage the physical memory, for the heap we just assume some size that we would need dynamically during rest of startup.
 
 ``` c

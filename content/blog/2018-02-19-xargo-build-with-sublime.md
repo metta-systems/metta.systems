@@ -22,6 +22,8 @@ Imagine you have a special OSdev project in Rust that you want to build from wit
 
 You save it and hit Cmd+B.
 
+<!-- more -->
+
 You get rather strange message:
 
 ``` text

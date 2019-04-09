@@ -6,6 +6,8 @@ categories = ["blog","rust"]
 +++
 Decision to port the blog to rust-based Cobalt.rs generator instead of hugo came rather easily, I'm quite fond of rust ecosystem now, and this porting excercise proved me right.
 
+<!-- more -->
+
 My first try was to run cobalt conversion directly from the insides of my hugo blog directory. This rained endless stream of errors and demotivated me, so I postponed the conversion, fearing it will be too hard.
 
 In my second attempt I decided to do it more controllably, initialized a new directory using `cobalt init` and started porting my theme.
