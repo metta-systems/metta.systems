@@ -1,4 +1,5 @@
 {% extends "page.html" %}
+{% import "categories/post-title-list-macro.html" as cats %}
 
 {% block title %}
 Category {{ term.name | title }} &middot; {{ config.title }}
@@ -13,7 +14,7 @@ Category {{ term.name | title }} &middot; {{ config.title }}
 {% for page in paginator.pages %}
 <li>
     <a href={{ page.permalink }}>{{ page.title }}</a>
-    {% include "categories/post-title-list.html" %}
+    {{ cats::show_cats(page=page) }}
 </li>
 {% endfor %}
 </ul>

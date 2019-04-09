@@ -1,3 +1,5 @@
+{% macro show_cats(page) %}
 {% if page.taxonomies %}
 {% for cat in page.taxonomies.categories %}<a class="label" href="{{ "/categories/" }}{{ cat | escape }}">{{ cat }}</a>{% endfor %}
 {% endif %}
+{% endmacro show_cats %}
