@@ -36,7 +36,7 @@ hyde_theme = "theme-base-0e"
 hyde_reverse = false
 hyde_links = [
     {url = "/", name = "Blog"},
-    {url = "/manifesto", name = "Manifesto"},
+    {url = "/misc/manifesto", name = "Manifesto"},
 ]
 
 highlight = "zenburn"
