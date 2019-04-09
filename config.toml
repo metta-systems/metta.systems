@@ -2,7 +2,6 @@
 base_url = "https://metta.systems"
 title = "Metta"
 description = "decentralized internets"
-# description = "Status updates on Metta development"
 
 theme = "hyde-x"
 
@@ -24,13 +23,16 @@ generate_rss = true
 
 [extra]
 # Put all your custom variables here
+#description = "Status updates on Metta development"
+#paginate = 15
+#highlight = "zenburn" -- if using hljs
+#tagline = "decentralized internets"
+#truncate = true # Zola doesn't use this setting
 languageCode = "en"
 
 utterances = "metta-systems/metta.systems"
 utterancesMapping = "url"
 utterancesTheme = "github-light"
-
-#paginate = 15
 
 hyde_theme = "theme-base-0e"
 hyde_reverse = false
@@ -41,10 +43,7 @@ hyde_links = [
 
 highlight = "zenburn"
 
-# tagline = "decentralized internets"
-
 googleAnalytics = "UA-45168329-1"
-truncate = true
 
 hydex_github = "https://github.com/metta-systems"
 
