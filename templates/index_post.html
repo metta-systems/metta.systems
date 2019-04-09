@@ -1,0 +1,18 @@
+<div class="post">
+  <h1 class="post-title">
+    <a href="{{ post.permalink }}">{{ post.title }}</a>
+  </h1>
+  <span class="post-date">{% if post.draft %}Unpublished draft{% else %}{{ post.date | date(format="%-d %B %Y") }}{% endif %} &middot; {{ helper::reading_time(page=post) }} read{% if config.extra.utterances %} &middot; <a href="{{ post.permalink }}#comments">Comments</a>{% endif %}
+  <br/>
+  {{ cats::show_cats(page=post) }}
+  </span>
+  {% if post.summary %}
+  {{ post.summary | safe }}
+  <a href="{{ post.permalink }}#continue-reading">Read more &rarr;</a>
+  {% elif post.description %}
+  <p>{{ post.description | safe }}</p>
+  <a href="{{ post.permalink }}#continue-reading">Read more &rarr;</a>
+  {% else %}
+  {{ post.content | safe }}
+  {% endif %}
+</div>
