@@ -1,0 +1,22 @@
+name = "hyde-x"
+description = "A classic blog theme"
+license = "MIT"
+homepage = "https://github.com/berkus/zola-hyde-x"
+min_version = "0.1.0"
+# demo = "https://zola-hyde.netlify.com"
+
+[extra]
+hyde_sticky = true
+hyde_reverse = false
+hyde_theme = ""
+hyde_links = [
+]
+
+[author]
+name = "Berkus Decker"
+homepage = "https://metta.systems"
+
+[original]
+author =  "Andrei Mihu"
+homepage = "http://andreimihu.com/"
+repo = "https://www.github.com/zyro/hyde-x"

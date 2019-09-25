@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:berkus/zola-hyde-x.git
+	branch = hyde-x-port
+	commit = ed0497e0abb47e451e13d137df190e126b3051cf
+	parent = a920c609752481ad6a739d6837b3c44417da767f
+	cmdver = 0.3.1
