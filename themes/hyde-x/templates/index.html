@@ -81,7 +81,7 @@
             {% endblock content %}
         </div>
         {% if config.extra.highlight %}
-        <script src="{{ "/js/highlight.pack.js" }}"></script>
+        <script src="{{ get_url(path="js/highlight.pack.js") }}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         {% endif %}
     </body>

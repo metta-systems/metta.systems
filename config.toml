@@ -41,7 +41,8 @@ hyde_links = [
     {url = "/misc/manifesto", name = "Manifesto"},
 ]
 
-highlight = "zenburn"
+# hljs causes webpage hang
+#highlight = "zenburn"
 
 googleAnalytics = "UA-45168329-1"
 
