@@ -1,5 +1,4 @@
 +++
-date = 2013-03-21T00:00:00+03:00
 title = "File sharing design considerations"
 [taxonomies]
 categories = ["uvvy","file-sharing","content-distribution"]

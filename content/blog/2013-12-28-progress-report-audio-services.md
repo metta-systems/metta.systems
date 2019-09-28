@@ -1,5 +1,4 @@
 +++
-date = 2013-12-28T15:15:00Z
 title = "Progress report: Audio services, congestion control"
 [taxonomies]
 categories = ["report","structured-secure-streams","nat","voicebox","security"]

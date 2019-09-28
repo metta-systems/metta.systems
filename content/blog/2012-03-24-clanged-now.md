@@ -1,5 +1,4 @@
 +++
-date = 2012-03-24T00:00:00+03:00
 title = "Clanged now"
 [taxonomies]
 categories = ["metta","cross-compiling","llvm"]

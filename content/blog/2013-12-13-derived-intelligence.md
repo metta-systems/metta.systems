@@ -1,5 +1,4 @@
 +++
-date = 2013-12-13T00:00:00+02:00
 title = "Derived intelligence"
 template = "quote.html"
 [taxonomies]

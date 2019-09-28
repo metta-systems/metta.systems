@@ -1,5 +1,4 @@
 +++
-date = 2012-08-15T00:00:00+03:00
 title = "Events interface"
 [taxonomies]
 categories = ["metta","ansa","distributed-architecture","events","synchronisation","fawn","nemesis"]

@@ -1,5 +1,4 @@
 +++
-date = 2012-07-16T00:00:00+03:00
 title = "Graphic dependency resolution"
 [taxonomies]
 categories = ["metta","tools","issue-tracking"]

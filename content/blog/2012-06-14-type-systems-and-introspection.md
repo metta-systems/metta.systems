@@ -1,5 +1,4 @@
 +++
-date = 2012-06-14T00:00:00+03:00
 title = "Type systems and introspection"
 [taxonomies]
 categories = ["metta","startup","coding","reflection","self-aware","introspection"]

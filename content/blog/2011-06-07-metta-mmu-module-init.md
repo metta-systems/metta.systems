@@ -1,5 +1,4 @@
 +++
-date = 2011-06-07T00:00:00+03:00
 title = "Metta MMU module init"
 [taxonomies]
 categories = ["metta","startup","memory"]

@@ -1,5 +1,4 @@
 +++
-date = 2012-04-08T00:00:00+03:00
 title = "sjlj and exception handling"
 [taxonomies]
 categories = ["metta","osdev","llvm","exceptions"]

@@ -1,7 +1,6 @@
 +++
-date = 2009-12-30T00:00:00+02:00
 title = "To remain the web weavers"
-# type: quote
+template = "quote.html"
 [taxonomies]
 categories = ["exocortex","metta"]
 +++

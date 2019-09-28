@@ -1,5 +1,4 @@
 +++
-date = 2012-07-13T00:00:00+03:00
 title = "Brief update on Metta"
 [taxonomies]
 categories = ["metta","toolchain","clang","llvm","type-system"]

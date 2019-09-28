@@ -1,5 +1,4 @@
 +++
-date = 2013-10-30T14:47:00Z
 title = "Using libsss for communication"
 [taxonomies]
 categories = ["structured-secure-streams","communication","howto","uvvy"]

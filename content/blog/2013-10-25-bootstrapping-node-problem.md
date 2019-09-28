@@ -1,5 +1,4 @@
 +++
-date = 2013-10-25T17:34:00Z
 title = "Bootstrapping node problem"
 [taxonomies]
 categories = ["routing","peer-to-peer"]

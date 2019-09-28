@@ -1,5 +1,4 @@
 +++
-date = 2013-05-23T00:00:00+03:00
 title = "Compiling LLVM trunk"
 [taxonomies]
 categories = ["compilers","clang","llvm","howto"]

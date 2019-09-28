@@ -1,5 +1,4 @@
 +++
-date = 2018-02-19T21:29:58+02:00
 title = "Xargo Build with Sublime"
 [taxonomies]
 categories = ["rust","cargo-xargo","sublime-text","osdev"]

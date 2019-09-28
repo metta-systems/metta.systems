@@ -1,5 +1,4 @@
 +++
-date = 2018-03-09T19:45:25+02:00
 title = "Reboot to Rust"
 [taxonomies]
 categories = ["rust","osdev","cargo-xargo"]

@@ -1,5 +1,4 @@
 +++
-date = 2012-03-25T00:00:00+03:00
 title = "Optimizations"
 [taxonomies]
 categories = ["metta","llvm","cpu-arch"]

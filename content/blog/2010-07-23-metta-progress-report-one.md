@@ -1,5 +1,4 @@
 +++
-date = 2010-07-23T00:00:00+03:00
 title = "Metta progress report one"
 [taxonomies]
 categories = ["metta","osdev"]

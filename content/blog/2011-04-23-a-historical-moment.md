@@ -1,5 +1,4 @@
 +++
-date = 2011-04-23T00:00:00+03:00
 title = "A historical moment"
 [taxonomies]
 categories = ["osdev","arm","startup"]

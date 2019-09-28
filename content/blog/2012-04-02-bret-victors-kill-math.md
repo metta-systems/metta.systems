@@ -1,7 +1,6 @@
 +++
-date = 2012-04-02T00:00:00+03:00
 title = "Bret Victor's Kill Math"
-#type: link
+template = "link.html"
 [taxonomies]
 categories = ["bret-victor"]
 +++
