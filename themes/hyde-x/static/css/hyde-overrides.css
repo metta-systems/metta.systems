@@ -14,3 +14,11 @@
   list-style: none;
   margin-bottom: 1rem;
 }
+
+.sidebar-search {
+    margin-bottom: auto;
+}
+
+.sidebar-search #search {
+    width: 80%;
+}

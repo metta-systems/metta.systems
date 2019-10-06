@@ -64,6 +64,7 @@
         {% endblock sidebar %}
 
         <div class="content container">
+            {% include "hyde-x/templates/search_results.html" %}
             {% block content %}
                 <div class="posts">
                     {% for page in section.pages | reverse %}
@@ -83,6 +84,11 @@
         {% if config.extra.highlight %}
         <script src="{{ get_url(path="js/highlight.pack.js") }}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
+        {% endif %}
+        {% if config.build_search_index %}
+        <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+        <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
+        <script type="text/javascript" src="{{ get_url(path="js/search.js") }}"></script>
         {% endif %}
     </body>
 </html>
