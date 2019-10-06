@@ -1,7 +1,6 @@
 +++
 date = 2016-03-07
 title = "Metta outbound access framework"
-#template = "note.liquid"
 [taxonomies]
 categories = ["metta"]
 +++
