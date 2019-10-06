@@ -7,4 +7,4 @@ I've ported events, sequencers and event-based communication primitives from Nem
 
 There's some interesting theory behind using events as the main synchronization mechanism, described [here](http://research.microsoft.com/pubs/72910/UCAM-CL-TR-361.pdf) in more detail.
 
-For the vacation time I've printed some ANSA documents, which define architectural specifications for distributed computation systems and is very invaluable source of information for designing such systems. The full list of available ANSA documents can be found [here](http://www.ansa.co.uk/ANSATech/ANSAhtml/). Good reading.
+For the vacation time I've printed some ANSA documents, which define architectural specifications for distributed computation systems and is very invaluable source of information for designing such systems. The full list of available ANSA documents can be found [here](http://www.ansa.co.uk/ANSATech/ANSAhtml/) (link is dead now). Good reading.

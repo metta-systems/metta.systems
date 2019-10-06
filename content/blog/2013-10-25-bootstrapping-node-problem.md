@@ -77,7 +77,7 @@ I would rather like to hear your ideas for other methods not covered here. Post 
 
   [1]: http://en.wikipedia.org/wiki/Kademlia "Kademlia"
   [2]: http://en.wikipedia.org/wiki/Chord_(peer-to-peer) "Chord"
-  [3]: http://wiki.enigmabox.net/cipherspace/cjdns "cjdns"
+  [3]: https://github.com/cjdelisle/cjdns "cjdns"
   [4]: http://netsukuku.freaknet.org/doc/main_doc/qspn.pdf "QSPN"
 
 मेता

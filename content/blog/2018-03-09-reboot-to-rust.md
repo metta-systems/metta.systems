@@ -77,9 +77,9 @@ rustc -Z unstable-options --print target-spec-json \
 
 `set -x RUST_TARGET_PATH (pwd)/targets/` before running xargo.
 
-See [here](https://github.com/japaric/rust-cross#the-target-triple) for a nice description of the target triples. `aarch64-unknown-metta` (or `aarch64-none-metta`) should be ok for start. [Here](http://intermezzos.github.io/book/setup.html) explains that it probably should be `aarch64-unknown-none` for bare metal. And the userspace would be `aarch64-vesper-metta`.
+See [here](https://github.com/japaric/rust-cross#the-target-triple) for a nice description of the target triples. `aarch64-unknown-metta` (or `aarch64-none-metta`) should be ok for start. [Here](http://intermezzos.github.io/book/first-edition/setup.html) explains that it probably should be `aarch64-unknown-none` for bare metal. And the userspace would be `aarch64-vesper-metta`.
 
-intermezzOS tutorial handles this bit down the road in the [First Rust chapter](http://intermezzos.github.io/book/creating-our-first-crate.html).
+intermezzOS tutorial handles this bit down the road in the [First Rust chapter](http://intermezzos.github.io/book/first-edition/creating-our-first-crate.html).
 
 PhilOS also mentions it [here](https://os.phil-opp.com/set-up-rust/#target-specifications).
 
