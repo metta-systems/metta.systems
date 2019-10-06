@@ -8,8 +8,8 @@ theme = "hyde-x"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
-# syntax_highlight must be disabled - we use hljs instead, see `highlight` in [extra]
-highlight_code = false
+highlight_code = true
+highlight_theme = "ayu-dark"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
@@ -40,9 +40,6 @@ hyde_links = [
     {url = "/", name = "Blog"},
     {url = "/misc/manifesto", name = "Manifesto"},
 ]
-
-# hljs causes webpage hang
-#highlight = "zenburn"
 
 googleAnalytics = "UA-45168329-1"
 
