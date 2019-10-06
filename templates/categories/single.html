@@ -8,6 +8,8 @@ Category {{ term.name | title }} &middot; {{ config.title }}
 {% block content %}
 {% include "paginator_navigation.html" %}
 
+<p><a href="/categories">List all categories</a></p>
+
 <h1>Posts in category <span class="label">{{ term.name }}</span></h1>
 
 <ul>
