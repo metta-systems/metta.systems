@@ -1,6 +1,15 @@
 {% extends "hyde-x/templates/page.html" %}
 {% import "reading-time-macro.html" as helper %}
 {% import "categories/post-title-list-macro.html" as cats %}
+
+{% block title %}
+{% if page.title %}
+{{ page.title }} &middot; {{ config.title }}
+{% else %}
+{{ config.title }}
+{% endif %}
+{% endblock title %}
+
 {% block content %}
     <div class="post">
         <span class="post-date">
