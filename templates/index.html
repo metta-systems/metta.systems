@@ -11,7 +11,17 @@
 {% endblock title %}
 
 {% block content %}
-{% for post in section.pages %}
-{% include "index_post.html" %}
-{% endfor %}
+<div class="posts">
+{% if not paginator %}
+    {% for post in section.pages %}
+    {% include "index_post.html" %}
+    {% endfor %}
+{% else %}
+    {% include "paginator_navigation.html" %}
+    {% for post in paginator.pages %}
+    {% include "index_post.html" %}
+    {% endfor %}
+    {% include "paginator_navigation.html" %}
+{% endif %}
+</div>
 {% endblock content %}
