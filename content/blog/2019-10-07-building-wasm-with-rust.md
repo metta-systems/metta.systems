@@ -63,6 +63,8 @@ module.run();
 
 I have my cdylib library for the web assembly code in the workspace under `lib` that's why the path looks like this. Adjust to your configuration. Remember to build a library crate, not a binary!
 
+NOTE: To build something useful with yew you can start from this excellent tutorial in 3 parts: [Hunt the Wumpus](https://dev.to/deciduously/lets-build-a-rust-frontend-with-yew---part-1-3k2o), [Part 2](https://dev.to/deciduously/lets-build-a-rust-frontend-with-yew---part-2-1ech), [Part 3](https://dev.to/deciduously/lets-build-a-rust-frontend-with-yew---part-3-ch3).
+
 Now just start it:
 
 ```sh
