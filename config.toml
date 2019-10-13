@@ -9,7 +9,8 @@ theme = "hyde-x"
 compile_sass = true
 
 highlight_code = true
-highlight_theme = "ayu-dark"
+# zenburn Theme available in Zola 0.10.0 or later
+highlight_theme = "zenburn"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
