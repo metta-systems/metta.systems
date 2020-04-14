@@ -3,16 +3,16 @@
 }
 
 @font-face {
-    font-family: denmark;
-    src: url('/fonts/denmark.woff') format('woff'), url('/fonts/denmark.ttf') format('truetype');
+    font-family: Changa;
+    src: url('/fonts/Changa-VariableFont_wght.ttf') format('truetype');
 }
 
 .sidebar-about h1 {
-    font-family: denmark;
+    font-family: Changa;
 }
 
 .post-title {
-    font-family: denmark;
+    font-family: Changa;
     color: #aa759f
 }
 
