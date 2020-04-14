@@ -7,7 +7,7 @@ Categories &middot; {{ config.title }}
 {% block content %}
 <ul>
 {% for term in terms %}
-<li><a href={{ term.permalink }}>{{ term.name }}</a>
+<li><a href={{ term.permalink }}><span class="label">{{ term.name }}</span></a>
     <ul>
     {% for page in term.pages %}
         <li><a href={{ page.permalink }}>{{ page.title }}</a></li>
