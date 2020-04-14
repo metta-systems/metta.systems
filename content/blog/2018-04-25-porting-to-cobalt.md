@@ -1,6 +1,5 @@
 +++
 title = "Porting to Cobalt"
-date = 2018-04-25T15:41:50Z
 [taxonomies]
 categories = ["blog","rust"]
 +++
