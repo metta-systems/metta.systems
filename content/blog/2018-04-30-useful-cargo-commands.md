@@ -1,10 +1,9 @@
 +++
-date = 2018-04-30T23:51:59Z
 title = "Useful cargo commands"
 [taxonomies]
 categories = ["rust","tools","cargo-xargo"]
 +++
-Some additional cargo commands exist to provide unprecedented level of support and extensibility to regular cargo. Here's a list of commands I use (will be updated over time, last update 2018-05-01):
+Some additional cargo commands exist to provide unprecedented level of support and extensibility to regular cargo. Here's a list of commands I use (will be updated over time, last update 2020-04-15):
 
 <!-- more -->
 
@@ -47,3 +46,7 @@ Some additional cargo commands exist to provide unprecedented level of support a
 [cargo-geiger](https://github.com/anderejd/cargo-geiger) - count number of `unsafe` operations in crate and its dependencies.
 
 [cargo-xbuild](https://github.com/rust-osdev/cargo-xbuild) - a replacement for xargo (which is now in maintenance mode).
+
+[cargo-make](https://github.com/sagiegurari/cargo-make) - a decent replacement for make.
+
+[just](https://github.com/casey/just) - another (more make-like) make replacement, modern and robust.
