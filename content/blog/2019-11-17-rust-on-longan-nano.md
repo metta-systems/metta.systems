@@ -276,3 +276,14 @@ Info : flash_size_in_kb = 0x00000080
 Info : flash size = 128kbytes
 Info : dropped 'gdb' connection
 ```
+
+## LLDB
+
+Build instructions based on https://github.com/sifive/riscv-llvm
+
+LLDB at this moment DOES NOT SUPPORT riscv, so it cannot be used.
+
+## General GD32VF103 info
+
+https://www.susa.net/wordpress/2019/10/longan-nano-gd32vf103/ has lots of information.
+
