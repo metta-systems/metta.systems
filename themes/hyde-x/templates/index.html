@@ -9,34 +9,40 @@
         <meta name="keywords" content="{{ config.extra.defaultKeywords }}">
         {% endif %}
 
-      <link href="http://gmpg.org/xfn/11" rel="profile">
+      <link rel="profile" href="http://gmpg.org/xfn/11" />
 
       <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-      <!-- CSS -->
-      <link rel="stylesheet" href="{{ get_url(path="print.css") }}" media="print">
-      <link rel="stylesheet" href="{{ get_url(path="poole.css") }}">
-      <link rel="stylesheet" href="{{ get_url(path="hyde.css") }}">
-      <link rel="stylesheet" href="{{ get_url(path="css/poole-overrides.css") }}">
-      <link rel="stylesheet" href="{{ get_url(path="css/hyde-overrides.css") }}">
-      <link rel="stylesheet" href="{{ get_url(path="css/hyde-x.css") }}">
-      {% if config.extra.highlight %}
-      <link rel="stylesheet" href="{{ get_url(path="css/highlight/" ~ config.extra.highlight ~ ".css") }}">
-      {% endif %}
       <!-- Fonts -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Oswald:wght@400;600&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Oswald:wght@400;600&display=swap" media="print" onload="this.media='all'" />
+      <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Oswald:wght@400;600&display=swap" />
+      </noscript>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="{{ get_url(path="print.css") }}" media="print" />
+      <link rel="stylesheet" href="{{ get_url(path="poole.css") }}" />
+      <link rel="stylesheet" href="{{ get_url(path="hyde.css") }}" />
+      <link rel="stylesheet" href="{{ get_url(path="css/poole-overrides.css") }}" />
+      <link rel="stylesheet" href="{{ get_url(path="css/hyde-overrides.css") }}" />
+      <link rel="stylesheet" href="{{ get_url(path="css/hyde-x.css") }}" />
+      {% if config.extra.highlight %}
+      <link rel="stylesheet" href="{{ get_url(path="css/highlight/" ~ config.extra.highlight ~ ".css") }}" />
+      {% endif %}
       {% if config.extra.customCSS %}
-      <link rel="stylesheet" href="{{ config.extra.customCSS }}">
+      <link rel="stylesheet" href="{{ config.extra.customCSS }}" />
       {% endif %}
 
       <!-- Icons -->
-      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ get_url(path="/touch-icon-144-precomposed.png") }}">
-      <link href="{{ get_url(path="/favicon.png") }}" rel="icon">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ get_url(path="/touch-icon-144-precomposed.png") }}" />
+      <link rel="icon" href="{{ get_url(path="/favicon.png") }}" />
 
       {% if config.generate_rss %}
       <!-- RSS -->
-      <link rel="alternate" type="application/rss+xml" title="{{ config.title }} RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+      <link rel="alternate" type="application/rss+xml" title="{{ config.title }} RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}" />
       {% endif %}
 
       {% if config.extra.googleAnalytics %}

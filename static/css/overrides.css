@@ -1,3 +1,20 @@
+/*
+Body: Montserrat (Regular) <-- base font
+
+Site title: Changa (Bold)
+Site subtitle: Changa (Regular)
+
+Headings: Oswald (Semi-Bold)
+Tags: Oswald (Regular)
+Code blocks: Fira Code (Regular)
+
+ */
+
+html {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
 .theme-base-0e .pagination > .active > a {
     color: #fff;
 }
@@ -9,14 +26,34 @@
 
 .sidebar-about h1 {
     font-family: Changa;
+    font-weight: 800;
+}
+
+.sidebar-about > p.lead {
+    font-family: Changa;
+    font-weight: 400;
+}
+
+.sidebar p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 13pt;
 }
 
 .post-title {
-    font-family: Changa;
+    font-family: Oswald;
+    font-weight: 600;
     color: #aa759f
 }
 
+.post-date {
+    font-family: Oswald;
+    font-weight: 400;
+}
+
 h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald;
+    font-weight: 600;
     color: #aa759f;
 }
 
@@ -28,6 +65,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #eef;
 }
 
+.content .label,
 .content a.label {
   color: #fff;
+  font-family: Oswald;
+  font-weight: 400;
 }
