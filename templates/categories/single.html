@@ -15,8 +15,8 @@ Category {{ term.name | title }} &middot; {{ config.title }}
 <ul>
 {% for page in paginator.pages %}
 <li>
-    <a href={{ page.permalink }}>{{ page.title }}</a>
-    {{ cats::show_cats(page=page) }}
+    <p><a href={{ page.permalink }}>{{ page.title }}</a></p>
+    <p>{{ cats::show_cats(page=page) }}</p>
 </li>
 {% endfor %}
 </ul>
