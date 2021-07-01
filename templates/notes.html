@@ -1,17 +1,14 @@
-{% extends "hyde-x/templates/page.html" %}
+{% extends "page.html" %}
 {% import "reading-time-macro.html" as helper %}
-{% import "categories/post-title-list-macro.html" as cats %}
+{% import "categories/post-title-list-macro.html" as tags %}
+{% import "post_meta.html" as post_meta %}
 {% block content %}
-    <div class="post">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <span class="post-date">{% if page.draft %}Unpublished draft{% else %}{{ page.date | date(format="%Y-%m-%d") }}{% endif %} &middot; {{ helper::reading_time(page=page) }} read{% if config.extra.utterances %} &middot; <a href="#comments">Comments</a>{% endif %}
-
-        <br/>
-        {{ cats::show_cats(page=page) }}
-        </span>
-        {{ page.content | safe }}
-    </div>
-    {% if config.extra.utterances %}
-    {% include "utterances.html" %}
-    {% endif %}
+<div class="post">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <span class="post-date">{{ post_meta::show(post=page) }}</span>
+    {{ page.content | safe }}
+</div>
+{% if config.extra.utterances %}
+{% include "utterances.html" %}
+{% endif %}
 {% endblock content %}

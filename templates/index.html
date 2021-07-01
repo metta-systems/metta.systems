@@ -1,27 +1,105 @@
-{% extends "hyde-x/templates/index.html" %}
 {% import "reading-time-macro.html" as helper %}
-{% import "categories/post-title-list-macro.html" as cats %}
+{% import "categories/post-title-list-macro.html" as tags_meta %}
+{% import "post_meta.html" as post_meta %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ config.description }}">
+    {% if config.extra.defaultKeywords %}
+    <meta name="keywords" content="{{ config.extra.defaultKeywords }}">
+    {% endif %}
 
-{% block title %}
-{% if page.title %}
-{{ page.title }} &middot; {{ config.title }}
-{% else %}
-{{ config.title }}
-{% endif %}
-{% endblock title %}
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-{% block content %}
-<div class="posts">
-{% if not paginator %}
-    {% for post in section.pages %}
-    {% include "index_post.html" %}
-    {% endfor %}
-{% else %}
-    {% include "paginator_navigation.html" %}
-    {% for post in paginator.pages %}
-    {% include "index_post.html" %}
-    {% endfor %}
-    {% include "paginator_navigation.html" %}
-{% endif %}
-</div>
-{% endblock content %}
+    <title>{% block title %}
+        {% if page.title %}
+        {{ page.title }} &middot; {{ config.title }}
+        {% else %}
+        {{ config.title }}
+        {% endif %}
+        {% endblock title %}
+    </title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Oswald:wght@400;600&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Oswald:wght@400;600&display=swap"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Oswald:wght@400;600&display=swap" />
+    </noscript>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ get_url(path="print.css", cachebust=true) }}" media="print" />
+    <link rel="stylesheet" href="{{ get_url(path="poole.css", cachebust=true) }}" />
+    <link rel="stylesheet" href="{{ get_url(path="hyde.css", cachebust=true) }}" />
+    <link rel="stylesheet" href="{{ get_url(path="css/poole-overrides.css", cachebust=true) }}" />
+    <link rel="stylesheet" href="{{ get_url(path="css/hyde-overrides.css", cachebust=true) }}" />
+    <link rel="stylesheet" href="{{ get_url(path="css/hyde-x.css", cachebust=true) }}" />
+    {% if config.extra.highlight %}
+    <link rel="stylesheet"
+        href="{{ get_url(path="css/highlight/" ~ config.extra.highlight ~ ".css", cachebust=true) }}" />
+    {% endif %}
+    {% if config.extra.customCSS %}
+    <link rel="stylesheet" href="{{ get_url(path=config.extra.customCSS, cachebust=true) }}" />
+    {% endif %}
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ get_url(path="touch-icon-144-precomposed.png", cachebust=true)
+        }}" />
+    <link rel="icon" href="{{ get_url(path="favicon.png", cachebust=true) }}" />
+
+    {% if config.generate_feeds %}
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="{{ config.title }} RSS feed"
+        href="{{ get_url(path="rss.xml", cachebust=true) }}" />
+    <!-- Atom -->
+    <link rel="alternate" type="application/atom+xml" title="{{ config.title }} Atom feed"
+        href="{{ get_url(path="atom.xml", cachebust=true) }}" />
+    {% endif %}
+
+    {% block extra_head %}
+    {% endblock extra_head %}
+</head>
+
+<body class="{{ config.extra.hyde_theme }} {% if config.extra.hyde_reverse %}layout-reverse{% endif %}">
+    {% block sidebar %}
+    {% include "sidebar.html" %}
+    {% endblock sidebar %}
+    <div class="content container">
+        {% include "search_results.html" %}
+        {% block content %}
+        <div class="posts">
+            {% if not paginator %}
+            {% for post in section.pages %}
+            {% include "index_post.html" %}
+            {% endfor %}
+            {% else %}
+            {% include "paginator_navigation.html" %}
+            {% for post in paginator.pages %}
+            {% include "index_post.html" %}
+            {% endfor %}
+            {% include "paginator_navigation.html" %}
+            {% endif %}
+        </div>
+        {% endblock content %}
+    </div>
+    {% if config.extra.highlight %}
+    <script src="{{ get_url(path="js/highlight.pack.js", cachebust=true) }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    {% endif %}
+    {% if config.build_search_index %}
+    <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="search_index.en.js", cachebust=true) }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="js/search.js", cachebust=true) }}"></script>
+    {% endif %}
+</body>
+
+</html>

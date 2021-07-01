@@ -3,8 +3,6 @@ base_url = "https://metta.systems"
 title = "Mettā"
 description = "decentralized internets"
 
-theme = "hyde-x"
-
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -37,14 +35,13 @@ utterances = "metta-systems/metta.systems"
 utterancesMapping = "url"
 utterancesTheme = "github-light"
 
+hyde_sticky = true
 hyde_theme = "theme-base-0e"
 hyde_reverse = false
 hyde_links = [
     {url = "/", name = "Blog"},
     {url = "/misc/manifesto", name = "Manifesto"},
 ]
-
-googleAnalytics = "UA-45168329-1"
 
 hydex_github = "https://github.com/metta-systems"
 

@@ -38,8 +38,8 @@
                         class="fa fa-twitter-square fa-3x"></i></a>{% endif %}
                 {% if config.extra.hydex_youtube %}<a href="{{ config.extra.hydex_youtube }}"><i
                         class="fa fa-youtube-square fa-3x"></i></a>{% endif %}
-                {% if config.generate_rss %}<a href="{{ get_url(path=" rss.xml", trailing_slash=false) }}"
-                    type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{% endif %}
+                {% if config.generate_feeds %}<a href="{{ get_url(path="rss.xml") }}" type="application/rss+xml"><i
+                        class="fa fa-rss-square fa-3x"></i></a>{% endif %}
             </li>
             {% endblock sidebar_icon_nav %}
         </ul>

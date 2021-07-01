@@ -1,5 +1,5 @@
 {% extends "page.html" %}
-{% import "categories/post-title-list-macro.html" as cats %}
+{% import "categories/post-title-list-macro.html" as tags_meta %}
 
 {% block title %}
 Category {{ term.name | title }} &middot; {{ config.title }}
@@ -8,15 +8,15 @@ Category {{ term.name | title }} &middot; {{ config.title }}
 {% block content %}
 {% include "paginator_navigation.html" %}
 
-<p><a href="/categories">List all categories</a></p>
+<p><a href="/tags">List all tags</a></p>
 
-<h1>Posts in category <span class="label">{{ term.name }}</span></h1>
+<h1>Posts with tag <span class="label">{{ term.name }}</span></h1>
 
 <ul>
 {% for page in paginator.pages %}
 <li>
     <p><a href={{ page.permalink }}>{{ page.title }}</a></p>
-    <p>{{ cats::show_cats(page=page) }}</p>
+    <p>{{ tags_meta::show(page=page) }}</p>
 </li>
 {% endfor %}
 </ul>
