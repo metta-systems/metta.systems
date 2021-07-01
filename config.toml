@@ -8,10 +8,6 @@ theme = "hyde-x"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
-highlight_code = true
-# zenburn Theme available in Zola 0.10.0 or later
-highlight_theme = "zenburn"
-
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 default_language = "en"
@@ -21,6 +17,11 @@ taxonomies = [
 ]
 
 generate_rss = true
+
+[markdown]
+highlight_code = true
+# zenburn Theme available in Zola 0.10.0 or later
+highlight_theme = "zenburn"
 
 [extra]
 # Put all your custom variables here
