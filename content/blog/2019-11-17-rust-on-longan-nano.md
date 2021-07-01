@@ -167,7 +167,7 @@ Info : Listening on port 4444 for telnet connections
 
 ## GDB
 
-I built GDB from the [riscv-gnu-toolchain]() sources. While it can step through the instructions and show register contents, it for some reason couldn't properly work with disassembly and source code navigation. I will work more on getting it to work correctly and will update this post when done.
+I built GDB from the [riscv-gnu-toolchain](http://example.com) sources. While it can step through the instructions and show register contents, it for some reason couldn't properly work with disassembly and source code navigation. I will work more on getting it to work correctly and will update this post when done.
 
 ```
 ➤ make gdb
