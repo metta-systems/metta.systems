@@ -92,3 +92,6 @@ Hurray, if you did everything correctly video starts playing right away! You can
 
     $ server.StopStreaming
 
+## See also
+
+[Scripting in Haiku](https://www.haiku-os.org/blog/humdinger/2017-11-05_scripting_the_gui_with_hey/)
