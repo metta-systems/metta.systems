@@ -3,11 +3,13 @@ title = "OSdev tooling"
 [taxonomies]
 categories = ["rust","osdev","vesper","tools"]
 +++
-From my first attempt at OSdev in x86 assembly I've tried to make my setup comfortable. With rust I finally achieved a nearly zero-configuration flow, there are still some tools to install but they are either simply a `cargo install just` away or are optional.
+Since my first attempt at OSdev in x86 assembly I've constantly strived to make my setup comfortable. With rust I finally achieved a nearly zero-configuration flow. There are still some tools to install but they are either a `cargo install just` away or entirely optional.
 
 Developing an OS in Rust gives an opportunity to apply the benefits of the entire Rust ecosystem, so I've decided to maximally utilise what it has to offer.
 
 <!-- more -->
+
+See also: [Useful cargo commands](/blog/useful-cargo-commands)
 
 ## Just
 
