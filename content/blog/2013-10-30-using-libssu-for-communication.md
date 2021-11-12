@@ -92,7 +92,7 @@ A server can support multiple distinct protocols on one logical service, for bac
 
 For example your Web server may register both ("Web", "HTTP 1.0") and ("Web", "HTTP 1.1").
 
-"eid" is a self-certifying endpoint identifier, derived from the hosts's private key and independent of actual IP address. [The previous article](/blog/2013-10-25-bootstrapping-node-problem) described some ways to associate EIDs with IP addresses and this is the task for routing module.
+"eid" is a self-certifying endpoint identifier, derived from the hosts's private key and independent of actual IP address. [The previous article](/blog/bootstrapping-node-problem) described some ways to associate EIDs with IP addresses and this is the task for routing module.
 
 Routing module will be fully integrated with libsss later, at the moment you will need to manually create routing subsystems you need.
 
