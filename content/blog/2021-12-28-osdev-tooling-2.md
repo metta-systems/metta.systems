@@ -47,3 +47,5 @@ So I had to settle for pure assembly implementation, however I've improved upon 
 I've also improved the code layout organization - compared to the [original](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials/blob/master/06_uart_chainloader/src/bsp/raspberrypi/link.ld#L30) I've set linker address for the relocation code (the one written in assembly) to [exactly match the load address](https://github.com/metta-systems/vesper/blob/feature/chainboot/bin/chainboot/src/link.ld#L50-L65) 0x80000, so it does not technically need to be position-independent and I might with a few tricks and assumptions actually make it work in pure Rust without assembly in the end.
 
 While doing all his I accidentally broke my serial port implementation, so this New Year's eve I'll be spending bisecting my branches to find where exactly it broke. Happy New Year!
+
+Update 2022-01-04: Fixed and [it's alive](https://gist.github.com/berkus/2b35cee48fc88e1abfd56e21e94a3002)!
