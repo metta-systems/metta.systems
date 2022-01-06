@@ -9,7 +9,7 @@ Developing an OS in Rust gives an opportunity to apply the benefits of the entir
 
 <!-- more -->
 
-See also: [Useful cargo commands](/blog/useful-cargo-commands)
+See also: [Useful cargo commands](/blog/useful-cargo-commands), [Amos' Rust workflow](https://fasterthanli.me/articles/my-ideal-rust-workflow)
 
 ## Just
 
