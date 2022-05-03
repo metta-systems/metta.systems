@@ -11,7 +11,7 @@ These instructions are not for copy-paste, they show general idea and should wor
 
 <!-- more -->
 
-``` console
+```sh
 $ mkdir workspace && cd workspace
 $ git clone http://llvm.org/git/llvm.git
 $ cd llvm/tools
@@ -28,7 +28,7 @@ $ git clone http://llvm.org/git/libcxx.git
 
 Install cloog for polly. This is as per polly's installation instructions.
 
-``` console
+```sh
 $ ./llvm/tools/polly/utils/checkout_cloog.sh workspace/cloog-src
 $ cd workspace/cloog-src
 $ ./configure --prefix=/Users/berkus/Tools/cloog
@@ -45,7 +45,7 @@ They are here:
 
 Now create a build configuration:
 
-``` console
+```sh
 $ mkdir workspace/llvm/_build_
 $ cd llvm/_build_
 $ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/Users/berkus/Tools/clang-git -DCMAKE_PREFIX_PATH=/Users/berkus/Tools/cloog/ -DCMAKE_CXX_FLAGS="-std=c++11 -stdlib=libc++" ..
@@ -53,7 +53,7 @@ $ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/Users/berkus
 
 Then build everything. This shall build around three thousand files, excluding libc++ which is built separately.
 
-``` console
+```sh
 $ ninja
 ```
 
@@ -61,7 +61,7 @@ Grab a coffee and watch ninjas in action for a while.
 
 Now build libc++. I opted to install it to a separate directory ... TODO: figure out default clang search paths for libc++ and install there..
 
-``` console
+```sh
 $ cd workspace/libcxx/_build_
 $ cmake -G Ninja -DCMAKE_INSTALL_PREFIX=/usr/local/opt/libcxx ..
 $ ninja install

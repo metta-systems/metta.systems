@@ -7,7 +7,7 @@ categories = ["rust","cargo-xargo","sublime-text","osdev"]
 
 Imagine you have a special OSdev project in Rust that you want to build from within Sublime Text. So you fire up the editor, choose the `Tools`>`Build System`>`New Build System…` and write a little simple configuration file:
 
-``` json
+```json
 {
     "shell_cmd": "xargo run --target aarch64-vesper-metta",
     "keyfiles": ["Xargo.toml"],
@@ -25,7 +25,7 @@ You save it and hit Cmd+B.
 
 You get rather strange message:
 
-``` text
+```
 error: Error loading target specification: Could not find specification for target "aarch64-vesper-metta"
 ```
 

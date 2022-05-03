@@ -9,7 +9,7 @@ I used a simple shell one-liner to extract NEEDS dependencies from the interface
 
 Here's the shell one-liner:
 
-``` shell
+```sh
 echo "digraph {"; find . -name *.if -exec grep -H NEEDS {} \; | grep -v "\-\-" | 
   sed s/ *NEEDS //g | sed s@^\./@@ | sed s/\.if// | awk -F: {print $1, "->", $2}; echo "}"
 ```

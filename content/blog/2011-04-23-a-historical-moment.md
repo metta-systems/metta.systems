@@ -4,7 +4,7 @@ title = "A historical moment"
 [taxonomies]
 categories = ["osdev","arm","startup","report"]
 +++
-``` console
+```
 OMAP3 beagleboard.org # mmcinit
 OMAP3 beagleboard.org # fatload mmc 0 0x82000000 kernel.bin
 reading kernel.bin

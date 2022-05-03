@@ -11,7 +11,7 @@ So, after some fiddling I was able to send a packet and receive it through the b
 
 Here's the screen dump of the sent and then received broadcast packet.
 
-``` console
+```
 IRQ11 enabled.
 Finished initializing NE2000 with MAC b0:c4:20:00:00:00.
 Received irq: 0x0000000b
