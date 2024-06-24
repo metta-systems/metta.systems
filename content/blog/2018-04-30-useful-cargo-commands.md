@@ -79,7 +79,7 @@ Sorted alphabetically:
 
 [aarch64-esr-decoder](https://github.com/google/aarch64-esr-decoder) - decode aarch64 Exception Syndrome Register values quickly.
 
-[bandwhich]() -
+<!-- [bandwhich]() -
 
 [bat]() -
 
@@ -133,11 +133,11 @@ Sorted alphabetically:
 
 [hyperfine]() -
 
-[jilu]() -
+[jilu]() - -->
 
 [just](https://github.com/casey/just) - a quick and easy tool runner, useful for automating repeated tasks.
 
-[kibi]() -
+<!-- [kibi]() -
 
 [koji]() -
 
@@ -175,14 +175,14 @@ Sorted alphabetically:
 
 [trunk]() -
 
-[ugdb]() -
+[ugdb]() - -->
 
 [version-sync](https://github.com/mgeisler/version-sync) - keep your version number in documentation and elsewhere in sync with version specified in Cargo.toml
 
-[wasm-pack]() -
+<!-- [wasm-pack]() -
 
 [xd]() -
 
 [ytop]() -
 
-[zellij]() -
+[zellij]() - -->
