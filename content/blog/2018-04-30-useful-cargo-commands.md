@@ -79,11 +79,11 @@ Sorted alphabetically:
 
 [aarch64-esr-decoder](https://github.com/google/aarch64-esr-decoder) - decode aarch64 Exception Syndrome Register values quickly.
 
-<!-- [bandwhich]() -
+<!-- [bandwhich]() - -->
 
-[bat]() -
+[bat](https://github.com/sharkdp/bat) - cat with wings. Replace your cat command with a nicer one by doing "alias cat bat".
 
-[bingrep]() -
+<!-- [bingrep]() -
 
 [biodiff]() -
 
