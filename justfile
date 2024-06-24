@@ -3,4 +3,4 @@ local:
 
 blog:
 	zola build
-	rsync -avx --exclude .DS_Store public hetzner:/web/net/atta-metta/www/htdocs/
+	rsync -avx --exclude .DS_Store public metta-website@motoko:/web/systems/metta/www/htdocs
