@@ -16,7 +16,8 @@ taxonomies = [
     {name = "categories", paginate_by = 15},
 ]
 
-generate_rss = true
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
 
 [markdown]
 highlight_code = true
