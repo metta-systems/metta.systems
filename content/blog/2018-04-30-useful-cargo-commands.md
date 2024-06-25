@@ -79,45 +79,47 @@ Sorted alphabetically:
 
 [aarch64-esr-decoder](https://github.com/google/aarch64-esr-decoder) - decode aarch64 Exception Syndrome Register values quickly.
 
-<!-- [bandwhich]() - -->
+[bandwhich](https://github.com/imsnif/bandwhich) - a CLI network monitor.
 
 [bat](https://github.com/sharkdp/bat) - cat with wings. Replace your cat command with a nicer one by doing "alias cat bat".
 
-<!-- [bingrep]() -
+[bingrep](https://github.com/m4b/bingrep) - cross-platform binary parser and colorizer. See binary file headers in a nice way.
 
-[biodiff]() -
+[biodiff](https://github.com/8051enthusiast/biodiff) - compare binary files using sequence alignment. Makes it easier to see diffs in files that are aaaalmost the same.
 
-[bootimage]() -
+[bootimage](https://github.com/rust-osdev/bootimage) - create a bootable OS image from a kernel binary. Integrates with cargo.
 
-[broot]() -
+[broot](https://github.com/canop/broot) - a CLI file manager with nice tree navigation.
 
-[cc-cli]() -
+[cc-cli](https://github.com/sousandrei/cc-cli) - git hook for conventional commits - "git commit" and pick details using a CLI.
 
-[clog-cli]() -
+[clog-cli](https://github.com/clog-tool/clog-cli) - conventional commits changelog generator. Old.
 
-[cocogitto]() -
+[cocogitto](https://github.com/cocogitto/cocogitto) - conventional commits swiss army knife. Does everything.
 
-[commit-emoji]() -
+[commit-emoji](https://github.com/berkus/commit-emoji) - git hook to add emoji to your conventional commits. Mine.
 
-[convco]() -
+[convco](https://github.com/convco/convco) - conventional commits tooling, similar to cocogitto.
 
-[dirstat-rs]() -
+[dirstat-rs](https://github.com/scullionw/dirstat-rs) - graphical (CLI) directory tree size statistics. Really nice and fast.
 
-[dts_viewer]() -
+[dts_viewer](https://github.com/yodaldevoid/dts_viewer) - a CLI viewer for device tree files (DTS, source).
 
-[du-dust]() -
+[du-dust](https://github.com/bootandy/dust) - graphical (CLI) disk usage statistics. Pretty and fast.
 
-[dua-cli]() -
+[dua-cli](https://github.com/byron/dua-cli) - Disk Usage Analyzer. Graphical (CLI) disk usage statistics.
 
-[elfcat]() -
+[elfcat](https://github.com/ruslashev/elfcat) - generates a cross-referenced HTML file with contents of an input ELF binary.
 
-[exa]() -
+<!-- [erdtree]() - -->
 
-[fd-find]() -
+[eza](https://github.com/eza-community/eza) - a modern `ls` replacement. Do `alias ls eza`.
 
-[fdtdump]() -
+[fd-find](https://github.com/sharkdp/fd) - super fast and simple alternative to `find`. Do `alias find fd` for your interactive sessions (the CLI is not compatible with find so keep the scripts happy).
 
-[flamegraph]() -
+[fdtdump](https://github.com/rs-embedded/fdtdump) - dump device tree files (DTB, compiled).
+
+<!-- [flamegraph]() -
 
 [git-cliff]() -
 
