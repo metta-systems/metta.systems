@@ -56,14 +56,14 @@
         }}" />
     <link rel="icon" href="{{ get_url(path="favicon.png", cachebust=true) }}" />
 
-    {% if config.generate_feeds %}
+    {% block rss %}
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="{{ config.title }} RSS feed"
-        href="{{ get_url(path="rss.xml", cachebust=true) }}" />
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+        href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
     <!-- Atom -->
-    <link rel="alternate" type="application/atom+xml" title="{{ config.title }} Atom feed"
-        href="{{ get_url(path="atom.xml", cachebust=true) }}" />
-    {% endif %}
+    <link rel="alternate" type="application/atom+xml" title="Atom"
+        href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    {% endblock %}
 
     {% block extra_head %}
     {% endblock extra_head %}

@@ -1,61 +1,64 @@
 <div class="sidebar">
-    <div class="container {% if config.extra.hyde_sticky %}sidebar-sticky{% endif %}">
-        <div class="sidebar-about">
-            {% block sidebar_about %}
-            <a href="{{ config.base_url }}">
-                <h1>{{ config.title }}</h1>
-            </a>
-            {% if config.description %}
-            <p class="lead">{{config.description}}</p>
-            {% endif %}
-            {% endblock sidebar_about %}
+        <div class="container {% if config.extra.hyde_sticky %}sidebar-sticky{% endif %}">
+                <div class="sidebar-about">
+                        {% block sidebar_about %}
+                        <a href="{{ config.base_url }}">
+                                <h1>{{ config.title }}</h1>
+                        </a>
+                        {% if config.description %}
+                        <p class="lead">{{config.description}}</p>
+                        {% endif %}
+                        {% endblock sidebar_about %}
+                </div>
+
+                <ul class="sidebar-nav">
+                        {% block sidebar_nav %}
+                        {% for link in config.extra.hyde_links %}
+                        <li class="sidebar-nav-item"><a href="{{link.url}}">{{link.name}}</a></li>
+                        {% endfor %}
+                        {% endblock sidebar_nav %}
+                </ul>
+
+                <ul class="sidebar-nav">
+                        {% block sidebar_icon_nav %}
+                        <li class="sidebar-nav-item">
+                                {% if config.extra.hydex_github %}<a href="{{ config.extra.hydex_github }}"><i
+                                                class="fa fa-github-square fa-3x"></i></a>{% endif %}
+                                {% if config.extra.hydex_bitbucket %}<a href="{{ config.extra.hydex_bitbucket }}"><i
+                                                class="fa fa-bitbucket-square fa-3x"></i></a>{% endif %}
+                                {% if config.extra.hydex_stackOverflow %}<a
+                                        href="{{ config.extra.hydex_stackOverflow }}"><i
+                                                class="fa fa-stack-overflow fa-3x"></i></a>{% endif %}
+                                {% if config.extra.hydex_linkedin %}<a href="{{ config.extra.hydex_linkedin }}"><i
+                                                class="fa fa-linkedin-square fa-3x"></i></a>{% endif %}
+                                {% if config.extra.hydex_googleplus %}<a href="{{ config.extra.hydex_googleplus }}"><i
+                                                class="fa fa-google-plus-square fa-3x"></i></a>{% endif %}
+                                {% if config.extra.hydex_facebook %}<a href="{{ config.extra.hydex_facebook }}"><i
+                                                class="fa fa-facebook-square fa-3x"></i></a>{% endif %}
+                                {% if config.extra.hydex_twitter %}<a href="{{ config.extra.hydex_twitter }}"><i
+                                                class="fa fa-twitter-square fa-3x"></i></a>{% endif %}
+                                {% if config.extra.hydex_youtube %}<a href="{{ config.extra.hydex_youtube }}"><i
+                                                class="fa fa-youtube-square fa-3x"></i></a>{% endif %}
+                                {% if config.generate_feeds %}<a
+                                        href="{{ get_url(path="rss.xml", trailing_slash=false) }}"
+                                        type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{% endif %}
+                        </li>
+                        {% endblock sidebar_icon_nav %}
+                </ul>
+
+                <div class="sidebar-search">
+                        <input id="search" type="search" placeholder="🔎 Search the site" />
+                </div>
+
+                {% block sidebar_copyright %}
+                <p>&copy; <a href="/misc/license">License</a>
+                </p>
+                <p><small>Last update {{ now() | date(format="%Y/%m/%d %H:%M:%S") }}<br />
+                                Powered by <a href="https://getzola.org">Zola</a> and <a
+                                        href="https://github.com/berkus/zola-hyde-x">
+                                        <nobr>Hyde-X</nobr>
+                                </a>-based theme</small>
+                </p>
+                {% endblock sidebar_copyright %}
         </div>
-
-        <ul class="sidebar-nav">
-            {% block sidebar_nav %}
-            {% for link in config.extra.hyde_links %}
-            <li class="sidebar-nav-item"><a href="{{link.url}}">{{link.name}}</a></li>
-            {% endfor %}
-            {% endblock sidebar_nav %}
-        </ul>
-
-        <ul class="sidebar-nav">
-            {% block sidebar_icon_nav %}
-            <li class="sidebar-nav-item">
-                {% if config.extra.hydex_github %}<a href="{{ config.extra.hydex_github }}"><i
-                        class="fa fa-github-square fa-3x"></i></a>{% endif %}
-                {% if config.extra.hydex_bitbucket %}<a href="{{ config.extra.hydex_bitbucket }}"><i
-                        class="fa fa-bitbucket-square fa-3x"></i></a>{% endif %}
-                {% if config.extra.hydex_stackOverflow %}<a href="{{ config.extra.hydex_stackOverflow }}"><i
-                        class="fa fa-stack-overflow fa-3x"></i></a>{% endif %}
-                {% if config.extra.hydex_linkedin %}<a href="{{ config.extra.hydex_linkedin }}"><i
-                        class="fa fa-linkedin-square fa-3x"></i></a>{% endif %}
-                {% if config.extra.hydex_googleplus %}<a href="{{ config.extra.hydex_googleplus }}"><i
-                        class="fa fa-google-plus-square fa-3x"></i></a>{% endif %}
-                {% if config.extra.hydex_facebook %}<a href="{{ config.extra.hydex_facebook }}"><i
-                        class="fa fa-facebook-square fa-3x"></i></a>{% endif %}
-                {% if config.extra.hydex_twitter %}<a href="{{ config.extra.hydex_twitter }}"><i
-                        class="fa fa-twitter-square fa-3x"></i></a>{% endif %}
-                {% if config.extra.hydex_youtube %}<a href="{{ config.extra.hydex_youtube }}"><i
-                        class="fa fa-youtube-square fa-3x"></i></a>{% endif %}
-                {% if config.generate_feeds %}<a href="{{ get_url(path="rss.xml") }}" type="application/rss+xml"><i
-                        class="fa fa-rss-square fa-3x"></i></a>{% endif %}
-            </li>
-            {% endblock sidebar_icon_nav %}
-        </ul>
-
-        <div class="sidebar-search">
-            <input id="search" type="search" placeholder="🔎 Search the site" />
-        </div>
-
-        {% block sidebar_copyright %}
-        <p>&copy; <a href="/misc/license">License</a>
-        </p>
-        <p><small>Last update {{ now() | date(format="%Y/%m/%d %H:%M:%S") }}<br />
-                Powered by <a href="https://getzola.org">Zola</a> and <a href="https://github.com/berkus/zola-hyde-x">
-                    <nobr>Hyde-X</nobr>
-                </a>-based theme</small>
-        </p>
-        {% endblock sidebar_copyright %}
-    </div>
 </div>
