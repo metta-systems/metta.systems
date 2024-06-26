@@ -1,7 +1,7 @@
 +++
 title = "Using libsss for communication"
 [taxonomies]
-tags = ["structured-secure-streams","communication","howto","uvvy"]
+tags = ["structured-secure-streams","howto","uvvy"]
 +++
 ### Introduction
 

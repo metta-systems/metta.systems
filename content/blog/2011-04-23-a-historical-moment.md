@@ -2,7 +2,7 @@
 title = "A historical moment"
 # Todo: delete
 [taxonomies]
-tags = ["osdev","arm","startup","report"]
+tags = ["osdev","report"]
 +++
 ```
 OMAP3 beagleboard.org # mmcinit

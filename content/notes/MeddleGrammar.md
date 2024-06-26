@@ -2,7 +2,7 @@
 date = 2012-08-07
 title = "Meddle Grammar"
 [taxonomies]
-tags = ["metta","idl"]
+tags = ["metta"]
 +++
 ## Types
 

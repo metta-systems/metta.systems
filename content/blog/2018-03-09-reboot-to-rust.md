@@ -1,7 +1,7 @@
 +++
 title = "Reboot to Rust"
 [taxonomies]
-tags = ["rust","osdev","cargo-xargo"]
+tags = ["rust","osdev","cargo"]
 +++
 ### Fast forward four years...
 

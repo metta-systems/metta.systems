@@ -1,7 +1,7 @@
 +++
 title = "assocfs note"
 [taxonomies]
-tags = ["metta","assocfs","content-addressable-storage","git-model","non-hierarchical-filesystem"]
+tags = ["metta","content-addressable-storage","non-hierarchical-filesystem"]
 +++
 While I'm still dabbling with fixing some SSS issues here and there I thought I'd post an old excerpt from assocfs design document.
 

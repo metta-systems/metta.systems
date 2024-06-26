@@ -1,7 +1,7 @@
 +++
 title = "OSdev tooling"
 [taxonomies]
-tags = ["rust","osdev","vesper","tools"]
+tags = ["rust","osdev","tools"]
 +++
 Since my first attempt at OSdev in x86 assembly I've constantly strived to make my setup comfortable. With rust I finally achieved a nearly zero-configuration flow. There are still some tools to install but they are either a `cargo install just` away or entirely optional.
 

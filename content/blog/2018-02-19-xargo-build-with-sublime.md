@@ -1,7 +1,7 @@
 +++
 title = "Xargo Build with Sublime"
 [taxonomies]
-tags = ["rust","cargo-xargo","sublime-text","osdev"]
+tags = ["rust","cargo","environments","osdev"]
 +++
 ### How to build your xargo package in Sublime
 

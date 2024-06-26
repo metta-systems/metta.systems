@@ -1,7 +1,7 @@
 +++
 title = "OSdev tooling finished"
 [taxonomies]
-tags = ["rust","osdev","vesper","tools"]
+tags = ["rust","osdev","tools"]
 +++
 January through May I was on and off on the project, fixing chainofcommand to work with the chain loading, in particular fighting the UNIX console and the TTY operations. Now the entire thing works, finished and merged into the main `develop`ment branch. After that I started prodding the MMU setup and DTB (DeviceTree) parsing.
 

@@ -2,7 +2,7 @@
 title = "Clanged now"
 # Todo: delete
 [taxonomies]
-tags = ["metta","cross-compiling","llvm","report"]
+tags = ["metta","llvm","report"]
 +++
 Anyway, I've done doing the craziest port of recent times - at the same time GCC to Clang _and_ from waf 1.5 to 1.6.
 

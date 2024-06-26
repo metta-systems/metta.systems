@@ -4,7 +4,7 @@ title = "License"
 description = "License for the contents of this website and blog"
 template = "notes.html"
 [taxonomies]
-tags = ["license","blog","code"]
+tags = ["blog-meta"]
 +++
 ### Content license
 

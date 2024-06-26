@@ -1,7 +1,7 @@
 +++
 title = "Bootstrapping node problem"
 [taxonomies]
-tags = ["routing","peer-to-peer"]
+tags = ["decentralized"]
 +++
 ### The problem
 

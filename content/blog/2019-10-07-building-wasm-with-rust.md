@@ -1,7 +1,7 @@
 +++
 title = "Building WASM with Rust"
 [taxonomies]
-tags = ["rust","wasm","web"]
+tags = ["rust","wasm"]
 +++
 There are several options to build Rust into WebAssembly. `cargo-web` was the preferred way for `yew`, but nowadays yew also supports wasm-bindgen and this opens up some possibilities for javascript interop.
 

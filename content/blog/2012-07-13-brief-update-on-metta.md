@@ -1,7 +1,7 @@
 +++
 title = "Brief update on Metta"
 [taxonomies]
-tags = ["metta","toolchain","clang","llvm","type-system","report"]
+tags = ["metta","llvm","report"]
 +++
 I've been working on toolchain building script, now at least on Macs it's possible to build a standalone toolchain for building Metta and you can download it and try to build it yourself. All necessary details are descibed on [SourceCheckout wiki page](https://github.com/berkus/metta/blob/master/README.md). There is followup work to remove dependency on binutils and gcc (gcc will probably go first, then once lld is mature enough I could get rid of ld/gold).
 

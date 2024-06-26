@@ -1,7 +1,7 @@
 +++
 title = "OSdev tooling continued"
 [taxonomies]
-tags = ["rust","osdev","vesper","tools"]
+tags = ["rust","osdev","tools"]
 +++
 This month I spent honing the tooling story. Partially it was driven by the desire to Rewrite All the Things in Rust, and partially by my attempt to integrate all the tooling in a convenient for me way to do things.
 
