@@ -1,7 +1,7 @@
 +++
 title = "Progress report: Audio services, congestion control"
 [taxonomies]
-categories = ["report","structured-secure-streams","nat","voicebox","security"]
+tags = ["report","structured-secure-streams","nat","voicebox","security"]
 +++
 ### Progress report
 

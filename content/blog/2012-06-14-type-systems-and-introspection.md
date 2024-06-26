@@ -1,7 +1,7 @@
 +++
 title = "Type systems and introspection"
 [taxonomies]
-categories = ["metta","startup","coding","reflection","self-aware","introspection"]
+tags = ["metta","startup","coding","reflection","self-aware","introspection"]
 +++
 Since I've decided to approach the system development from both low-level and high-level perspectives, one of the applications I have in mind for demo purposes is a little console tool which lets you activate various parts of the system, list available services and call operations on available interfaces.
 

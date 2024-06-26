@@ -1,7 +1,7 @@
 +++
 title = "Sending network packets"
 [taxonomies]
-categories = ["osdev","network","report"]
+tags = ["osdev","network","report"]
 +++
 A little sidetrack into the world of PCI probing and NE2000 network card emulation.
 

@@ -1,7 +1,7 @@
 +++
 title = "Metta MMU module init"
 [taxonomies]
-categories = ["metta","startup","memory"]
+tags = ["metta","startup","memory"]
 +++
 ### MMU initialisation
 

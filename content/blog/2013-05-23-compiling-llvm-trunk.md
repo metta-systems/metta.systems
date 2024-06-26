@@ -1,7 +1,7 @@
 +++
 title = "Compiling LLVM trunk"
 [taxonomies]
-categories = ["compilers","clang","llvm","howto"]
+tags = ["compilers","clang","llvm","howto"]
 +++
 Just a very simple thing to try and build Clang with polly, LLVM, libcxx, lldb and lld from trunk. Isn't it?
 

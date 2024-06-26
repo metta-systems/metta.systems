@@ -2,7 +2,7 @@
 date = 2016-03-07T00:00:00+02:00
 title = "Metta grabber (uvvy)"
 [taxonomies]
-categories = ["metta"]
+tags = ["metta"]
 +++
 (Disclaimer: здесь и далее читать как «для меня», «в моём сегодняшнем понимании» и т.п.)
 

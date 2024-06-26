@@ -1,7 +1,7 @@
 +++
 title = "Porting to Cobalt"
 [taxonomies]
-categories = ["blog","rust"]
+tags = ["blog","rust"]
 +++
 Decision to port the blog to rust-based Cobalt.rs generator instead of hugo came rather easily, I'm quite fond of rust ecosystem now, and this porting excercise proved me right.
 

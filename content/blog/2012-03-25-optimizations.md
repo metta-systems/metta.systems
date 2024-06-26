@@ -2,7 +2,7 @@
 title = "Optimizations"
 # Todo: delete
 [taxonomies]
-categories = ["metta","llvm","cpu-arch","report"]
+tags = ["metta","llvm","cpu-arch","report"]
 +++
 The reason for not booting was simple - Clang, seeing that target is Pentium 4 and above, optimized some memmoves into SSE operations. Bochs didn't expect that.
 

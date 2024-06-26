@@ -2,7 +2,7 @@
 title = "Escaping from old ideas"
 template = "quote.html"
 [taxonomies]
-categories = ["design"]
+tags = ["design"]
 +++
 > The difficulty lies not so much in developing new ideas as in escaping from old ones.
 

@@ -2,7 +2,7 @@
 date = 2016-03-07T00:00:00+02:00
 title = "Metta architecture"
 [taxonomies]
-categories = ["metta"]
+tags = ["metta"]
 +++
 System works as a federation of autonomous services distributed onto different machines across the network.
 

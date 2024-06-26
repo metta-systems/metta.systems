@@ -1,7 +1,7 @@
 +++
 title = "Rust on Sipeed Longan Nano board"
 [taxonomies]
-categories = ["rust","embedded","mcu"]
+tags = ["rust","embedded","mcu"]
 +++
 My [Longan Nano board](https://www.seeedstudio.com/Sipeed-Longan-Nano-RISC-V-GD32VF103CBT6-Development-Board-p-4205.html) has arrived and I tried to run Rust on it. It's a great success and here's how.
 

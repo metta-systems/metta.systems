@@ -2,7 +2,7 @@
 date = 2016-03-07T00:00:00+02:00
 title = "Metta - mashable techdemo storyboard"
 [taxonomies]
-categories = ["metta"]
+tags = ["metta"]
 +++
 Fire up console, we'll use two consoles for this demo - one will run the streaming video server, another will be our client. The
 

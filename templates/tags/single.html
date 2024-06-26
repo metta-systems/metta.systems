@@ -1,0 +1,25 @@
+{% extends "page.html" %}
+{% import "tags/post-title-list-macro.html" as tags_meta %}
+
+{% block title %}
+Tag {{ term.name | title }} &middot; {{ config.title }}
+{% endblock title %}
+
+{% block content %}
+{% include "paginator_navigation.html" %}
+
+<p><a href="/tags">List all tags</a></p>
+
+<h1>Posts with tag <span class="label">{{ term.name }}</span></h1>
+
+<ul>
+    {% for page in paginator.pages %}
+    <li>
+        <p>{{ page.date }} &ndash; <a href={{ page.permalink }}>{{ page.title }}</a></p>
+        <p>{{ tags_meta::show(page=page) }}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+{% include "paginator_navigation.html" %}
+{% endblock content %}

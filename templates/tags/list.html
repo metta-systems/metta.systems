@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block title %}
+Tags &middot; {{ config.title }}
+{% endblock title %}
+
+{% block content %}
+{% set blogtags = get_taxonomy(kind="tags") %}
+{# determine most and least popular tags #}
+{% set tags_by_count = blogtags.items | sort(attribute="page_count") %}
+{% set least_pop_tag = tags_by_count | first %}
+{% set lowest_weight = least_pop_tag.page_count %}
+{% set most_pop_tag = tags_by_count | last %}
+{% set highest_weight = most_pop_tag.page_count %}
+
+<p>Tag cloud</p>
+{% for tag in blogtags.items %}
+<span>
+    <a href="#{{ tag.name | slugify }}"
+        style="font-size: calc(1rem + ({{ tag.page_count }} - {{ lowest_weight }}) / ({{ highest_weight }} - {{ lowest_weight }}) * 1.5rem);">{{ tag.name }}</a>
+    {%- if not loop.last %}{{ ", " | safe }}{% endif -%}
+</span>
+{% endfor %}
+<p></p>
+<p>Tags list</p>
+<ul>
+    {% for term in terms %}
+    <li><a name="{{ term.name | slugify }}" href={{ term.permalink | safe }}><span
+                class="label">{{ term.name }}</span></a>
+        <ul>
+            {% for page in term.pages %}
+            <li>{{ page.date }} &ndash; <a href={{ page.permalink }}>{{ page.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}

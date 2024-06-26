@@ -2,7 +2,7 @@
 title = "Personal device cluster management"
 draft = true
 [taxonomies]
-categories = ["naming","personal device cluster"]
+tags = ["naming","personal device cluster"]
 +++
 ### Managing a network of devices
 

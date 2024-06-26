@@ -1,7 +1,7 @@
 +++
 title = "Useful cargo commands"
 [taxonomies]
-categories = ["rust","tools","cargo"]
+tags = ["rust","tools","cargo"]
 +++
 Some additional cargo commands exist to provide unprecedented level of support and extensibility to regular cargo. Here's a list of commands I use (will be updated over time, last update 2024-05-21):
 

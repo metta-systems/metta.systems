@@ -1,7 +1,7 @@
 +++
 title = "File sharing design considerations"
 [taxonomies]
-categories = ["uvvy","file-sharing","content-distribution"]
+tags = ["uvvy","file-sharing","content-distribution"]
 +++
 Some issues that need tackling in design of file sharing (see [Brendan's post here](http://forum.osdev.org/viewtopic.php?p=220878#p220878)):
 

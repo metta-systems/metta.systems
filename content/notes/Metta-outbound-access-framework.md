@@ -2,7 +2,7 @@
 date = 2016-03-07
 title = "Metta outbound access framework"
 [taxonomies]
-categories = ["metta"]
+tags = ["metta"]
 +++
 ## Постановка вопроса
 

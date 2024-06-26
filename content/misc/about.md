@@ -3,7 +3,7 @@ date = 2009-12-30
 title = "About"
 template = "notes.html"
 [taxonomies]
-categories = ["exocortex","metta"]
+tags = ["exocortex","metta"]
 +++
 ### What I'm working on and why
 

@@ -1,7 +1,7 @@
 +++
 title = "Graphic dependency resolution"
 [taxonomies]
-categories = ["metta","tools","issue-tracking"]
+tags = ["metta","tools","issue-tracking"]
 +++
 I needed to quickly check how much of Nemesis support has to be ported over before I can start launching some basic domains.
 
