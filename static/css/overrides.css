@@ -15,7 +15,7 @@ html {
     font-weight: 400;
 }
 
-.theme-base-0e .pagination > .active > a {
+.theme-base-0e .pagination>.active>a {
     color: #fff;
 }
 
@@ -29,7 +29,7 @@ html {
     font-weight: 800;
 }
 
-.sidebar-about > p.lead {
+.sidebar-about>p.lead {
     font-family: Changa;
     font-weight: 400;
 }
@@ -51,7 +51,12 @@ html {
     font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Oswald;
     font-weight: 600;
     color: #aa759f;
@@ -67,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .content .label,
 .content a.label {
-  color: #fff;
-  font-family: Oswald;
-  font-weight: 400;
+    color: #fff;
+    font-family: Oswald;
+    font-weight: 400;
 }
