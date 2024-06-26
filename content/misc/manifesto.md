@@ -2,6 +2,8 @@
 date = 2014-01-15
 title = "Manifesto"
 template = "notes.html"
+[taxonomies]
+tags = ["metta"]
 +++
 ### Metta
 

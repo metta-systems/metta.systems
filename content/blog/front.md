@@ -1,6 +1,8 @@
 +++
 title = "Hi and welcome to Metta hub!"
 date = 3000-01-01
+[taxonomies]
+tags = ["blog-meta"]
 +++
 Here we develop decentralised communication systems for the future, called Metta nodes or uvvies. You can join in by helping us develop, document, promote and use the software.
 
