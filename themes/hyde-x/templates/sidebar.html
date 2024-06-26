@@ -44,23 +44,6 @@
             {% endblock sidebar_icon_nav %}
         </ul>
 
-        {% if config.extra.hydex_flattr %}
-        <p>
-            <script id='flattr'>
-                (function (id) {
-                    var s = document.getElementById(id);
-                    var f = document.createElement('iframe');
-                    f.src = '//api.flattr.com/button/view/?uid={{ config.extra.hydex_flattr }}&button=compact&url={{ config.base_url }}&title={{ config.title }}';
-                    f.title = 'Flattr';
-                    f.height = 20;
-                    f.width = 110;
-                    f.style.borderWidth = 0;
-                    s.parentNode.insertBefore(f, s);
-                })('flattr');
-            </script>
-        </p>
-        {% endif %}
-
         <div class="sidebar-search">
             <input id="search" type="search" placeholder="🔎 Search the site" />
         </div>
