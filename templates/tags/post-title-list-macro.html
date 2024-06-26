@@ -1,6 +1,0 @@
-{% macro show(page) %}
-{% if page.taxonomies %}
-{% for tag in page.taxonomies.tags | sort %}<a class="label" href="{{ "/tags/" }}{{ tag | escape }}">{{ tag }}</a>
-{% endfor %}
-{% endif %}
-{% endmacro show %}
