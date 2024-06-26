@@ -1,5 +1,5 @@
 +++
-date = 2014-01-15T15:40:00+02:00
+date = 2014-01-15
 title = "Manifesto"
 template = "notes.html"
 +++

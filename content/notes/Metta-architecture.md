@@ -1,5 +1,5 @@
 +++
-date = 2016-03-07T00:00:00+02:00
+date = 2016-03-07
 title = "Metta architecture"
 [taxonomies]
 tags = ["metta"]
