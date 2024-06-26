@@ -66,11 +66,13 @@
         </div>
 
         {% block sidebar_copyright %}
-        <p>&copy; <a href="/misc/license">License</a> |
-            Last update {{ now() | date(format="%Y/%m/%d %H:%M:%S") }}</p>
-        <p>Powered by <a href="https://getzola.org">Zola</a> and <a href="https://github.com/berkus/zola-hyde-x">
-                <nobr>Hyde-X</nobr>
-            </a>-based theme</p>
+        <p>&copy; <a href="/misc/license">License</a>
+        </p>
+        <p><small>Last update {{ now() | date(format="%Y/%m/%d %H:%M:%S") }}<br />
+                Powered by <a href="https://getzola.org">Zola</a> and <a href="https://github.com/berkus/zola-hyde-x">
+                    <nobr>Hyde-X</nobr>
+                </a>-based theme</small>
+        </p>
         {% endblock sidebar_copyright %}
     </div>
 </div>
