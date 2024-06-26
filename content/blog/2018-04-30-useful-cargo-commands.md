@@ -111,7 +111,7 @@ Sorted alphabetically:
 
 [elfcat](https://github.com/ruslashev/elfcat) - generates a cross-referenced HTML file with contents of an input ELF binary.
 
-<!-- [erdtree]() - -->
+[erdtree](https://github.com/solidiquis/erdtree) - a nicely looking file tree. Be sure to set up one of [Nerd Fonts](https://nerdfonts.com) in your terminal.
 
 [eza](https://github.com/eza-community/eza) - a modern `ls` replacement. Do `alias ls eza`.
 
