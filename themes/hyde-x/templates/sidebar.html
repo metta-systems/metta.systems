@@ -13,9 +13,9 @@
 
         <ul class="sidebar-nav">
             {% block sidebar_nav %}
-                {% for link in config.extra.hyde_links %}
-                <li class="sidebar-nav-item"><a href="{{link.url}}">{{link.name}}</a></li>
-                {% endfor %}
+            {% for link in config.extra.hyde_links %}
+            <li class="sidebar-nav-item"><a href="{{link.url}}">{{link.name}}</a></li>
+            {% endfor %}
             {% endblock sidebar_nav %}
         </ul>
 
@@ -66,8 +66,11 @@
         </div>
 
         {% block sidebar_copyright %}
-        <p>Copyright &copy; {{ now() | date(format="%Y") }} <a href="/misc/license">License</a></p>
-        <p>Powered by <a href="https://getzola.org">Zola</a> and <a href="https://github.com/berkus/zola-hyde-x"><nobr>Hyde-X</nobr></a>-based theme</p>
+        <p>&copy; <a href="/misc/license">License</a> |
+            Last update {{ now() | date(format="%Y/%m/%d %H:%M:%S") }}</p>
+        <p>Powered by <a href="https://getzola.org">Zola</a> and <a href="https://github.com/berkus/zola-hyde-x">
+                <nobr>Hyde-X</nobr>
+            </a>-based theme</p>
         {% endblock sidebar_copyright %}
     </div>
 </div>
