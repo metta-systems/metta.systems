@@ -76,3 +76,13 @@ h6 {
     font-family: Oswald;
     font-weight: 400;
 }
+
+.tagcloud {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.tagcloud--item {
+    color: #aa759f;
+}

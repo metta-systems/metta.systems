@@ -13,7 +13,33 @@ Tags &middot; {{ config.title }}
 {% set most_pop_tag = tags_by_count | last %}
 {% set highest_weight = most_pop_tag.page_count %}
 
-<p>Tag cloud</p>
+<h1>Tag cloud</h1>
+
+<div id="tagcloud"></div>
+
+<script type="text/javascript" src="{{ get_url(path="js/TagCloud.min.js") }}"></script>
+<script>
+    var texts = [
+    {%- for tag in blogtags.items -%}
+    "{{ tag.name }}"
+    {%- if not loop.last %}{{ ", " | safe }}{% endif -%}
+    {%- endfor -%}
+    ];
+    var options = {
+        useContainerInlineStyles: false,
+        radius: 200,
+    };
+    TagCloud("#tagcloud", texts, options);
+
+    function clickEventHandler(e) {
+        if (e.target.className === 'tagcloud--item') {
+            window.location = `#${e.target.innerText}`;
+        }
+    }
+    var rootEl = document.querySelector('#tagcloud');
+    rootEl.addEventListener('click', clickEventHandler);
+</script>
+
 {% for tag in blogtags.items %}
 <span>
     <a href="#{{ tag.name | slugify }}"
@@ -21,8 +47,8 @@ Tags &middot; {{ config.title }}
     {%- if not loop.last %}{{ ", " | safe }}{% endif -%}
 </span>
 {% endfor %}
-<p></p>
-<p>Tags list</p>
+
+<h1>Tags list</h1>
 <ul>
     {% for term in terms %}
     <li><a name="{{ term.name | slugify }}" href={{ term.permalink | safe }}><span
