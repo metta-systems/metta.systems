@@ -1,0 +1,9 @@
+{% if paginator.number_pagers > 1 %}
+<div class="paginator">
+<a href={{ paginator.first }}><i class="lni lni-arrow-left-circle"></i></a>
+<a href={{ paginator.previous }}><i class="lni lni-chevron-left-circle"></i></a>
+{{ paginator.current_index }} of {{ paginator.number_pagers }}
+<a href={{ paginator.next }}><i class="lni lni-chevron-right-circle"></i></a>
+<a href={{ paginator.last }}><i class="lni lni-arrow-right-circle"></i></a>
+</div>
+{% endif %}

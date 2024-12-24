@@ -1,14 +1,23 @@
 {% extends "page.html" %}
-{% import "reading-time-macro.html" as helper %}
+
+{% import "macros/reading-time-macro.html" as helper %}
 {% import "tags/meta.html" as tags %}
-{% import "post_meta.html" as post_meta %}
+{% import "macros/post_meta.html" as post_meta %}
+
 {% block content %}
-<div class="post">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <span class="post-date">{{ post_meta::show(post=page) }}</span>
-    {{ page.content | safe }}
-</div>
-{% if config.extra.utterances %}
-{% include "utterances.html" %}
-{% endif %}
+<article>
+    <post-header>
+        <column>
+            <h1 class="post-title">{{ page.title }}</h1>
+        </column>
+        <column>
+            <span class="post-date">{{ post_meta::show(post=page) }}</span>
+        </column>
+    </post-header>
+    <div class="post-body">
+        {{ page.content | safe }}
+    </div>
+    {% include "partial/pagenav.html" %}
+</article>
+{% include "partial/comments.html" %}
 {% endblock content %}

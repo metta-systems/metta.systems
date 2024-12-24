@@ -1,0 +1,11 @@
+<page-nav>
+    {% if page.lower %}
+        <a class="label" href="{{page.lower.permalink}}"><i class="lni lni-chevron-left-circle"></i> {{page.lower.title}}</a>
+    {% endif %}
+
+    <a class="label" href="{{ " /" }}">home</a>
+
+    {% if page.higher %}
+        <a class="label" href="{{page.higher.permalink}}">{{page.higher.title}} <i class="lni lni-chevron-right-circle"></i></a>
+    {% endif %}
+</page-nav>

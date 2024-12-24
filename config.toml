@@ -10,9 +10,7 @@ compile_sass = true
 build_search_index = true
 default_language = "en"
 
-taxonomies = [
-    {name = "tags"},
-]
+taxonomies = [{ name = "tags" }]
 
 generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml"]
@@ -24,11 +22,8 @@ highlight_theme = "zenburn"
 
 [extra]
 # Put all your custom variables here
-#description = "Status updates on Metta development"
 #paginate = 15
 #highlight = "zenburn" -- if using hljs
-#tagline = "decentralized internets"
-#truncate = true # Zola doesn't use this setting
 languageCode = "en"
 
 utterances = "metta-systems/metta.systems"
@@ -37,16 +32,6 @@ utterancesTheme = "github-light"
 
 hyde_sticky = true
 hyde_theme = "theme-base-0e"
-hyde_reverse = false
-hyde_links = [
-    {url = "/", name = "Blog"},
-    {url = "/misc/manifesto", name = "Manifesto"},
-]
-
-hydex_github = "https://github.com/metta-systems"
-
-# Optional additional custom CSS file URL, will override other styles.
-customCSS = "/css/overrides.css"
 
 # Default page metadata, used when the specific page doesn't set its own.
 defaultKeywords = "devlog,blog,metta,decentralised,peer-to-peer,vesper,rust"

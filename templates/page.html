@@ -1,32 +1,30 @@
-{% extends "index.html" %}
-{% import "reading-time-macro.html" as helper %}
+{% extends "base.html" %}
+
+{% import "macros/reading-time-macro.html" as helper %}
 {% import "tags/meta.html" as tags %}
 
 {% block title %}
-{% if page.title %}
-{{ page.title }} &middot; {{ config.title }}
-{% else %}
-{{ config.title }}
-{% endif %}
+    {% if page.title %}
+        {{ page.title }} &middot; {{ config.title }}
+    {% else %}
+        {{ config.title }}
+    {% endif %}
 {% endblock title %}
 
 {% block content %}
-<div class="post">
-        <span class="post-date">
-                {% if page.earlier %}
-                <a class="label" href="{{page.earlier.permalink}}">&laquo; {{page.earlier.title}}</a>
-                {% endif %}
-                <a class="label" href="{{ " /" }}">up</a>
-                {% if page.later %}
-                <a class="label" href="{{page.later.permalink}}">{{page.later.title}} &raquo;</a>
-                {% endif %}
-        </span>
-
-        <h1 class="post-title">{{ page.title }}</h1>
-        <span class="post-date">{{ post_meta::show(post=page) }}</span>
+<article>
+    <post-header>
+        <column>
+            <h1 class="post-title">{{ page.title }}</h1>
+        </column>
+        <column>
+            <span class="post-date">{{ post_meta::show(post=page) }}</span>
+        </column>
+    </post-header>
+    <div class="post-body">
         {{ page.content | safe }}
-</div>
-{% if config.extra.utterances %}
-{% include "utterances.html" %}
-{% endif %}
+    </div>
+    {% include "partial/pagenav.html" %}
+</article>
+{% include "partial/comments.html" %}
 {% endblock content %}

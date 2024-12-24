@@ -1,0 +1,82 @@
+{% import "macros/reading-time-macro.html" as helper %}
+{% import "tags/meta.html" as tags_meta %}
+{% import "macros/post_meta.html" as post_meta %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ config.description }}">
+    {% if config.extra.defaultKeywords %}
+    <meta name="keywords" content="{{ config.extra.defaultKeywords }}">
+    {% endif %}
+
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+
+    <title>{% block title %}
+        {% if page.title %}
+        {{ page.title }} &middot; {{ config.title }}
+        {% else %}
+        {{ config.title }}
+        {% endif %}
+        {% endblock title %}
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ get_url(path="modernist.css", cachebust=true) }}" />
+    {% if config.extra.highlight %}
+    <link rel="stylesheet"
+        href="{{ get_url(path="css/highlight/" ~ config.extra.highlight ~ ".css", cachebust=true) }}" />
+    {% endif %}
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ get_url(path="touch-icon-144-precomposed.png", cachebust=true)
+        }}" />
+    <link rel="icon" href="{{ get_url(path="favicon.png", cachebust=true) }}" />
+
+    {% block rss %}
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+        href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    <!-- Atom -->
+    <link rel="alternate" type="application/atom+xml" title="Atom"
+        href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    {% endblock %}
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            {% block header %}
+            {% include "partial/header.html" %}
+            {% endblock header %}
+        </header>
+        <section>
+            {% include "partial/search_results.html" %}
+            {% block content %}
+            <!-- include your content here -->
+            {% endblock content %}
+        </section>
+        <footer>
+            <div class="wrapper">
+            <p><small><a href="/misc/license">&copy; License</a></small></p>
+            <p><small>Last update {{ now() | date(format="%Y/%m/%d %H:%M:%S") }}<br />
+                Powered by <a href="https://getzola.org">Zola</a> and <a
+                href="https://github.com/orderedlist/modernist">modernist</a>-based theme</small>
+            </p>
+            </div>
+        </footer>
+    </div>
+    {% if config.extra.highlight %}
+    <script src="{{ get_url(path="js/highlight.pack.js", cachebust=true) }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    {% endif %}
+    {% if config.build_search_index %}
+    <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js", cachebust=true) }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="search_index.en.js", cachebust=true) }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="js/search.js", cachebust=true) }}"></script>
+    {% endif %}
+</body>
+
+</html>

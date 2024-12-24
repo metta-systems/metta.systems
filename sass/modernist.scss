@@ -1,0 +1,842 @@
+/*
+ *                             888                           d8b          888
+ *                             888                           Y8P          888
+ *                             888                                        888
+ * 88888b.d88b.   .d88b.   .d88888  .d88b.  888d888 88888b.  888 .d8888b  888888
+ * 888 "888 "88b d88""88b d88" 888 d8P  Y8b 888P"   888 "88b 888 88K      888
+ * 888  888  888 888  888 888  888 88888888 888     888  888 888 "Y8888b. 888
+ * 888  888  888 Y88..88P Y88b 888 Y8b.     888     888  888 888      X88 Y88b.
+ * 888  888  888  "Y88P"   "Y88888  "Y8888  888     888  888 888  88888P'  "Y888
+ *
+ * Reverse created from the Modernist theme by orderedlist.
+ * https://github.com/orderedlist/modernist
+ * Logo with https://onlinetools.com/ascii/convert-text-to-ascii-art and colossal font.
+ */
+
+@import "classic-blue.scss";
+/* @import "magenta-0e.scss"; */
+
+@import url(http://fonts.googleapis.com/css?family=Fira+Code:400,700|Numans|Oswald:400,600);
+@import url(https://cdn.lineicons.com/5.0/lineicons.css);
+
+@font-face {
+    font-family: Changa;
+    src: url("/fonts/Changa-VariableFont_wght.ttf") format("truetype");
+}
+
+$container_width: 1040px;
+
+html {
+    background: $bg_color_start;
+    background: $bg_color_start -webkit-gradient(
+            linear,
+            50% 0%,
+            50% 100%,
+            color-stop(0%, $bg_color_start),
+            color-stop(100%, $bg_color_end)
+        ) fixed;
+    background: $bg_color_start -webkit-linear-gradient(
+            $bg_color_start,
+            $bg_color_end
+        ) fixed;
+    background: $bg_color_start -moz-linear-gradient(
+            $bg_color_start,
+            $bg_color_end
+        ) fixed;
+    background: $bg_color_start -o-linear-gradient(
+            $bg_color_start,
+            $bg_color_end
+        ) fixed;
+    background: $bg_color_start -ms-linear-gradient(
+            $bg_color_start,
+            $bg_color_end
+        ) fixed;
+    background: $bg_color_start linear-gradient($bg_color_start, $bg_color_end)
+        fixed;
+}
+
+body {
+    padding: 50px 0;
+    margin: 0;
+    font:
+        16px/1.5 "Numans",
+        sans-serif;
+    color: $fg_color;
+    font-weight: 300;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==")
+        fixed;
+}
+
+.container {
+    width: $container_width;
+    margin: 0 auto;
+    background: $main_bg_color;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+    -moz-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+    box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+}
+
+.wrap_comments {
+    padding: 8px;
+    margin: 8px;
+}
+
+header,
+section,
+footer,
+article {
+    display: block;
+}
+
+a {
+    color: $header_title_fg_color;
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+strong {
+    color: $header_title_fg_color;
+    font-weight: 700;
+}
+
+/* Header */
+
+header {
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+    background: $header_bg_end;
+    background: -webkit-gradient(
+        linear,
+        50% 0%,
+        50% 100%,
+        color-stop(0%, $header_bg_start),
+        color-stop(100%, $header_bg_end)
+    );
+    background: -webkit-linear-gradient($header_bg_start, $header_bg_end);
+    background: -moz-linear-gradient($header_bg_start, $header_bg_end);
+    background: -o-linear-gradient($header_bg_start, $header_bg_end);
+    background: -ms-linear-gradient($header_bg_start, $header_bg_end);
+    background: linear-gradient($header_bg_start, $header_bg_end);
+    position: relative;
+    padding: 15px 20px;
+    border-bottom: 1px solid $header_border_shadow;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: Changa;
+    font-weight: 800;
+    line-height: 1.2;
+    color: $header_title_fg_color;
+    /* text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0; */
+}
+header.without-description h1 {
+    margin: 10px 0;
+}
+header p {
+    margin: 0;
+    color: $header_text_fg_color;
+    width: 300px;
+    font-size: 14px;
+}
+header p.view {
+    display: none;
+    font-weight: 700;
+    text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
+    -webkit-font-smoothing: antialiased;
+}
+header p.view a {
+    color: $header_title_fg_color;
+}
+header p.view small {
+    font-weight: 400;
+}
+
+/* Header menu bar */
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+    /* height: 38px; */
+    padding: 1px 0;
+    background: $header_menu_bg;
+    background: -webkit-gradient(
+        linear,
+        50% 0%,
+        50% 100%,
+        color-stop(0%, $header_menu_bg_start),
+        color-stop(100%, $header_menu_bg_end)
+    );
+    background: -webkit-linear-gradient(
+        $header_menu_bg_start,
+        $header_menu_bg_end
+    );
+    background: -moz-linear-gradient(
+        $header_menu_bg_start,
+        $header_menu_bg_end
+    );
+    background: -o-linear-gradient($header_menu_bg_start, $header_menu_bg_end);
+    background: -ms-linear-gradient($header_menu_bg_start, $header_menu_bg_end);
+    background: linear-gradient($header_menu_bg_start, $header_menu_bg_end);
+    border-radius: 5px;
+    -webkit-box-shadow:
+        inset rgba(255, 255, 255, 0.45) 0 1px 0,
+        inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+    -moz-box-shadow:
+        inset rgba(255, 255, 255, 0.45) 0 1px 0,
+        inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+    box-shadow:
+        inset rgba(255, 255, 255, 0.45) 0 1px 0,
+        inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+    width: auto;
+}
+header ul:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -5px;
+    top: -4px;
+    right: -5px;
+    bottom: -6px;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 -1px 0,
+        inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+    -moz-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 -1px 0,
+        inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+    box-shadow:
+        rgba(0, 0, 0, 0.2) 0 -1px 0,
+        inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+}
+header ul li {
+    float: left;
+}
+header ul li:first-child {
+    border-right: 1px solid $header_menu_item_border_color;
+}
+header ul li:not(:first-child):not(:last-child) {
+    border-right: 1px solid $header_menu_item_border_color;
+    border-left: 1px solid $header_menu_item_border_shadow_color;
+}
+header ul li:last-child {
+    border-left: 1px solid $header_menu_item_border_shadow_color;
+}
+header ul a {
+    line-height: 1;
+    font-size: 12px;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    margin: 6px;
+    padding-top: 4px;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
+}
+header ul input {
+    margin: 6px;
+}
+header ul i.lni {
+    font-size: 14px;
+}
+
+header ul a strong {
+    font-size: 18px;
+    display: block;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Text section */
+
+section {
+    padding: 15px 20px;
+    font-size: 14pt;
+    border-top: 1px solid #fff;
+    background: $section_bg_color;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $header_title_fg_color;
+    padding: 0;
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
+
+p,
+ul,
+ol,
+table,
+pre,
+dl {
+    margin: 0 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    color: $title2_fg_color;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: $title3_fg_color;
+}
+
+img {
+    max-width: 100%;
+}
+
+code,
+pre {
+    font-family:
+        "Fira Code",
+        Lucida Console,
+        Terminal,
+        monospace;
+    color: $code_fg_color;
+    background: $code_bg_color;
+    font-size: 14pt;
+    overflow-x: auto;
+}
+
+pre {
+    padding: 20px;
+    background: $code_bg_color;
+    color: $code_fg_color;
+    margin: 0 -20px 20px;
+}
+pre code {
+    color: $code_fg_color;
+}
+li pre {
+    margin-left: -60px;
+    padding-left: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 5px 10px;
+    border-bottom: 1px solid $table_border_fg_color;
+}
+
+dt {
+    color: $header_title_fg_color;
+    font-weight: 700;
+}
+
+th {
+    color: $header_title_fg_color;
+}
+
+small {
+    font-size: 12px;
+}
+
+hr {
+    border: 0;
+    background: #aaa;
+    height: 1px;
+    margin: 0 0 20px;
+}
+
+/* Footer */
+
+footer {
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    -ms-border-radius: 0 0 8px 8px;
+    -o-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    background: $header_bg_start;
+    background: -webkit-gradient(
+        linear,
+        50% 0%,
+        50% 100%,
+        color-stop(0%, $header_bg_end),
+        color-stop(100%, $header_bg_start)
+    );
+    background: -webkit-linear-gradient($header_bg_end, $header_bg_start);
+    background: -moz-linear-gradient($header_bg_end, $header_bg_start);
+    background: -o-linear-gradient($header_bg_end, $header_bg_start);
+    background: -ms-linear-gradient($header_bg_end, $header_bg_start);
+    background: linear-gradient($header_bg_end, $header_bg_start);
+    position: relative;
+    padding: 15px 20px;
+    border-top: 1px solid $header_border_shadow;
+}
+
+footer {
+    overflow: hidden;
+}
+footer .wrapper {
+    width: 640px;
+    margin: 0 auto;
+}
+footer a {
+    color: $header_text_fg_color;
+    font-weight: bold;
+}
+footer p {
+    color: $header_text_fg_color;
+    float: left;
+}
+footer p:last-child {
+    float: right;
+}
+
+/* Quote type post */
+
+blockquote {
+    /* this is overridden by post-quote - merge? */
+    margin: 0 -20px 20px;
+    padding: 15px 20px 1px 40px;
+    font-style: italic;
+    background: $blockquote_bg_color;
+    background: rgba(0, 0, 0, 0.06);
+    color: $header_title_fg_color;
+}
+
+/* From tumblr */ /* Copy text */
+.post-quote p {
+    font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
+    text-align: right;
+}
+.post-quote p:first-child strong:first-child {
+    font-family:
+        Helvetica Neue,
+        Arial,
+        sans-serif;
+}
+
+/* From tumblr */ /* Main color */
+/*.colored-panel, .type-photoset .navi a:hover,*/
+.post-quote blockquote {
+    background-color: $blockquote_bg_color;
+}
+
+.post-quote blockquote p {
+    color: $blockquote_fg_color;
+}
+
+.post-link {
+    background-color: #eef;
+}
+
+article.post-preview {
+    margin-bottom: 4em;
+}
+
+/* From tumblr */ /* Colored Area */
+.colored-panel,
+.colored-panel a,
+.colored-panel a:hover {
+    color: #fffadc;
+}
+
+/* From tumblr */ /* Colored Area Text Shadow */
+.post-quote blockquote,
+.post-audio .audio-meta,
+.pages a:hover {
+    text-shadow: 1px 1px $blockquote_shadow_color;
+}
+
+.label {
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: $tag_fg_color;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+}
+a.label:hover,
+a.label:focus {
+    color: $tag_fg_color;
+    text-decoration: none;
+    cursor: pointer;
+}
+.label:empty {
+    display: none;
+}
+
+.label {
+    margin: 0 0.25em;
+    background-color: $tag_bg_color;
+}
+
+.posts a.label,
+.post-date a.label {
+    color: $tag_fg_color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+article .label,
+article a.label {
+    color: $tag_fg_color;
+    font-family: Oswald;
+    font-weight: 400;
+}
+
+/* .tag_cloud div {
+    float: left;
+}
+.tag_cloud div + div {
+    float: right;
+} */
+
+.tagcloud {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.tagcloud--item {
+    color: $tag_bg_color;
+}
+
+@media print, screen and (max-width: 740px) {
+    body {
+        padding: 0;
+    }
+
+    container {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    footer {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        padding: 20px;
+        width: auto;
+    }
+    footer p {
+        float: none;
+        margin: 0;
+    }
+    footer p + p {
+        float: none;
+    }
+}
+@media print, screen and (max-width: 580px) {
+    header ul {
+        display: none;
+    }
+
+    header p.view {
+        display: block;
+    }
+
+    header p {
+        width: 100%;
+    }
+}
+@media print {
+    header p.view a small:before {
+        content: "at http://github.com/";
+    }
+}
+
+/*
+ * Additional CSS for Hyde-X
+ */
+
+.posts {
+    list-style: none;
+}
+
+.posts li {
+    margin: 0 0 0.5em 0;
+}
+
+.sidebar-about img {
+    margin: 0 auto 0.5rem auto;
+    width: 150px;
+    height: 150px;
+}
+@media (min-width: 48em) {
+    .sidebar-about img {
+        margin: 0 0 0.75rem 0;
+        width: 175px;
+        height: 175px;
+    }
+}
+@media (min-width: 58em) {
+    .sidebar-about img {
+        margin: 0 0 1rem 0;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.paginator {
+    text-align: right;
+}
+
+/* From bootstrap.css 3.3.2 - start */
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+/* From bootstrap.css 3.3.2 - end */
+
+/* Blue */
+
+.pagination > li > a,
+.pagination > li > span {
+    color: $tag_bg_color;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: $tag_bg_color;
+    border-color: $tag_bg_color;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    color: #777;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+/*
+ * Tweaks and overrides to hyde.css
+ */
+
+.sidebar-about h1 {
+    color: #fff;
+    margin-top: 0;
+    /* font-family: "Changa", sans-serif; */
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.sidebar-nav {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.sidebar-search {
+    margin-bottom: auto;
+}
+
+.sidebar-search #search {
+    width: 80%;
+}
+
+/*
+Body: Montserrat (Regular) <-- base font
+
+Site title: Changa (Bold)
+Site subtitle: Changa (Regular)
+
+Headings: Oswald (Semi-Bold)
+Tags: Oswald (Regular)
+Code blocks: Fira Code (Regular)
+
+ */
+
+.pagination > .active > a {
+    color: #fff;
+}
+
+.sidebar-about h1 {
+    /* font-family: Changa; */
+    font-weight: 800;
+}
+
+.sidebar-about > p.lead {
+    /* font-family: Changa; */
+    font-weight: 400;
+}
+
+.sidebar p {
+    /* font-family: Montserrat; */
+    font-weight: 400;
+    font-size: 13pt;
+}
+
+post-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+post-header > column:last-child {
+    text-align: right;
+}
+
+.post-title a {
+    font-family: Oswald;
+    font-weight: 600;
+    color: $header_title_fg_color;
+}
+
+.post-date {
+    font-family: Oswald;
+    font-weight: 400;
+}
+
+.post-body {
+}
+.post-body a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+page-nav {
+    display: block;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald;
+    font-weight: 600;
+    color: $header_title_fg_color;
+}
+
+.posts .quote {
+    background-color: $blockquote_bg_color;
+}
