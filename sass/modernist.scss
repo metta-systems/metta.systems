@@ -842,6 +842,7 @@ h6 {
 }
 
 /* Search results */
+
 .search-results {
     display: block;
 
@@ -867,4 +868,13 @@ h6 {
     font-weight: 900;
     background-color: #069;
     color: #fff;
+}
+
+/* Tag cloud page */
+
+tag-clouds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+    padding-bottom: 20px;
 }

@@ -15,7 +15,7 @@ Tags &middot; {{ config.title }}
 
 <h1>Tag cloud</h1>
 
-<div class="tag_cloud">
+<tag-clouds>
     <div id="tagcloud"></div>
     <div>
         {% for tag in blogtags.items %}
@@ -26,7 +26,7 @@ Tags &middot; {{ config.title }}
         </span>
         {% endfor %}
     </div>
-</div>
+</tag-clouds>
 
 <script type="text/javascript" src="{{ get_url(path="js/TagCloud.min.js") }}"></script>
 <script>
