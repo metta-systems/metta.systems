@@ -346,11 +346,33 @@ pre {
     overflow-x: auto;
 }
 
+code {
+    padding: 2px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
 pre {
     padding: 20px;
     background: $code_bg_color;
     color: $code_fg_color;
-    margin: 0 -20px 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+    -moz-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+    box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
 pre code {
     color: $code_fg_color;
@@ -432,6 +454,7 @@ footer a {
 footer p {
     color: $header_text_fg_color;
     float: left;
+    margin: 0;
 }
 footer p:last-child {
     float: right;
@@ -440,58 +463,93 @@ footer p:last-child {
 /* Quote type post */
 
 blockquote {
-    /* this is overridden by post-quote - merge? */
-    margin: 0 -20px 20px;
-    padding: 15px 20px 1px 40px;
+    padding: 20px;
+    margin: 0 0 20px;
     font-style: italic;
     background: $blockquote_bg_color;
-    background: rgba(0, 0, 0, 0.06);
-    color: $header_title_fg_color;
+    color: $blockquote_fg_color;
+    text-shadow: 1px 1px $blockquote_shadow_color;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+    -moz-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+    box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
 
-/* From tumblr */ /* Copy text */
+blockquote p {
+    color: $blockquote_fg_color;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
+    text-align: right;
+}
+
 .post-quote p {
     font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
     text-align: right;
 }
+
 .post-quote p:first-child strong:first-child {
+    // TODO: fix font style, try B612 for quotes?
     font-family:
         Helvetica Neue,
         Arial,
         sans-serif;
 }
 
-/* From tumblr */ /* Main color */
-/*.colored-panel, .type-photoset .navi a:hover,*/
-.post-quote blockquote {
+/* Link type post */
+
+.post-link p:first-child {
     background-color: $blockquote_bg_color;
+
+    padding: 20px;
+    margin: 0 0 20px;
+    color: $blockquote_fg_color;
+    text-shadow: 1px 1px $blockquote_shadow_color;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+    -moz-box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
+    box-shadow:
+        rgba(0, 0, 0, 0.2) 0 0 0 1px,
+        rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
 
-.post-quote blockquote p {
+.post-link p:first-child a {
     color: $blockquote_fg_color;
 }
 
-.post-link {
-    background-color: #eef;
-}
+/* Post previews in the main feed */
 
 article.post-preview {
     margin-bottom: 4em;
 }
 
-/* From tumblr */ /* Colored Area */
-.colored-panel,
-.colored-panel a,
-.colored-panel a:hover {
-    color: #fffadc;
+/* Posts feed pagination */
+
+.paginator {
+    text-align: right;
 }
 
-/* From tumblr */ /* Colored Area Text Shadow */
-.post-quote blockquote,
-.post-audio .audio-meta,
-.pages a:hover {
-    text-shadow: 1px 1px $blockquote_shadow_color;
-}
+/* Tags */
 
 .label {
     display: inline;
@@ -534,12 +592,14 @@ article a.label {
     font-weight: 400;
 }
 
-/* .tag_cloud div {
-    float: left;
+/* Tag cloud page */
+
+tag-clouds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+    padding-bottom: 20px;
 }
-.tag_cloud div + div {
-    float: right;
-} */
 
 .tagcloud {
     width: 100%;
@@ -550,6 +610,84 @@ article a.label {
 .tagcloud--item {
     color: $tag_bg_color;
 }
+
+/* Post parts */
+
+post-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+post-header > column:last-child {
+    text-align: right;
+}
+
+.post-title a {
+    font-family: Oswald;
+    font-weight: 600;
+    color: $header_title_fg_color;
+}
+
+.post-date {
+    font-family: Oswald;
+    font-weight: 400;
+}
+
+.post-body {
+}
+.post-body a {
+    text-decoration: underline;
+}
+
+page-nav {
+    display: block;
+    text-align: center;
+}
+
+// overrides? merge
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald;
+    font-weight: 600;
+    color: $header_title_fg_color;
+}
+
+/* Search results */
+
+.search-results {
+    display: block;
+
+    font-size: 14pt;
+    border-top: 1px solid #fff;
+    position: relative;
+    background-color: $header_bg_end;
+}
+.search-results:has(li) {
+    padding: 15px 20px;
+    border-bottom: 1px solid $header_border_shadow;
+}
+
+.search-results__items li {
+    list-style: none;
+}
+
+.search-results__items:has(li):first-child::before {
+    content: "Search results:";
+}
+
+.search-results__item a {
+    font-weight: 900;
+    background-color: #069;
+    color: #fff;
+}
+
+/* Printable version */
 
 @media print, screen and (max-width: 740px) {
     body {
@@ -602,279 +740,4 @@ article a.label {
     header p.view a small:before {
         content: "at http://github.com/";
     }
-}
-
-/*
- * Additional CSS for Hyde-X
- */
-
-.posts {
-    list-style: none;
-}
-
-.posts li {
-    margin: 0 0 0.5em 0;
-}
-
-.sidebar-about img {
-    margin: 0 auto 0.5rem auto;
-    width: 150px;
-    height: 150px;
-}
-@media (min-width: 48em) {
-    .sidebar-about img {
-        margin: 0 0 0.75rem 0;
-        width: 175px;
-        height: 175px;
-    }
-}
-@media (min-width: 58em) {
-    .sidebar-about img {
-        margin: 0 0 1rem 0;
-        width: 200px;
-        height: 200px;
-    }
-}
-
-.paginator {
-    text-align: right;
-}
-
-/* From bootstrap.css 3.3.2 - start */
-.pagination {
-    display: inline-block;
-    padding-left: 0;
-    margin: 20px 0;
-    border-radius: 4px;
-}
-.pagination > li {
-    display: inline;
-}
-.pagination > li > a,
-.pagination > li > span {
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    margin-left: -1px;
-    line-height: 1.42857143;
-    color: #337ab7;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
-.pagination > li:first-child > a,
-.pagination > li:first-child > span {
-    margin-left: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-.pagination > li:last-child > a,
-.pagination > li:last-child > span {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-.pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus {
-    color: #23527c;
-    background-color: #eee;
-    border-color: #ddd;
-}
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
-    z-index: 2;
-    color: #fff;
-    cursor: default;
-    background-color: #337ab7;
-    border-color: #337ab7;
-}
-.pagination > .disabled > span,
-.pagination > .disabled > span:hover,
-.pagination > .disabled > span:focus,
-.pagination > .disabled > a,
-.pagination > .disabled > a:hover,
-.pagination > .disabled > a:focus {
-    color: #777;
-    cursor: not-allowed;
-    background-color: #fff;
-    border-color: #ddd;
-}
-/* From bootstrap.css 3.3.2 - end */
-
-/* Blue */
-
-.pagination > li > a,
-.pagination > li > span {
-    color: $tag_bg_color;
-}
-
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
-    background-color: $tag_bg_color;
-    border-color: $tag_bg_color;
-}
-
-.pagination > .disabled > span,
-.pagination > .disabled > span:hover,
-.pagination > .disabled > span:focus,
-.pagination > .disabled > a,
-.pagination > .disabled > a:hover,
-.pagination > .disabled > a:focus {
-    color: #777;
-    background-color: #fff;
-    border-color: #ddd;
-}
-
-/*
- * Tweaks and overrides to hyde.css
- */
-
-.sidebar-about h1 {
-    color: #fff;
-    margin-top: 0;
-    /* font-family: "Changa", sans-serif; */
-    font-weight: 600;
-    font-size: 2.5rem;
-}
-
-.sidebar-nav {
-    padding-left: 0;
-    list-style: none;
-    margin-bottom: 1rem;
-}
-
-.sidebar-search {
-    margin-bottom: auto;
-}
-
-.sidebar-search #search {
-    width: 80%;
-}
-
-/*
-Body: Montserrat (Regular) <-- base font
-
-Site title: Changa (Bold)
-Site subtitle: Changa (Regular)
-
-Headings: Oswald (Semi-Bold)
-Tags: Oswald (Regular)
-Code blocks: Fira Code (Regular)
-
- */
-
-.pagination > .active > a {
-    color: #fff;
-}
-
-.sidebar-about h1 {
-    /* font-family: Changa; */
-    font-weight: 800;
-}
-
-.sidebar-about > p.lead {
-    /* font-family: Changa; */
-    font-weight: 400;
-}
-
-.sidebar p {
-    /* font-family: Montserrat; */
-    font-weight: 400;
-    font-size: 13pt;
-}
-
-post-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 0;
-    padding-bottom: 20px;
-}
-
-post-header > column:last-child {
-    text-align: right;
-}
-
-.post-title a {
-    font-family: Oswald;
-    font-weight: 600;
-    color: $header_title_fg_color;
-}
-
-.post-date {
-    font-family: Oswald;
-    font-weight: 400;
-}
-
-.post-body {
-}
-.post-body a {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-}
-
-page-nav {
-    display: block;
-    text-align: center;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Oswald;
-    font-weight: 600;
-    color: $header_title_fg_color;
-}
-
-.posts .quote {
-    background-color: $blockquote_bg_color;
-}
-
-/* Search results */
-
-.search-results {
-    display: block;
-
-    font-size: 14pt;
-    border-top: 1px solid #fff;
-    position: relative;
-    background-color: $header_bg_end;
-}
-.search-results:has(li) {
-    padding: 15px 20px;
-    border-bottom: 1px solid $header_border_shadow;
-}
-
-.search-results__items li {
-    list-style: none;
-}
-
-.search-results__items:has(li):first-child::before {
-    content: "Search results:";
-}
-
-.search-results__item a {
-    font-weight: 900;
-    background-color: #069;
-    color: #fff;
-}
-
-/* Tag cloud page */
-
-tag-clouds {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 0;
-    padding-bottom: 20px;
 }
