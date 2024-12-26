@@ -840,3 +840,31 @@ h6 {
 .posts .quote {
     background-color: $blockquote_bg_color;
 }
+
+/* Search results */
+.search-results {
+    display: block;
+
+    font-size: 14pt;
+    border-top: 1px solid #fff;
+    position: relative;
+    background-color: $header_bg_end;
+}
+.search-results:has(li) {
+    padding: 15px 20px;
+    border-bottom: 1px solid $header_border_shadow;
+}
+
+.search-results__items li {
+    list-style: none;
+}
+
+.search-results__items:has(li):first-child::before {
+    content: "Search results:";
+}
+
+.search-results__item a {
+    font-weight: 900;
+    background-color: #069;
+    color: #fff;
+}
