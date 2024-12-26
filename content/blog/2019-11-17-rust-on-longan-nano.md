@@ -43,7 +43,7 @@ dfu: all
     /usr/local/opt/gd32-dfu-utils/bin/dfu-util -a 0 --dfuse-address 0x08000000:leave -D rust-sipeed-longan-nano.bin
 ```
 
-Don't forget to use tabs to indent the make commands, or make will complain.
+Don't forget to use tabs to indent the make commands, otherwise make will complain.
 
 Now actually flashing the device goes as simple as the following:
 
@@ -139,7 +139,7 @@ ocd:
 
 With JLink connected to your machine, run `make ocd` to connect to the device.
 
-```
+```sh
 $ make ocd
 /usr/local/openocd-425828274-riscv/bin/openocd -f SOMEWHERE/openocd_jlink.cfg
 Open On-Chip Debugger 0.10.0+dev-00918-g425828274 (2019-11-16-22:34)
@@ -169,7 +169,7 @@ Info : Listening on port 4444 for telnet connections
 
 I built GDB from the [riscv-gnu-toolchain](http://example.com) sources. While it can step through the instructions and show register contents, it for some reason couldn't properly work with disassembly and source code navigation. I will work more on getting it to work correctly and will update this post when done.
 
-```
+```sh
 ➤ make gdb
 /usr/local/opt/gdb-c3eb407852-riscv/bin/riscv32-elf-gdb target/riscv32imac-unknown-none-elf/debug/rust-sipeed-longan-nano
 GNU gdb (GDB) 8.3.0.20190516-git
@@ -279,11 +279,10 @@ Info : dropped 'gdb' connection
 
 ## LLDB
 
-Build instructions based on https://github.com/sifive/riscv-llvm
+Build instructions based on [sifive/riscv-llvm](https://github.com/sifive/riscv-llvm).
 
 LLDB at this moment DOES NOT SUPPORT riscv, so it cannot be used.
 
 ## General GD32VF103 info
 
-https://www.susa.net/wordpress/2019/10/longan-nano-gd32vf103/ has lots of information.
-
+[longan-nano-gd32vf103](https://www.susa.net/wordpress/2019/10/longan-nano-gd32vf103/) has lots of information.

@@ -1,7 +1,7 @@
 +++
 title = "File sharing design considerations"
 [taxonomies]
-tags = ["uvvy","content-distribution"]
+tags = ["uvvy","content-addressable-storage","decentralized"]
 +++
 Some issues that need tackling in design of file sharing (see [Brendan's post here](http://forum.osdev.org/viewtopic.php?p=220878#p220878)):
 
@@ -16,4 +16,3 @@ Plausible deniability: if your file is not stored in a single place as a single 
 File metadata (name, attributes, custom labels) is also stored in a block, usually much smaller in size, which can be unencrypted to allow indexing, but could also be encrypted if you do not want to expose this metadata. In my design metadata is a key-value store with a lot of different attributes ranging from `UNIX_PATH=/bin/sh` to `DESCRIPTION[en]="Bourne Shell executable"` to `UNIX_PERMISSIONS=u=rwx,g=rx,o=rx` and so on. This format is not fixed, although it follows a certain schema/onthology. It allows "intelligent agents" or bots to crawl this data and enrich it with suggestions, links, e.g. a bot crawling an mp3 collection and suggesting proper tags - it could also find higher quality versions of the file, for example.
 
 All this revolves around the ideas of DHTs, darknets, netsukuku and zeroconf. Still early on in the implementation to uncover all the details - they might change.
-

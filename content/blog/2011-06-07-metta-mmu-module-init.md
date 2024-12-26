@@ -13,7 +13,7 @@ First off, we start by loading the needed modules - `mmu_mod`, `frames_mod` and 
 
 We need `frames_mod` to tell us, how much it needs to manage the physical memory, for the heap we just assume some size that we would need dynamically during rest of startup.
 
-``` c
+```cpp
 int required = frames_mod->required_size();
 int initial_heap_size = 128*KiB;
 ```
@@ -36,7 +36,7 @@ Frame allocator needs to track all frames of physical memory, their availability
 
 It does so by keeping a linked list of allocation regions (which roughly correspond to areas in the BIOS memory map passed to us). Each region entry has a list of frames in this region and their availability.
 
-``` c
+```cpp
 struct frames_module_v1_state
 {
     address_t start;
@@ -53,7 +53,7 @@ Each region starts at address “start” and lasts for “n_logical_frames”, 
 
 “next” points to the next region in the list and “frames” points to an array of n_logical_frames entries describing which frames are free. This array consists of very simple entries:
 
-``` c
+```cpp
 struct frame_st
 {
     uint32_t free;
@@ -67,7 +67,7 @@ It makes it fairly easy to look for the first-fit or the best-fit frame stretche
 Frame allocator also keeps track of domains that request frame allocation, or clients.
 For each new client, thereʼs a structure describing it and the contract obligations that frame allocator has for this client.
 
-``` c
+```cpp
 struct frame_allocator_v1_state
 {
     frame_allocator_v1_closure closure;
@@ -88,7 +88,7 @@ Whenever a frame is occupied and taken from that list, owner information is reco
 
 Ramtab registers ownership information for allocated frames, it also records if these frames are “nailed” - that is, cannot be unmapped or released.
 
-``` c
+```cpp
 struct ramtab_entry_t
 {
     address_t owner;
@@ -103,7 +103,7 @@ Thatʼs about all it does at the moment, so I wonʼt focus on it.
 
 After all the above the heap looks fairly simplistic. Thereʼs a header record with pointers to about 40 free lists - for blocks of different sizes. These free lists provide means to quickly allocate blocks of approximately requested size (or “best fit”).
 
-``` c
+```cpp
 static const int SMALL_BLOCKS = 16;
 static const int LARGE_BLOCKS = 24;
 static const int COUNT = (SMALL_BLOCKS + LARGE_BLOCKS + 1);
@@ -115,7 +115,7 @@ The structure is two-dimensional: free lists connect memory blocks through “ne
 
 Each block has a header:
 
-``` c
+```cpp
 struct heap_rec_t
 {
     memory_v1_size prev;  // either a magic or size of previous block (backlink).
@@ -137,4 +137,3 @@ If it is - we set up some meta information (like the owning heap and the fact th
 If there isnʼt free block available - we take some space from the “all sizes” block, which is usually just huge chunk of still available memory.
 
 This memory can get fragmented as well, and when thereʼs no more memory available heap must grow. The current “raw” heap does not support this, and it will be implemented for stretch-backed heaps later, when stretch allocator works - which is the topic for the next post. Stay tuned!
-

@@ -39,9 +39,9 @@ Add some helper lines to yarn config:
   },
 ```
 
-`yarn start` will do a hot-reloadable debug build of your code. It takes some time on first run to build rust code, so be patient. `yarn build` could be used to bundle a package.
+`yarn start` will perform a hot-reloadable debug build of your code. It takes some time on first run to build rust code, so be patient. `yarn build` could be used to bundle a package.
 
-Your index.html should load JS wrapper that runs webassembly script:
+Your index.html should load a JS wrapper that runs webassembly script:
 
 ```html
 <!DOCTYPE html>

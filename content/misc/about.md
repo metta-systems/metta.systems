@@ -5,6 +5,11 @@ template = "notes.html"
 [taxonomies]
 tags = ["exocortex","metta"]
 +++
+> To dream a dream as big\
+As big could ever dream to be\
+Then dream a dream ten times as big\
+As that one dream you see.
+
 ### What I'm working on and why
 
 My biggest project so far is Metta - a humane, social and multimedia OS. While multimedia and social are pretty much all over the place, humane part is still unexplored widely.
