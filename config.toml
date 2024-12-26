@@ -17,8 +17,11 @@ feed_filenames = ["atom.xml", "rss.xml"]
 
 [markdown]
 highlight_code = true
-# zenburn Theme available in Zola 0.10.0 or later
-highlight_theme = "zenburn"
+highlight_theme = "css"
+highlight_themes_css = [
+    { theme = "base16-ocean-dark", filename = "css/syntax-theme-dark.css" },
+    { theme = "gruvbox-light", filename = "css/syntax-theme-light.css" },
+]
 
 [extra]
 # Put all your custom variables here
@@ -29,9 +32,6 @@ languageCode = "en"
 utterances = "metta-systems/metta.systems"
 utterancesMapping = "url"
 utterancesTheme = "github-light"
-
-hyde_sticky = true
-hyde_theme = "theme-base-0e"
 
 # Default page metadata, used when the specific page doesn't set its own.
 defaultKeywords = "devlog,blog,metta,decentralised,peer-to-peer,vesper,rust"

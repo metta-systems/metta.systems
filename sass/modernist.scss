@@ -14,7 +14,7 @@
  */
 
 @import "classic-blue.scss";
-/* @import "magenta-0e.scss"; */
+@import "hl.scss";
 
 @import url(http://fonts.googleapis.com/css?family=Fira+Code:400,700|Numans|Oswald:400,600);
 @import url(https://cdn.lineicons.com/5.0/lineicons.css);
@@ -341,12 +341,12 @@ pre {
         Terminal,
         monospace;
     color: $code_fg_color;
-    background: $code_bg_color;
     font-size: 14pt;
     overflow-x: auto;
 }
 
 code {
+    background: $code_bg_color;
     padding: 2px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -357,7 +357,7 @@ code {
 
 pre {
     padding: 20px;
-    background: $code_bg_color;
+    /* background: $code_bg_color; */
     color: $code_fg_color;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -374,13 +374,16 @@ pre {
         rgba(0, 0, 0, 0.2) 0 0 0 1px,
         rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
+/* Syntax-highlighted code blocks */
 pre code {
-    color: $code_fg_color;
+    background-color: inherit;
 }
 li pre {
     margin-left: -60px;
     padding-left: 60px;
 }
+
+/* Tables - @todo test */
 
 table {
     width: 100%;
