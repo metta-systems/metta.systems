@@ -1,5 +1,5 @@
 local:
-	zola serve
+	zola serve --drafts
 
 blog:
 	zola build
