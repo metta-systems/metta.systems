@@ -7,6 +7,8 @@ Want to have your own custom app icon in the dock, but it always gets replaced b
 
 Inspired by the talks to replace Warp.app icon (in [multiple](https://github.com/warpdotdev/Warp/issues/2703) [issues](https://github.com/warpdotdev/Warp/issues/5418) [on GH](https://github.com/warpdotdev/Warp/issues/5408)), I've made a simple tool to automatically replace the icon after the app update.
 
+<!-- more -->
+
 Using [this helpful article by Mayeu](https://mayeu.me/post/how-to-trigger-any-action-when-a-file-or-folder-changes-on-macos-on-the-cheap/) one can make a very simple agent watching for changes in the app icon file and replace it back.
 
 The agent article above gives all the necessary background, here I'll just provide the actual script and agent configuration.
