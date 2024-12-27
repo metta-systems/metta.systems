@@ -3,7 +3,8 @@ title = "Useful cargo commands"
 [taxonomies]
 tags = ["rust","tools","cargo"]
 +++
-Some additional cargo commands exist to provide unprecedented level of support and extensibility to regular cargo. Here's a list of commands I use (will be updated over time, last update 2024-05-21):
+Some additional cargo commands exist to provide unprecedented level of support and extensibility
+to regular cargo. Here's a list of commands I use (will be updated over time, last update 2024-12-27):
 
 <!-- more -->
 
@@ -12,8 +13,6 @@ Some additional cargo commands exist to provide unprecedented level of support a
 Sorted alphabetically:
 
 [cargo-aoc](https://github.com/gobanos/cargo-aoc) - Advent of Code helper.
-
-[cargo-asm](https://github.com/gnzlbg/cargo-asm) - see the assembly (with `cargo asm`) or llvm-ir (with `cargo llvm-ir`) generated for Rust code.
 
 [cargo-audit](https://github.com/rustsec/rustsec) - audit Cargo.lock for security vulnerabilities.
 
@@ -56,6 +55,9 @@ Sorted alphabetically:
 [cargo-play](https://github.com/fanzeyi/cargo-play) - instant playground. Run your code from single .rs file like if it was a full rust project.
 
 [cargo-release](https://github.com/sunng87/cargo-release) - for when you're ready to share your crate with the world, automates mundane release tasks - bumping versions, tagging repo, updating docs, etc.
+
+[cargo-show-asm](https://github.com/pacak/cargo-show-asm) - see the assembly (with `cargo asm --asm`) or llvm-ir (with `cargo asm --llvm` or `--llvm-input`) generated for Rust code. This is an updated version
+of the unmaintained `cargo-asm` crate. Install with `cargo install --locked --all-features cargo-show-asm`.
 
 [cargo-src](https://github.com/nrc/cargo-src) - detailed rust source code browser with semantic details.
 
