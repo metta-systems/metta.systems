@@ -5,6 +5,8 @@ tags = ["metta","osdev","report"]
 +++
 I have cleaned up the booting mess more or less and now my loader is able to enter the **root domain** - the startup component, which initialises all other components in order and passes control on to userspace loader component, which is supposed to finish system initialisation by starting up all user interface services.
 
+<!-- more -->
+
 Now there are pretty many loaders here already - there's a first stage loader which is either GRUB or some other kind of boot loader, next there is second stage loader which understands boot protocol, be it multiboot or Linux-style boot or something else and converts all information to format understood by kernel startup, which in turn parses the info from bootinfo page and sets necessary flags, configures necessary platform hardware, prepares memory structures like IDT and GDT and then launches the root domain, which in turn loads all startup modules, initialises them and passes control on to userspace startup component. This is 5 startup stages in all.
 
 Now the design decision in modular system with C++ implementation is separation of component architecture and OO implementation. In component system, nothing is known about component implementation outside of the component and C++ implementation details break at component interface boundary - we want to confine implementation details inside component and expose only a C++ representation of public interface.

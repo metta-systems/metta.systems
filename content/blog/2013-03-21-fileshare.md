@@ -7,6 +7,8 @@ Some issues that need tackling in design of file sharing (see [Brendan's post he
 
 The issue of trust: right now, the file is only distributed across a range of devices you manually allow to access your data. This doesn't solve the problem per se, but just makes it easier to tackle for the initial implementation. The data and metadata could be encrypted with asymmetric schemes (private keys), but that doesn't give full security.
 
+<!-- more -->
+
 The issue of overhead: using automatic deduplication on a block level (if people share the same file using the same block size, chances are all the blocks will match up, and hence need to be stored only once. If there are minor modifications, then only some blocks would mismatch while other are perfectly in sync, and this means much less storage overhead).
 
 Redundancy: This also gives possibility to spread out the file blocks to other nodes more evenly, with an encoding scheme allowing error correction file may be reconstructed even if some of its blocks are lost completely.

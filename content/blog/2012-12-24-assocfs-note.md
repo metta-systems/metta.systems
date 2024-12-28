@@ -7,6 +7,8 @@ While I'm still dabbling with fixing some SSS issues here and there I thought I'
 
 It's a non-hierarchical filesystem - in other words, associative filesystem. It's basically a huge graph database. Every object is addressed by its hash (content addressable, like git), knowing the hash you can find it on disk. For more conventional searches (for those who does not know or does not care about the hash) there is metadata - attributes, drawn from an ontology and associated with a particular hashed blob.
 
+<!-- more -->
+
 This gives a few interesting properties:
 
  * Same blobs will end up in the same space, giving you a for-free deduplication.
@@ -28,4 +30,3 @@ Attributes "orient" blobs in filesystem space - without attributes the blobs are
 Since recalculating hashes for entire huge files would be troublesome, the files are split up in smaller chunks, which are hashed independently and collected into a "record" object, similar to a git tree. Changing one chunk therefore requires rehashing only two much smaller objects, rather than entire huge file.
 
 Changes to the filesystem may be recorded into a "change" object, similar to a git commit, which may be cryptographically signed and used for securely syncing filesystem changes between nodes.
-
