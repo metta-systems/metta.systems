@@ -1,4 +1,4 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
 {% block title %}
 Tags &middot; {{ config.title }}
@@ -15,40 +15,28 @@ Tags &middot; {{ config.title }}
 
 <h1>Tag cloud</h1>
 
-<tag-clouds>
-    <div id="tagcloud"></div>
-    <div>
-        {% for tag in blogtags.items %}
-        <span>
-            <a href="#{{ tag.name | slugify }}"
-                style="font-size: calc(1rem + ({{ tag.page_count }} - {{ lowest_weight }}) / ({{ highest_weight }} - {{ lowest_weight }}) * 1.5rem);">{{ tag.name }}</a>
-            {%- if not loop.last %}{{ ", " | safe }}{% endif -%}
-        </span>
-        {% endfor %}
-    </div>
-</tag-clouds>
+<div id="tagcloud"></div>
 
 <script type="text/javascript" src="{{ get_url(path="js/TagCloud.min.js") }}"></script>
 <script>
     var texts = [
     {%- for tag in blogtags.items -%}
-    "{{ tag.name }}"
+    "<span style='font-size:{{ 1 + (tag.page_count - lowest_weight) / (highest_weight - lowest_weight) * 1.5}}rem;'>{{ tag.name }}</span>"
     {%- if not loop.last %}{{ ", " | safe }}{% endif -%}
     {%- endfor -%}
     ];
     var options = {
-        useContainerInlineStyles: false,
-        radius: 200,
+        useHTML: true,
+        radius: 250,
     };
     TagCloud("#tagcloud", texts, options);
 
-    function clickEventHandler(e) {
+    var rootEl = document.querySelector('#tagcloud');
+    rootEl.addEventListener('click', function clickEventHandler(e) {
         if (e.target.className === 'tagcloud--item') {
             window.location = `#${e.target.innerText}`;
         }
-    }
-    var rootEl = document.querySelector('#tagcloud');
-    rootEl.addEventListener('click', clickEventHandler);
+    });
 </script>
 
 

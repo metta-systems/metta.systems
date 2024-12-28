@@ -597,16 +597,14 @@ article a.label {
 
 /* Tag cloud page */
 
-tag-clouds {
+#tagcloud {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 0;
-    padding-bottom: 20px;
+    place-items: center;
 }
 
 .tagcloud {
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
 }
 
