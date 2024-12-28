@@ -1,6 +1,7 @@
 +++
-date = 2099-01-01
 draft = true
+date = 2099-01-01
+title = "Free data"
 [taxonomies]
 category = ["notes"]
 +++
