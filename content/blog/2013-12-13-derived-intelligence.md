@@ -1,7 +1,7 @@
 +++
 title = "Derived intelligence"
-template = "quote.html"
 [taxonomies]
+category = ["quote"]
 tags = ["exocortex","metta"]
 +++
 > Our lives are increasingly mediated by, filtered through, and experienced via technology. A plethora of mechanisms capture, store, examine, manipulate, derive intelligence from, and share our information. This happens either with our knowledge, consent, and intent or without.

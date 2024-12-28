@@ -1,7 +1,7 @@
 +++
 title = "Apple's Attention to Detail"
-template = "quote.html"
 [taxonomies]
+category = ["quote"]
 tags = ["design"]
 +++
 > In July 2002, Apple filed a patent for a “Breathing Status LED Indicator”

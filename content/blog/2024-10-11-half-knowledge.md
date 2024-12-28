@@ -1,7 +1,7 @@
 +++
 title = "Half-knowledge"
-template = "quote.html"
 [taxonomies]
+category = ["quote"]
 tags = ["exocortex","metta"]
 +++
 > Half-knowledge is very communicable; not so knowledge.

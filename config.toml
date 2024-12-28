@@ -10,7 +10,8 @@ compile_sass = true
 build_search_index = true
 default_language = "en"
 
-taxonomies = [{ name = "tags" }]
+taxonomies = [{ name = "tags" }, { name = "category", render = false }]
+# category is a pseudo-taxonomy, link/quote/notes/page(default)
 
 generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml"]

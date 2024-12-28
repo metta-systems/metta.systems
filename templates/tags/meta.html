@@ -2,7 +2,7 @@
 {% if page.draft %}
 <a class="label" href="/tags#draft">draft</a>
 {% endif %}
-{% if page.taxonomies %}
+{% if page.taxonomies and page.taxonomies.tags %}
 {% for tag in page.taxonomies.tags | sort %}<a class="label" href="{{ "/tags#" }}{{ tag | escape }}">{{ tag }}</a>
 {% endfor %}
 {% endif %}

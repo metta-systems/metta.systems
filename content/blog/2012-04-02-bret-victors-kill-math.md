@@ -1,7 +1,7 @@
 +++
 title = "Bret Victor's Kill Math"
-template = "link.html"
 [taxonomies]
+category = ["link"]
 tags = ["bret-victor"]
 +++
 [Bret Victors Kill Math](http://worrydream.com/KillMath/)

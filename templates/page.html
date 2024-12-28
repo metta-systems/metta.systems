@@ -1,7 +1,5 @@
 {% extends "base.html" %}
-
-{% import "macros/reading-time-macro.html" as helper %}
-{% import "tags/meta.html" as tags %}
+{% import "macros/post.html" as post %}
 
 {% block title %}
     {% if page.title %}
@@ -12,19 +10,5 @@
 {% endblock title %}
 
 {% block content %}
-<article>
-    <post-header>
-        <column>
-            <h1 class="post-title">{{ page.title }}</h1>
-        </column>
-        <column>
-            <span class="post-date">{{ post_meta::show(post=page) }}</span>
-        </column>
-    </post-header>
-    <div class="post-body">
-        {{ page.content | safe }}
-    </div>
-    {% include "partial/pagenav.html" %}
-</article>
-{% include "partial/comments.html" %}
+{{ post::show(post=page, link=false, read_more=false) }}
 {% endblock content %}

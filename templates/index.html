@@ -1,18 +1,19 @@
 {% extends "base.html" %}
+{% import "macros/post.html" as post %}
 
 {% block content %}
 {% if not paginator %}
 
-    {% for post in section.pages %}
-        {% include "partial/index_post.html" %}
+    {% for page in section.pages %}
+        {{ post::show(post=page, link=true, read_more=true) }}
     {% endfor %}
 
 {% else %}
 
     {% include "partial/paginator_navigation.html" %}
 
-    {% for post in paginator.pages %}
-        {% include "partial/index_post.html" %}
+    {% for page in paginator.pages %}
+        {{ post::show(post=page, link=true, read_more=true) }}
     {% endfor %}
 
     {% include "partial/paginator_navigation.html" %}

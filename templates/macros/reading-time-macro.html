@@ -1,9 +1,9 @@
-{% macro reading_time(page) %}
-    {% if page.reading_time == 0 %}
+{% macro reading_time(post) %}
+    {% if post.reading_time == 0 %}
         less than a minute
-    {% elif page.reading_time == 1 %}
+    {% elif post.reading_time == 1 %}
         about a minute
     {% else %}
-        {{ page.reading_time }} minutes
+        {{ post.reading_time }} minutes
     {% endif %}
 {% endmacro reading_time %}

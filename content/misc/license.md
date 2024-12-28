@@ -2,8 +2,8 @@
 date = 2017-01-18
 title = "License"
 description = "License for the contents of this website and blog"
-template = "notes.html"
 [taxonomies]
+category = ["notes"]
 tags = ["blog-meta"]
 +++
 ### Content license

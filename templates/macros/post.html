@@ -1,0 +1,57 @@
+{% macro show(post, link, read_more) %}
+
+{% if post.taxonomies %}
+{% if not post.taxonomies.category %}
+{% set _category = ["page"] %}
+{% else %}
+{% set _category = post.taxonomies.category %}
+{% endif %}
+{% else %}
+{% set _category = [] %}
+{% endif %}
+
+{% if "quote" in _category %}
+<article class="post-quote{% if read_more %} post-preview{% endif %}">
+{% elif "link" in _category %}
+<article class="post-link{% if read_more %} post-preview{% endif %}">
+{% elif "notes" in _category %}
+<article{% if read_more %} class="post-preview"{% endif %}>
+{% else %}
+<article{% if read_more %} class="post-preview"{% endif %}>
+{% endif %}
+    <post-header>
+        <column>
+            {% if link %}
+            <h1 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h1>
+            {% else %}
+            <h1 class="post-title">{{ post.title }}</h1>
+            {% endif %}
+        </column>
+        <column>
+            <span class="post-date">{{ post_meta::show(post=post) }}</span>
+        </column>
+    </post-header>
+    <div class="post-body">
+        {% if read_more %}
+            {% if post.summary %}
+            {{ post.summary | safe }}
+            <a href="{{ post.permalink }}#continue-reading">Read more <i class="lni lni-arrow-right-circle"></i></a>
+            {% elif post.description %}
+            {{ post.description | safe }}
+            <a href="{{ post.permalink }}#continue-reading">Read more <i class="lni lni-arrow-right-circle"></i></a>
+            {% else %}
+            {{ post.content | safe }}
+            {% endif %}
+        {% else %}
+            {{ post.content | safe }}
+        {% endif %}
+    </div>
+    {% if not read_more %}
+    {% include "partial/post_nav.html" %}
+    {% endif %}
+</article>
+{% if not read_more %}
+{% include "partial/comments.html" %}
+{% endif %}
+
+{% endmacro show %}

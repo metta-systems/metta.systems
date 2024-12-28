@@ -1,8 +1,8 @@
 +++
 date = 2014-01-15
 title = "Manifesto"
-template = "notes.html"
 [taxonomies]
+category = ["notes"]
 tags = ["metta"]
 +++
 ### Metta

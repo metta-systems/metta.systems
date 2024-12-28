@@ -2,6 +2,7 @@
 date = 2012-08-07
 title = "Meddle Grammar"
 [taxonomies]
+category = ["notes"]
 tags = ["metta"]
 +++
 ## Types
@@ -77,15 +78,15 @@ Array is currently not implemented in IDL.
 Record is a composite type, consisting of fields of arbitrary types laid out in a specified order.
 
 ```
-record datarec  { 
-    ten_bytes input; 
-    nibble_frequencies output; 
+record datarec {
+    ten_bytes input;
+    nibble_frequencies output;
 }
 
 record nibble_statistics {
     datarec data
     status.type status;
-} 
+}
 ```
 
 #### choice

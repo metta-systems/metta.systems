@@ -1,7 +1,7 @@
 +++
 title = "Museum of Endangered Sounds"
-template = "link.html"
 [taxonomies]
+category = ["link"]
 tags = ["curios"]
 +++
 [Museum of Endangered Sounds](http://savethesounds.info/)

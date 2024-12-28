@@ -1,8 +1,8 @@
 +++
 date = 2009-12-30
 title = "About"
-template = "notes.html"
 [taxonomies]
+category = ["notes"]
 tags = ["exocortex","metta"]
 +++
 > To dream a dream as big\
