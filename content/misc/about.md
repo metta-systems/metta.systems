@@ -3,12 +3,16 @@ date = 2009-12-30
 title = "About"
 [taxonomies]
 category = ["notes"]
-tags = ["exocortex","metta"]
+tags = ["exocortex","metta","blog-meta"]
 +++
 > To dream a dream as big\
 As big could ever dream to be\
 Then dream a dream ten times as big\
 As that one dream you see.
+
+## Hi and welcome to Metta hub!
+
+Here I develop decentralised communication systems for the future, called Metta nodes or uvvies. You can join in by helping us develop, document, promote and use the software.
 
 ### What I'm working on and why
 
