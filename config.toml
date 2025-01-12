@@ -30,10 +30,5 @@ highlight_themes_css = [
 #highlight = "zenburn" -- if using hljs
 languageCode = "en"
 
-utterances = "metta-systems/metta.systems"
-utterancesMapping = "url"
-utterancesTheme = "github-light"
-utterancesLabel = "💬 comments"
-
 # Default page metadata, used when the specific page doesn't set its own.
 defaultKeywords = "devlog,blog,metta,decentralised,peer-to-peer,vesper,rust"

@@ -1,13 +1,17 @@
-{% if config.extra.utterances %}
 <div id="comments" class="wrap_comments">
-    <script
-        src="https://utteranc.es/client.js"
-        repo="{{ config.extra.utterances }}"
-        issue-term="{{ config.extra.utterancesMapping }}"
-        label="{{ config.extra.utterancesLabel }}"
-        theme="{{ config.extra.utterancesTheme }}"
+    <script src="https://giscus.app/client.js"
+        data-repo="metta-systems/metta.systems"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxMzg1ODgzMw=="
+        data-category="General"
+        data-category-id="DIC_kwDOANN4Ec4Cl8Iq"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light_protanopia"
+        data-lang="en"
         crossorigin="anonymous"
-        async
-    ></script>
+        async>
+    </script>
 </div>
-{% endif %}
