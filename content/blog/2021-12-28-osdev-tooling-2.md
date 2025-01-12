@@ -32,7 +32,7 @@ The file '/usr/local/bin/bundle' specified the interpreter '/System/Library/Fram
 
 Yes, that's a `ruby 2.6` asking for non-existing `ruby 2.3` while `ruby 3.0` is actually installed via homebrew. And I have zero desire to work on fixing that.
 
-chainofcommand is a pure Rust binary implementing a similar chainloading protocol. New feature I've added is the kernel checksum calculation using `seahash` crate (which has a `no_std` implementation, used on the board side).
+chainofcommand is a pure Rust binary implementing a similar chainloading protocol. New feature I've added is the kernel checksum calculation using {{ crate(name="seahash") }} crate (which has a `no_std` implementation, used on the board side).
 
 ## Nucleus code refactoring
 
