@@ -10,6 +10,7 @@
  *
  * Reverse created from the Modernist theme by orderedlist.
  * https://github.com/orderedlist/modernist
+ * SCSS reconstruction based on https://github.com/pages-themes/modernist/blob/master/_sass/jekyll-theme-modernist.scss
  * Logo with https://onlinetools.com/ascii/convert-text-to-ascii-art and colossal font.
  */
 
@@ -138,143 +139,158 @@ header {
     position: relative;
     padding: 15px 20px;
     border-bottom: 1px solid $header_border_shadow;
-}
 
-header h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-family: Changa;
-    font-weight: 800;
-    line-height: 1.2;
-    color: $header_title_fg_color;
-    /* text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0; */
-}
-header.without-description h1 {
-    margin: 10px 0;
-}
-header p {
-    margin: 0;
-    color: $header_text_fg_color;
-    width: 300px;
-    font-size: 14px;
-}
-header p.view {
-    display: none;
-    font-weight: 700;
-    text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
-    -webkit-font-smoothing: antialiased;
-}
-header p.view a {
-    color: $header_title_fg_color;
-}
-header p.view small {
-    font-weight: 400;
-}
+    h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        font-family: Changa;
+        font-weight: 800;
+        line-height: 1.2;
+        color: $header_title_fg_color;
+        /* text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0; */
+    }
 
-/* Header menu bar */
-header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    z-index: 1;
-    right: 20px;
-    top: 20px;
-    /* height: 38px; */
-    padding: 1px 0;
-    background: $header_menu_bg;
-    background: -webkit-gradient(
-        linear,
-        50% 0%,
-        50% 100%,
-        color-stop(0%, $header_menu_bg_start),
-        color-stop(100%, $header_menu_bg_end)
-    );
-    background: -webkit-linear-gradient(
-        $header_menu_bg_start,
-        $header_menu_bg_end
-    );
-    background: -moz-linear-gradient(
-        $header_menu_bg_start,
-        $header_menu_bg_end
-    );
-    background: -o-linear-gradient($header_menu_bg_start, $header_menu_bg_end);
-    background: -ms-linear-gradient($header_menu_bg_start, $header_menu_bg_end);
-    background: linear-gradient($header_menu_bg_start, $header_menu_bg_end);
-    border-radius: 5px;
-    -webkit-box-shadow:
-        inset rgba(255, 255, 255, 0.45) 0 1px 0,
-        inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    -moz-box-shadow:
-        inset rgba(255, 255, 255, 0.45) 0 1px 0,
-        inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    box-shadow:
-        inset rgba(255, 255, 255, 0.45) 0 1px 0,
-        inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    width: auto;
-}
-header ul:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: -5px;
-    top: -4px;
-    right: -5px;
-    bottom: -6px;
-    background: rgba(0, 0, 0, 0.1);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow:
-        rgba(0, 0, 0, 0.2) 0 -1px 0,
-        inset rgba(255, 255, 255, 0.7) 0 -1px 0;
-    -moz-box-shadow:
-        rgba(0, 0, 0, 0.2) 0 -1px 0,
-        inset rgba(255, 255, 255, 0.7) 0 -1px 0;
-    box-shadow:
-        rgba(0, 0, 0, 0.2) 0 -1px 0,
-        inset rgba(255, 255, 255, 0.7) 0 -1px 0;
-}
-header ul li {
-    float: left;
-}
-header ul li:first-child {
-    border-right: 1px solid $header_menu_item_border_color;
-}
-header ul li:not(:first-child):not(:last-child) {
-    border-right: 1px solid $header_menu_item_border_color;
-    border-left: 1px solid $header_menu_item_border_shadow_color;
-}
-header ul li:last-child {
-    border-left: 1px solid $header_menu_item_border_shadow_color;
-}
-header ul a {
-    line-height: 1;
-    font-size: 12px;
-    color: #fff;
-    color: rgba(255, 255, 255, 0.8);
-    display: block;
-    text-align: center;
-    font-weight: 400;
-    margin: 6px;
-    padding-top: 4px;
-    text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
-}
-header ul input {
-    margin: 6px;
-}
-header ul i.lni {
-    font-size: 14px;
-}
+    p {
+        margin: 0;
+        color: $header_text_fg_color;
+        width: 300px;
+        font-size: 14px;
+    }
 
-header ul a strong {
-    font-size: 18px;
-    display: block;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
+    p.view {
+        display: none;
+        font-weight: 700;
+        text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
+        -webkit-font-smoothing: antialiased;
+
+        a {
+            color: $header_title_fg_color;
+        }
+
+        small {
+            font-weight: 400;
+        }
+    }
+
+    /* Header menu bar */
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        z-index: 1;
+        right: 20px;
+        top: 20px;
+        /* height: 38px; */
+        padding: 1px 0;
+        background: $header_menu_bg;
+        background: -webkit-gradient(
+            linear,
+            50% 0%,
+            50% 100%,
+            color-stop(0%, $header_menu_bg_start),
+            color-stop(100%, $header_menu_bg_end)
+        );
+        background: -webkit-linear-gradient(
+            $header_menu_bg_start,
+            $header_menu_bg_end
+        );
+        background: -moz-linear-gradient(
+            $header_menu_bg_start,
+            $header_menu_bg_end
+        );
+        background: -o-linear-gradient(
+            $header_menu_bg_start,
+            $header_menu_bg_end
+        );
+        background: -ms-linear-gradient(
+            $header_menu_bg_start,
+            $header_menu_bg_end
+        );
+        background: linear-gradient($header_menu_bg_start, $header_menu_bg_end);
+        border-radius: 5px;
+        -webkit-box-shadow:
+            inset rgba(255, 255, 255, 0.45) 0 1px 0,
+            inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+        -moz-box-shadow:
+            inset rgba(255, 255, 255, 0.45) 0 1px 0,
+            inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+        box-shadow:
+            inset rgba(255, 255, 255, 0.45) 0 1px 0,
+            inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+        width: auto;
+
+        a {
+            line-height: 1;
+            font-size: 12px;
+            color: #fff;
+            color: rgba(255, 255, 255, 0.8);
+            display: block;
+            text-align: center;
+            font-weight: 400;
+            margin: 6px;
+            padding-top: 4px;
+            text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
+
+            strong {
+                font-size: 18px;
+                display: block;
+                color: #fff;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+
+        input {
+            margin: 6px;
+        }
+
+        i.lni {
+            font-size: 14px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li:first-child {
+            border-right: 1px solid $header_menu_item_border_color;
+        }
+
+        li:not(:first-child):not(:last-child) {
+            border-right: 1px solid $header_menu_item_border_color;
+            border-left: 1px solid $header_menu_item_border_shadow_color;
+        }
+
+        li:last-child {
+            border-left: 1px solid $header_menu_item_border_shadow_color;
+        }
+    }
+
+    ul:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: -5px;
+        top: -4px;
+        right: -5px;
+        bottom: -6px;
+        background: rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow:
+            rgba(0, 0, 0, 0.2) 0 -1px 0,
+            inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+        -moz-box-shadow:
+            rgba(0, 0, 0, 0.2) 0 -1px 0,
+            inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+        box-shadow:
+            rgba(0, 0, 0, 0.2) 0 -1px 0,
+            inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+    }
 }
 
 /* Text section */
@@ -285,18 +301,6 @@ section {
     border-top: 1px solid #fff;
     background: $section_bg_color;
     position: relative;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $header_title_fg_color;
-    padding: 0;
-    margin: 0 0 20px;
-    line-height: 1.2;
 }
 
 p,
@@ -310,23 +314,20 @@ dl {
 
 h1,
 h2,
-h3 {
-    line-height: 1.1;
-}
-
-h1 {
-    font-size: 30px;
-}
-
-h2 {
-    color: $title2_fg_color;
-}
-
 h3,
 h4,
 h5,
 h6 {
-    color: $title3_fg_color;
+    font-family: Oswald;
+    font-weight: 600;
+    color: $header_title_fg_color;
+    padding: 0;
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 img {
@@ -373,11 +374,13 @@ pre {
     box-shadow:
         rgba(0, 0, 0, 0.2) 0 0 0 1px,
         rgba(0, 0, 0, 0.45) 0 3px 10px;
+
+    /* Syntax-highlighted code blocks */
+    code {
+        background-color: inherit;
+    }
 }
-/* Syntax-highlighted code blocks */
-pre code {
-    background-color: inherit;
-}
+
 li pre {
     margin-left: -60px;
     padding-left: 60px;
@@ -439,28 +442,29 @@ footer {
     background: -ms-linear-gradient($header_bg_end, $header_bg_start);
     background: linear-gradient($header_bg_end, $header_bg_start);
     position: relative;
+    overflow: hidden;
     padding: 15px 20px;
     border-top: 1px solid $header_border_shadow;
-}
 
-footer {
-    overflow: hidden;
-}
-footer .wrapper {
-    width: 640px;
-    margin: 0 auto;
-}
-footer a {
-    color: $header_text_fg_color;
-    font-weight: bold;
-}
-footer p {
-    color: $header_text_fg_color;
-    float: left;
-    margin: 0;
-}
-footer p:last-child {
-    float: right;
+    .wrapper {
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    a {
+        color: $header_text_fg_color;
+        font-weight: bold;
+    }
+
+    p {
+        color: $header_text_fg_color;
+        float: left;
+        margin: 0;
+    }
+
+    p:last-child {
+        float: right;
+    }
 }
 
 /* Quote type post */
@@ -487,57 +491,61 @@ blockquote {
     box-shadow:
         rgba(0, 0, 0, 0.2) 0 0 0 1px,
         rgba(0, 0, 0, 0.45) 0 3px 10px;
+
+    p {
+        color: $blockquote_fg_color;
+        padding: 0;
+        margin: 0;
+        font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
+        text-align: right;
+    }
 }
 
-blockquote p {
-    color: $blockquote_fg_color;
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
-    text-align: right;
-}
+.post-quote {
+    p {
+        font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
+        text-align: right;
+    }
 
-.post-quote p {
-    font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
-    text-align: right;
-}
-
-.post-quote p:first-child strong:first-child {
-    // TODO: fix font style, try B612 for quotes?
-    font-family:
-        Helvetica Neue,
-        Arial,
-        sans-serif;
+    p:first-child strong:first-child {
+        // TODO: fix font style, try B612 for quotes?
+        font-family:
+            Helvetica Neue,
+            Arial,
+            sans-serif;
+    }
 }
 
 /* Link type post */
 
-.post-link p:first-child {
-    background-color: $blockquote_bg_color;
+.post-link {
+    p:first-child {
+        background-color: $blockquote_bg_color;
 
-    padding: 20px;
-    margin: 0 0 20px;
-    color: $blockquote_fg_color;
-    text-shadow: 1px 1px $blockquote_shadow_color;
+        padding: 20px;
+        margin: 0 0 20px;
+        color: $blockquote_fg_color;
+        text-shadow: 1px 1px $blockquote_shadow_color;
 
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow:
-        rgba(0, 0, 0, 0.2) 0 0 0 1px,
-        rgba(0, 0, 0, 0.45) 0 3px 10px;
-    -moz-box-shadow:
-        rgba(0, 0, 0, 0.2) 0 0 0 1px,
-        rgba(0, 0, 0, 0.45) 0 3px 10px;
-    box-shadow:
-        rgba(0, 0, 0, 0.2) 0 0 0 1px,
-        rgba(0, 0, 0, 0.45) 0 3px 10px;
-}
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow:
+            rgba(0, 0, 0, 0.2) 0 0 0 1px,
+            rgba(0, 0, 0, 0.45) 0 3px 10px;
+        -moz-box-shadow:
+            rgba(0, 0, 0, 0.2) 0 0 0 1px,
+            rgba(0, 0, 0, 0.45) 0 3px 10px;
+        box-shadow:
+            rgba(0, 0, 0, 0.2) 0 0 0 1px,
+            rgba(0, 0, 0, 0.45) 0 3px 10px;
+    }
 
-.post-link p:first-child a {
-    color: $blockquote_fg_color;
+    p:first-child a {
+        color: $blockquote_fg_color;
+    }
 }
 
 /* Post previews in the main feed */
@@ -557,10 +565,12 @@ article.post-preview {
 .label {
     display: inline;
     padding: 0.2em 0.6em 0.3em;
+    margin: 0 0.25em;
     font-size: 75%;
     font-weight: bold;
     line-height: 1;
     color: $tag_fg_color;
+    background-color: $tag_bg_color;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
@@ -576,11 +586,6 @@ a.label:focus {
     display: none;
 }
 
-.label {
-    margin: 0 0.25em;
-    background-color: $tag_bg_color;
-}
-
 .posts a.label,
 .post-date a.label {
     color: $tag_fg_color;
@@ -588,11 +593,13 @@ a.label:focus {
     cursor: pointer;
 }
 
-article .label,
-article a.label {
-    color: $tag_fg_color;
-    font-family: Oswald;
-    font-weight: 400;
+article {
+    .label,
+    a.label {
+        color: $tag_fg_color;
+        font-family: Oswald;
+        font-weight: 400;
+    }
 }
 
 /* Tag cloud page */
@@ -645,18 +652,6 @@ post-header > column:last-child {
 page-nav {
     display: block;
     text-align: center;
-}
-
-// overrides? merge
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Oswald;
-    font-weight: 600;
-    color: $header_title_fg_color;
 }
 
 /* Search results */
@@ -721,6 +716,7 @@ h6 {
         margin: 0;
     }
     footer p + p {
+        /* TODO: Fix these selectors to match footer above */
         float: none;
     }
 }
@@ -735,10 +731,5 @@ h6 {
 
     header p {
         width: 100%;
-    }
-}
-@media print {
-    header p.view a small:before {
-        content: "at http://github.com/";
     }
 }
