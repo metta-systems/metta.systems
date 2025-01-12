@@ -4,7 +4,7 @@ title = "Useful cargo commands"
 tags = ["rust","tools","cargo"]
 +++
 Some additional cargo commands exist to provide unprecedented level of support and extensibility
-to regular cargo. Here's a list of commands I use (will be updated over time, last update 2024-12-27):
+to regular cargo. Here's a list of commands I use (will be updated over time, last update 2025-01-12):
 
 <!-- more -->
 
@@ -12,114 +12,114 @@ to regular cargo. Here's a list of commands I use (will be updated over time, la
 
 Sorted alphabetically:
 
-[cargo-aoc](https://github.com/gobanos/cargo-aoc) - Advent of Code helper.
+{% crate(name="cargo-aoc", gh="gobanos/cargo-aoc") %} - Advent of Code helper.{% end %}
 
-[cargo-audit](https://github.com/rustsec/rustsec) - audit Cargo.lock for security vulnerabilities.
+{% crate(name="cargo-audit", gh="rustsec/rustsec") %} - audit Cargo.lock for security vulnerabilities.{% end %}
 
-[cargo-binutils](https://github.com/rust-embedded/cargo-binutils) - proxy for LLVM tools like llvm-nm, llvm-objdump and llvm-size. Beware of nasty LLVM bugs like [this one](https://github.com/llvm/llvm-project/issues/58407).
+{% crate(name="cargo-binutils", gh="rust-embedded/cargo-binutils") %} - proxy for LLVM tools like llvm-nm, llvm-objdump and llvm-size. Beware of nasty LLVM bugs like [this one](https://github.com/llvm/llvm-project/issues/58407).{% end %}
 
-[cargo-bloat](https://github.com/RazrFalcon/cargo-bloat) - find out what takes most of the space in your executable.
+{% crate(name="cargo-bloat", gh="RazrFalcon/cargo-bloat") %} - find out what takes most of the space in your executable.{% end %}
 
-[cargo-bundle](https://github.com/burtonageo/cargo-bundle) - create OS-specific app bundles from rust binaries.
+{% crate(name="cargo-bundle", gh="burtonageo/cargo-bundle") %} - create OS-specific app bundles from rust binaries.{% end %}
 
-[cargo-cache](https://github.com/matthiaskrgr/cargo-cache) - manage and clean cargo cache.
+{% crate(name="cargo-cache", gh="matthiaskrgr/cargo-cache") %} - manage and clean cargo cache.{% end %}
 
-[cargo-clippy](https://github.com/rust-lang-nursery/rust-clippy) - over 300 lints to make your Rust code tidy.
+{% crate(name="cargo-clippy", gh="rust-lang-nursery/rust-clippy") %} - over 300 lints to make your Rust code tidy.{% end %}
 
-[cargo-deny](https://github.com/embarkstudios/cargo-deny) - manage large dependency graphs, check licenses, security advisories or outright ban certain packages.
+{% crate(name="cargo-deny", gh="embarkstudios/cargo-deny") %} - manage large dependency graphs, check licenses, security advisories or outright ban certain packages.{% end %}
 
-[cargo-dfu](https://github.com/dfu-rs/cargo-dfu) - flash embedded firmware using DFU.
+{% crate(name="cargo-dfu", gh="dfu-rs/cargo-dfu") %} - flash embedded firmware using DFU.{% end %}
 
-[cargo-edit](https://github.com/killercup/cargo-edit) -  `cargo add`, `cargo rm`, and `cargo upgrade` Cargo.toml dependencies.
+{% crate(name="cargo-edit", gh="killercup/cargo-edit") %} - `cargo add`, `cargo rm`, and `cargo upgrade` Cargo.toml dependencies.{% end %}
 
-[cargo-expand](https://github.com/dtolnay/cargo-expand) - show result of macro expansion and #[derive] expansion.
+{% crate(name="cargo-expand", gh="dtolnay/cargo-expand") %} - show result of macro expansion and `#[derive]` expansion.{% end %}
 
-[cargo-fix](https://github.com/rust-lang-nursery/rustfix) - automatically apply fix-it suggestions from rustc and clippy to entire project. For better effect, run `cargo clean` first, then `cargo fix --clippy`.
+{% crate(name="cargo-fix", gh="rust-lang-nursery/rustfix") %} - automatically apply fix-it suggestions from rustc and clippy to entire project. For better effect, run `cargo clean` first, then `cargo fix --clippy`.{% end %}
 
-[cargo-fmt](https://github.com/rust-lang-nursery/rustfmt) - format Rust code, applies rustfmt to entire crate.
+{% crate(name="cargo-fmt", gh="rust-lang-nursery/rustfmt") %} - format Rust code, applies rustfmt to entire crate.{% end %}
 
-[cargo-fuzz](https://github.com/rust-fuzz/cargo-fuzz) - use libFuzzer to fuzz your code easily.
+{% crate(name="cargo-fuzz", gh="rust-fuzz/cargo-fuzz") %} - use libFuzzer to fuzz your code easily.{% end %}
 
-[cargo-geiger](https://github.com/anderejd/cargo-geiger) - count number of `unsafe` operations in crate and its dependencies.
+{% crate(name="cargo-geiger", gh="anderejd/cargo-geiger") %} - count number of `unsafe` operations in crate and its dependencies.{% end %}
 
-[cargo-generate](https://github.com/ashleygwilliams/cargo-generate) - generate cargo project from a given template.
+{% crate(name="cargo-generate", gh="ashleygwilliams/cargo-generate") %} - generate cargo project from a given template.{% end %}
 
-[cargo-graph](https://github.com/kbknapp/cargo-graph) - create GraphViz DOT files and dependency graphs.
+{% crate(name="cargo-graph", gh="kbknapp/cargo-graph") %} - create GraphViz DOT files and dependency graphs.{% end %}
 
-[cargo-insta](https://github.com/mitsuhiko/insta) - snapshot testing using [insta](https://insta.rs/).
+{% crate(name="cargo-insta", gh="mitsuhiko/insta") %} - snapshot testing using [insta](https://insta.rs/).{% end %}
 
-[cargo-make](https://github.com/sagiegurari/cargo-make) - a decent replacement for make.
+{% crate(name="cargo-make", gh="sagiegurari/cargo-make") %} - a decent replacement for make.{% end %}
 
-[cargo-outdated](https://github.com/kbknapp/cargo-outdated) - display out-of-date dependencies.
+{% crate(name="cargo-outdated", gh="kbknapp/cargo-outdated") %} - display out-of-date dependencies.{% end %}
 
-[cargo-play](https://github.com/fanzeyi/cargo-play) - instant playground. Run your code from single .rs file like if it was a full rust project.
+{% crate(name="cargo-play", gh="fanzeyi/cargo-play") %} - instant playground. Run your code from single .rs file like if it was a full rust project.{% end %}
 
-[cargo-release](https://github.com/sunng87/cargo-release) - for when you're ready to share your crate with the world, automates mundane release tasks - bumping versions, tagging repo, updating docs, etc.
+{% crate(name="cargo-release", gh="sunng87/cargo-release") %} - for when you're ready to share your crate with the world, automates mundane release tasks - bumping versions, tagging repo, updating docs, etc.{% end %}
 
-[cargo-show-asm](https://github.com/pacak/cargo-show-asm) - see the assembly (with `cargo asm --asm`) or llvm-ir (with `cargo asm --llvm` or `--llvm-input`) generated for Rust code. This is an updated version
-of the unmaintained `cargo-asm` crate. Install with `cargo install --locked --all-features cargo-show-asm`.
+{% crate(name="cargo-show-asm", gh="pacak/cargo-show-asm") %} - see the assembly (with `cargo asm --asm`) or llvm-ir (with `cargo asm --llvm` or `--llvm-input`) generated for Rust code. This is an updated version
+of the unmaintained `cargo-asm` crate. Install with `cargo install --locked --all-features cargo-show-asm`.{% end %}
 
-[cargo-src](https://github.com/nrc/cargo-src) - detailed rust source code browser with semantic details.
+{% crate(name="cargo-src", gh="nrc/cargo-src") %} - detailed rust source code browser with semantic details.{% end %}
 
-[cargo-sweep](https://github.com/holmgr/cargo-sweep) - clean unused build files.
+{% crate(name="cargo-sweep", gh="holmgr/cargo-sweep") %} - clean unused build files.{% end %}
 
-[cargo-testify](https://github.com/greyblake/cargo-testify) - show popup notifications about testing results.
+{% crate(name="cargo-testify", gh="greyblake/cargo-testify") %} - show popup notifications about testing results.{% end %}
 
-[cargo-tree](https://github.com/sfackler/cargo-tree) - visualise crate dependencies as a tree.
+{% crate(name="cargo-tree", gh="sfackler/cargo-tree") %} - visualise crate dependencies as a tree.{% end %}
 
-[cargo-update](https://github.com/nabijaczleweli/cargo-update) - add `cargo install-update` command to upgrade already installed binaries.
+{% crate(name="cargo-update", gh="nabijaczleweli/cargo-update") %} - add `cargo install-update` command to upgrade already installed binaries.{% end %}
 
-[cargo-vendor](https://github.com/alexcrichton/cargo-vendor) - vendor dependencies into a local directory.
+{% crate(name="cargo-vendor", gh="alexcrichton/cargo-vendor") %} - vendor dependencies into a local directory.{% end %}
 
-[cargo-watch](https://github.com/passcod/cargo-watch) - add a `cargo watch` command to monitor and rebuild source in case of changes.
+{% crate(name="cargo-watch", gh="passcod/cargo-watch") %} - add a `cargo watch` command to monitor and rebuild source in case of changes.{% end %}
 
-[cargo-web](https://github.com/koute/cargo-web) - automatically build and run web projects (use with [parcel](https://github.com/koute/parcel-plugin-cargo-web) for amazing results).
+{% crate(name="cargo-web", gh="koute/cargo-web") %} - automatically build and run web projects (use with [parcel](https://github.com/koute/parcel-plugin-cargo-web) for amazing results).{% end %}
 
 ## Standalone commands
 
 Sorted alphabetically:
 
-[aarch64-esr-decoder](https://github.com/google/aarch64-esr-decoder) - decode aarch64 Exception Syndrome Register values quickly.
+{% crate(name="aarch64-esr-decoder", gh="google/aarch64-esr-decoder") %} - decode aarch64 Exception Syndrome Register values quickly.{% end %}
 
-[bandwhich](https://github.com/imsnif/bandwhich) - a CLI network monitor.
+{% crate(name="bandwhich", gh="imsnif/bandwhich") %} - a CLI network monitor.{% end %}
 
-[bat](https://github.com/sharkdp/bat) - cat with wings. Replace your cat command with a nicer one by doing "alias cat bat".
+{% crate(name="bat", gh="sharkdp/bat") %} - cat with wings. Replace your cat command with a nicer one by doing "alias cat bat".{% end %}
 
-[bingrep](https://github.com/m4b/bingrep) - cross-platform binary parser and colorizer. See binary file headers in a nice way.
+{% crate(name="bingrep", gh="m4b/bingrep") %} - cross-platform binary parser and colorizer. See binary file headers in a nice way.{% end %}
 
-[biodiff](https://github.com/8051enthusiast/biodiff) - compare binary files using sequence alignment. Makes it easier to see diffs in files that are aaaalmost the same.
+{% crate(name="biodiff", gh="8051enthusiast/biodiff") %} - compare binary files using sequence alignment. Makes it easier to see diffs in files that are aaaalmost the same.{% end %}
 
-[bootimage](https://github.com/rust-osdev/bootimage) - create a bootable OS image from a kernel binary. Integrates with cargo.
+{% crate(name="bootimage", gh="rust-osdev/bootimage") %} - create a bootable OS image from a kernel binary. Integrates with cargo.{% end %}
 
-[broot](https://github.com/canop/broot) - a CLI file manager with nice tree navigation.
+{% crate(name="broot", gh="canop/broot") %} - a CLI file manager with nice tree navigation.{% end %}
 
-[cc-cli](https://github.com/sousandrei/cc-cli) - git hook for conventional commits - "git commit" and pick details using a CLI.
+{% crate(name="cc-cli", gh="sousandrei/cc-cli") %} - git hook for conventional commits - "git commit" and pick details using a CLI.{% end %}
 
-[clog-cli](https://github.com/clog-tool/clog-cli) - conventional commits changelog generator. Old.
+{% crate(name="clog-cli", gh="clog-tool/clog-cli") %} - conventional commits changelog generator. Old.{% end %}
 
-[cocogitto](https://github.com/cocogitto/cocogitto) - conventional commits swiss army knife. Does everything.
+{% crate(name="cocogitto", gh="cocogitto/cocogitto") %} - conventional commits swiss army knife. Does everything.{% end %}
 
-[commit-emoji](https://github.com/berkus/commit-emoji) - git hook to add emoji to your conventional commits. Mine.
+{% crate(name="commit-emoji", gh="berkus/commit-emoji") %} - git hook to add emoji to your conventional commits. Disclosure: This is my crate.{% end %}
 
-[convco](https://github.com/convco/convco) - conventional commits tooling, similar to cocogitto.
+{% crate(name="convco", gh="convco/convco") %} - conventional commits tooling, similar to cocogitto.{% end %}
 
-[dirstat-rs](https://github.com/scullionw/dirstat-rs) - graphical (CLI) directory tree size statistics. Really nice and fast.
+{% crate(name="dirstat-rs", gh="scullionw/dirstat-rs") %} - graphical (CLI) directory tree size statistics. Really nice and fast.{% end %}
 
-[dts_viewer](https://github.com/yodaldevoid/dts_viewer) - a CLI viewer for device tree files (DTS, source).
+{% crate(name="dts_viewer", gh="yodaldevoid/dts_viewer") %} - a CLI viewer for device tree files (DTS, source).{% end %}
 
-[du-dust](https://github.com/bootandy/dust) - graphical (CLI) disk usage statistics. Pretty and fast.
+{% crate(name="du-dust", gh="bootandy/dust") %} - graphical (CLI) disk usage statistics. Pretty and fast.{% end %}
 
-[dua-cli](https://github.com/byron/dua-cli) - Disk Usage Analyzer. Graphical (CLI) disk usage statistics.
+{% crate(name="dua-cli", gh="byron/dua-cli") %} - Disk Usage Analyzer. Graphical (CLI) disk usage statistics.{% end %}
 
-[elfcat](https://github.com/ruslashev/elfcat) - generates a cross-referenced HTML file with contents of an input ELF binary.
+{% crate(name="elfcat", gh="ruslashev/elfcat") %} - generates a cross-referenced HTML file with contents of an input ELF binary.{% end %}
 
-[erdtree](https://github.com/solidiquis/erdtree) - a nicely looking file tree. Be sure to set up one of [Nerd Fonts](https://nerdfonts.com) in your terminal.
+{% crate(name="erdtree", gh="solidiquis/erdtree") %} - a nicely looking file tree. Be sure to set up one of [Nerd Fonts](https://nerdfonts.com) in your terminal.{% end %}
 
-[eza](https://github.com/eza-community/eza) - a modern `ls` replacement. Do `alias ls eza`.
+{% crate(name="eza", gh="eza-community/eza") %} - a modern `ls` replacement. Do `alias ls eza`.{% end %}
 
-[fd-find](https://github.com/sharkdp/fd) - super fast and simple alternative to `find`. Do `alias find fd` for your interactive sessions (the CLI is not compatible with find so keep the scripts happy).
+{% crate(name="fd-find", gh="sharkdp/fd") %} - super fast and simple alternative to `find`. Do `alias find fd` for your interactive sessions (the CLI is not compatible with find so keep the scripts happy).{% end %}
 
-[fdtdump](https://github.com/rs-embedded/fdtdump) - dump device tree files (DTB, compiled).
+{% crate(name="fdtdump", gh="rs-embedded/fdtdump") %} - dump device tree files (DTB, compiled).{% end %}
 
 <!-- [flamegraph]() -
 
@@ -139,7 +139,7 @@ Sorted alphabetically:
 
 [jilu]() - -->
 
-[just](https://github.com/casey/just) - a quick and easy tool runner, useful for automating repeated tasks.
+{% crate(name="just", gh="casey/just") %} - a quick and easy tool runner, useful for automating repeated tasks.{% end %}
 
 <!-- [kibi]() -
 
@@ -181,7 +181,7 @@ Sorted alphabetically:
 
 [ugdb]() - -->
 
-[version-sync](https://github.com/mgeisler/version-sync) - keep your version number in documentation and elsewhere in sync with version specified in Cargo.toml
+{% crate(name="version-sync", gh="mgeisler/version-sync") %} - keep your version number in documentation and elsewhere in sync with version specified in Cargo.toml{% end %}
 
 <!-- [wasm-pack]() -
 
