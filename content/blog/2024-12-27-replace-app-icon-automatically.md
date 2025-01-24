@@ -13,22 +13,37 @@ Using [this helpful article by Mayeu](https://mayeu.me/post/how-to-trigger-any-a
 
 The agent article above gives all the necessary background, here I'll just provide the actual script and agent configuration.
 
-Create a script [`~/Tools/warp-watcher.sh`](https://github.com/berkus/my-system-config/blob/main/Tools/warp-watcher.sh):
+You will need one additional tool to reliably change the app icon, install it with `brew install fileicon`.
+(Recommended by [this post](https://manik.cc/2020/05/21/macicons.html) and it works flawlessly).
+
+To allow watching multiple apps separately, split the functionality into the setter script and one or more watcher scripts.
+
+Create a script [`~/Tools/app-icon-replace.sh`](https://github.com/berkus/my-system-config/blob/main/Tools/app-icon-replace.sh):
 
 ```sh
 #!/bin/sh
-FILE_ORIG=/Applications/Warp.app/Contents/Resources/Warp.icns
-FILE_REPL=~/Tools/classic_1984_mac.icns
+APP=$1
+ICON=$2
+FILE_ORIG=/Applications/${APP}.app/Contents/Resources/${APP}.icns
+FILE_REPL=~/Tools/icons/${ICON}.icns
 
 ORIG=$(shasum $FILE_ORIG | cut -d ' ' -f 1)
 REPL=$(shasum $FILE_REPL | cut -d ' ' -f 1)
 
 if [[ "$ORIG" != "$REPL" ]]; then
-    cp $FILE_REPL $FILE_ORIG
-    touch /Applications/Warp.app
+    sleep 5
+    fileicon set /Applications/${APP}.app $FILE_REPL
+    killall Dock
 
-    echo "$(date): Warp icon changed, updated" >> ~/Tools/warp-watcher.log
+    echo "$(date): ${APP} icon changed, updated" >> ~/Tools/${APP}-watcher.log
 fi
+```
+
+Create a script [`~/Tools/warp-watcher.sh`](https://github.com/berkus/my-system-config/blob/main/Tools/warp-watcher.sh):
+
+```sh
+#!/bin/sh
+sh ~/Tools/app-icon-replace.sh Warp classic_1984_mac
 ```
 
 Don't forget to `chmod +x ~/Tools/warp-watcher.sh`!
