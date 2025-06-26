@@ -7,7 +7,7 @@ tags = ["rust","osdev","cargo"]
 
 And the landscape is changed again. The idea to write a secure robust kernel and then build a secure robust operating system on it is still there. However, there are new tools, technologies as well as new [hazards](https://spectreattack.com/).
 
-One of the new tools is Rust language. The tenets of Rust are speed, safety and [fearless concurrency](https://doc.rust-lang.org/book/second-edition/ch16-00-concurrency.html). This makes it nearly ideal language for writing new secure software, including kernels. Robigalia project is also looking towards [semi-automatic assurance of Rust-based software](https://robigalia.org/blog/2016/11/15/verfication.html) by leveraging the MIR intermediate representation as containing the semantic information about the program, which we can reason about. Looking forward to seeing what this brings, meanwhile I set out to write an equivalent of seL4 kernel in Rust for 64-bit systems.
+One of the new tools is Rust language. The tenets of Rust are speed, safety and [fearless concurrency](https://doc.rust-lang.org/book/second-edition/ch16-00-concurrency.html). This makes it nearly ideal language for writing new secure software, including kernels. Robigalia project is also looking towards [semi-automatic assurance of Rust-based software](https://web.archive.org/web/20170316053649/https://robigalia.org/blog/2016/11/15/verfication.html) by leveraging the MIR intermediate representation as containing the semantic information about the program, which we can reason about. Looking forward to seeing what this brings, meanwhile I set out to write an equivalent of seL4 kernel in Rust for 64-bit systems.
 
 I've intentionally dropped support for 32-bit systems at the moment, it should be possible to retrofit 32-bit support into the kernel APIs - they will just become either slower or more limited. Just don't focus on these now.
 
@@ -82,4 +82,3 @@ See [here](https://github.com/japaric/rust-cross#the-target-triple) for a nice d
 intermezzOS tutorial handles this bit down the road in the [First Rust chapter](http://intermezzos.github.io/book/first-edition/creating-our-first-crate.html).
 
 PhilOS also mentions it [here](https://os.phil-opp.com/set-up-rust/#target-specifications).
-
