@@ -15,7 +15,7 @@ I'm on OSX so your mileage may vary. I started from a blog post [here](https://p
 git clone https://github.com/pcein/rust-sipeed-longan-nano
 ```
 
-I use `cargo-xbuild` to build and `cargo-binutils` to perform various object manipulation tasks, so install them first.
+I use {{ crate(name="cargo-xbuild") }} to build and {{ crate(name="cargo-binutils") }} to perform various object manipulation tasks, so install them first.
 
 ```sh
 cargo install cargo-xbuild cargo-binutils

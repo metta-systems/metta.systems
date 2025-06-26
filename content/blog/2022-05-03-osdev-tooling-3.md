@@ -23,7 +23,7 @@ I wanted to try my hand at some Tokio code, but I believe another approach would
 
 ## Other tools
 
-Using cargo-make lets install helper tools as part of the build, so I added `rustfilt` dependency to my `nm` command. Now `just nm` would not simply dump all of the kernel symbols, but sort them by start address and demangle names to proper Rust qualified identifiers.
+Using cargo-make lets install helper tools as part of the build, so I added {{ crate(name="rustfilt") }} dependency to my `nm` command. Now `just nm` would not simply dump all of the kernel symbols, but sort them by start address and demangle names to proper Rust qualified identifiers.
 
 ```
 000000000009390c t core::slice::index::slice_start_index_len_fail_rt
