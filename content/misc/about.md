@@ -40,11 +40,6 @@ The grabber comes from Latin saying "Omnia mea mecum porto" - grab, snapshot thi
 
 Final target is to have a bunch of clients for desktop and mobile platforms (Win, Mac, Linux, Android, iOS) as well as own operating system implementation (Metta) running together.
 
-### Components
-
-There are building blocks in form of underlying substrate libraries ([libsupport](https://github.com/berkus/libsupport) for miscellaneous utilities, [libkrypto](https://github.com/berkus/libkrypto) for cryptographics primitives, [libssu](https://github.com/berkus/libssu) for encrypted multiplexed re-routable streams,
-[librouting](https://github.com/berkus/librouting) for routing those streams regardless of peers locations and availability). They could also be used separately to support _your_ applications.
-
 ### Support or contact
 
 Ping [@berkus](https://github.com/berkus) if you have any questions or ideas.

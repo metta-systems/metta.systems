@@ -12,7 +12,7 @@ All non-code blog content is licensed under [Creative Commons BY-NC-SA](http://c
 
 ### Code license
 
-All source code files and snippets found on this blog, unless otherwise explicitly noted, are licensed under the terms below.
+All source code files and snippets found on this blog, unless otherwise explicitly noted, are licensed under the terms of Blue Oak Model license below.
 
 #### Blue Oak Model License
 

@@ -5,7 +5,7 @@ title = "Metta - mashable techdemo storyboard"
 category = ["notes"]
 tags = ["metta"]
 +++
-Fire up console, we'll use two consoles for this demo - one will run the streaming video server, another will be our client. The
+Fire up a console, we'll use two consoles for this demo - one will run the streaming video server, another will be our client. The
 
     $
 
