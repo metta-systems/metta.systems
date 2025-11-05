@@ -1,5 +1,6 @@
 +++
 title = "Rust on Sipeed Longan Nano board"
+template = "page-with-toc.html"
 [taxonomies]
 tags = ["rust","embedded"]
 +++

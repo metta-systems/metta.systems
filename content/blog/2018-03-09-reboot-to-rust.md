@@ -1,5 +1,6 @@
 +++
 title = "Reboot to Rust"
+template = "page-with-toc.html"
 [taxonomies]
 tags = ["rust","osdev","cargo"]
 +++

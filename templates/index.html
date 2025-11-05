@@ -5,7 +5,7 @@
 {% if not paginator %}
 
     {% for page in section.pages %}
-        {{ post::show(post=page, link=true, read_more=true) }}
+        {{ post::show(post=page, link=true, read_more=true, toc_depth=0) }}
     {% endfor %}
 
 {% else %}
@@ -13,7 +13,7 @@
     {% include "partial/paginator_navigation.html" %}
 
     {% for page in paginator.pages %}
-        {{ post::show(post=page, link=true, read_more=true) }}
+        {{ post::show(post=page, link=true, read_more=true, toc_depth=0) }}
     {% endfor %}
 
     {% include "partial/paginator_navigation.html" %}

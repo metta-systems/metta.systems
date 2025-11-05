@@ -1,5 +1,6 @@
 +++
 title = "OSdev tooling finished"
+template = "page-with-toc.html"
 [taxonomies]
 tags = ["rust","osdev","tools"]
 +++

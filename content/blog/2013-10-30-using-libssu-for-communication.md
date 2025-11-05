@@ -1,5 +1,6 @@
 +++
 title = "Using libsss for communication"
+template = "page-with-toc.html"
 [taxonomies]
 tags = ["structured-secure-streams","howto","uvvy"]
 +++

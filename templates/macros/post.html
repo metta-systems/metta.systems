@@ -1,4 +1,4 @@
-{% macro show(post, link, read_more) %}
+{% macro show(post, link, read_more, toc_depth) %}
 
 {% if post.taxonomies %}
 {% if not post.taxonomies.category %}
@@ -31,6 +31,30 @@
             <span class="post-date">{{ post_meta::show(post=post) }}</span>
         </column>
     </post-header>
+    {% if toc_depth > 0 %}
+    <div class="post-toc">
+        {% if page.toc %}
+            <ul>
+            {% for h1 in page.toc %}
+                <li>
+                    <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                    {% if toc_depth > 1 %}
+                    {% if h1.children %}
+                        <ul>
+                            {% for h2 in h1.children %}
+                                <li>
+                                    <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    {% endif %}
     <div class="post-body">
         {% if read_more %}
             {% if post.summary %}

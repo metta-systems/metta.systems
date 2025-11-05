@@ -1,5 +1,6 @@
 +++
 title = "Bootstrapping node problem"
+template = "page-with-toc.html"
 [taxonomies]
 tags = ["decentralized"]
 +++

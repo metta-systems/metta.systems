@@ -35,23 +35,28 @@ html {
             50% 100%,
             color-stop(0%, $bg_color_start),
             color-stop(100%, $bg_color_end)
-        ) fixed;
+        )
+        fixed;
     background: $bg_color_start -webkit-linear-gradient(
             $bg_color_start,
             $bg_color_end
-        ) fixed;
+        )
+        fixed;
     background: $bg_color_start -moz-linear-gradient(
             $bg_color_start,
             $bg_color_end
-        ) fixed;
+        )
+        fixed;
     background: $bg_color_start -o-linear-gradient(
             $bg_color_start,
             $bg_color_end
-        ) fixed;
+        )
+        fixed;
     background: $bg_color_start -ms-linear-gradient(
             $bg_color_start,
             $bg_color_end
-        ) fixed;
+        )
+        fixed;
     background: $bg_color_start linear-gradient($bg_color_start, $bg_color_end)
         fixed;
 }
@@ -496,14 +501,16 @@ blockquote {
         color: $blockquote_fg_color;
         padding: 0;
         margin: 0;
-        font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
+        font-family:
+            Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
         text-align: right;
     }
 }
 
 .post-quote {
     p {
-        font-family: Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
+        font-family:
+            Helvetica, sans-serif; // TODO: fix font style, try B612 for quotes?
         text-align: right;
     }
 
@@ -552,6 +559,26 @@ blockquote {
 
 article.post-preview {
     margin-bottom: 4em;
+}
+
+/* TOC for a page */
+
+.post-toc {
+    float: right;
+    font-size: x-small;
+    border: 1px dotted $toc_border_color;
+    background-color: $toc_bg_color;
+    padding: 1rem;
+    margin: 0.5rem;
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style-type: none;
+        }
+    }
 }
 
 /* Posts feed pagination */
