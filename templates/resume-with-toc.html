@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "macros/post.html" as post %}
+
+{% block title %}
+    {% if page.title %}
+        {{ page.title }} &middot; {{ config.title }}
+    {% else %}
+        {{ config.title }}
+    {% endif %}
+{% endblock title %}
+
+{% block content %}
+{{ post::show(post=page, link=false, read_more=false, toc_depth=1) }}
+{% endblock content %}
