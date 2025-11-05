@@ -7,14 +7,13 @@ Want to have your own custom app icon in the dock, but it always gets replaced b
 
 Inspired by the talks to replace Warp.app icon (in [multiple](https://github.com/warpdotdev/Warp/issues/2703) [issues](https://github.com/warpdotdev/Warp/issues/5418) [on GH](https://github.com/warpdotdev/Warp/issues/5408)), I've made a simple tool to automatically replace the icon after the app update.
 
+Update: In the new versions of macOS/Warp it is done more [easily](https://github.com/warpdotdev/Warp/issues/5408#issuecomment-2963756207). I've updated the script to reflect this new approach.
+
 <!-- more -->
 
 Using [this helpful article by Mayeu](https://mayeu.me/post/how-to-trigger-any-action-when-a-file-or-folder-changes-on-macos-on-the-cheap/) one can make a very simple agent watching for changes in the app icon file and replace it back.
 
 The agent article above gives all the necessary background, here I'll just provide the actual script and agent configuration.
-
-You will need one additional tool to reliably change the app icon, install it with `brew install fileicon`.
-(Recommended by [this post](https://manik.cc/2020/05/21/macicons.html) and it works flawlessly).
 
 To allow watching multiple apps separately, split the functionality into the setter script and one or more watcher scripts.
 
@@ -24,15 +23,15 @@ Create a script [`~/Tools/app-icon-replace.sh`](https://github.com/berkus/my-sys
 #!/bin/sh
 APP=$1
 ICON=$2
-FILE_ORIG=/Applications/${APP}.app/Contents/Resources/${APP}.icns
-FILE_REPL=~/Tools/icons/${ICON}.icns
+FILE_ORIG=/Applications/${APP}.app/Contents/PlugIns/WarpDockTilePlugin.docktileplugin/Contents/Resources/${APP}.png
+FILE_REPL=~/Tools/icons/${ICON}.png
 
 ORIG=$(shasum $FILE_ORIG | cut -d ' ' -f 1)
 REPL=$(shasum $FILE_REPL | cut -d ' ' -f 1)
 
 if [[ "$ORIG" != "$REPL" ]]; then
     sleep 5
-    fileicon set /Applications/${APP}.app $FILE_REPL
+    cp -f $FILE_REPL $FILE_ORIG
     killall Dock
 
     echo "$(date): ${APP} icon changed, updated" >> ~/Tools/${APP}-watcher.log

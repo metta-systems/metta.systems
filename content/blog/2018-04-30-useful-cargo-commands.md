@@ -61,7 +61,7 @@ of the unmaintained `cargo-asm` crate. Install with `cargo install --locked --al
 
 {% crate(name="cargo-src", gh="nrc/cargo-src") %} - detailed rust source code browser with semantic details.{% end %}
 
-{% crate(name="cargo-sweep", gh="holmgr/cargo-sweep") %} - clean unused build files.{% end %}
+{% crate(name="cargo-sweep", gh="holmgr/cargo-sweep") %} - clean unused build files.{% end %} -- replace with cargo-clean-all? sweep is unmaintained for a while
 
 {% crate(name="cargo-testify", gh="greyblake/cargo-testify") %} - show popup notifications about testing results.{% end %}
 
@@ -122,6 +122,8 @@ Sorted alphabetically:
 {% crate(name="fdtdump", gh="rs-embedded/fdtdump") %} - dump device tree files (DTB, compiled).{% end %}
 
 <!-- [flamegraph]() -
+
+[cargo-clean-all]() -
 
 [git-cliff]() -
 
