@@ -561,6 +561,12 @@ article.post-preview {
     margin-bottom: 4em;
 }
 
+/* Note posts */
+
+.post-note {
+    background-color: $note_bg_color;
+}
+
 /* TOC for a page */
 
 .post-toc {
