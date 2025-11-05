@@ -1,6 +1,6 @@
 {% macro show(post) %}
 
-{% if post.draft %}Unpublished draft{% else %}{{ post.date | date(format="%-d. %B %Y") }}{% endif %} &middot;
+{% if post.draft %}Unpublished draft &middot;{% elif post.date %}{{ post.date | date(format="%-d. %B %Y") }} &middot;{% endif %}
 {{ helper::reading_time(post=post) }} read{% if config.extra.utterances %} &middot; <a class="meta"
     href="{{ post.permalink }}#comments">Comments</a>{% endif %}
 <br />
