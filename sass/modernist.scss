@@ -334,6 +334,22 @@ h6 {
 h1 {
     font-size: 30px;
 }
+h2 {
+    font-size: 23px;
+}
+h3 {
+    font-size: 20px;
+}
+/* Not really useful */
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 19px;
+}
+h6 {
+    font-size: 18px;
+}
 
 img {
     max-width: 100%;
@@ -384,6 +400,9 @@ pre {
     code {
         background-color: inherit;
     }
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
 }
 
 li pre {
@@ -710,9 +729,9 @@ page-nav {
     color: #fff;
 }
 
-/* Printable version */
+/* Semi-reactive layout */
 
-@media print, screen and (max-width: 740px) {
+@media screen and (max-width: 740px) {
     body {
         padding: 0;
     }
@@ -747,7 +766,7 @@ page-nav {
         float: none;
     }
 }
-@media print, screen and (max-width: 580px) {
+@media screen and (max-width: 580px) {
     header ul {
         display: none;
     }
@@ -758,5 +777,27 @@ page-nav {
 
     header p {
         width: 100%;
+    }
+}
+
+/* Printable version */
+
+@page {
+    size: A4;
+    margin: 12mm;
+}
+
+@media print {
+    header,
+    footer,
+    page-nav,
+    .post-toc,
+    .post-date,
+    div.wrap_comments {
+        display: none;
+    }
+    /* Details blocks are opened by JS, just hide the summary */
+    details > summary {
+        display: none !important;
     }
 }
