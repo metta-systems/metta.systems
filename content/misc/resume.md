@@ -168,3 +168,5 @@ A KDE RSS aggregator. I wrote Akregator in the time KDE had no RSS aggregator so
 # Hobbies
 
 I am interested in competitive multiplayer games (ARC Raiders ftw!), 3D printing and embedded electronics and software.
+
+I love helping make open source projects easier to maintain - by providing CI pipelines and release-plz publishing, so if you want to be able to easily publish your crates and have them continuously tested and well, give me a shout!
