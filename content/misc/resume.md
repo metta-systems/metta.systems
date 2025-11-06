@@ -1,5 +1,5 @@
 +++
-date = 2025-04-09
+date = 2025-10-05
 title = "Resumé"
 description = "Resumé page"
 render = true
