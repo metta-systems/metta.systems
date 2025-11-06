@@ -25,7 +25,7 @@ Andre's chainloader example uses a miniterm.rb - Ruby-based app, which works les
 Could not find gem 'colorize' in any of the gem sources listed in your Gemfile.
 Run `bundle install` to install missing gems.
 
-rust-raspi3-OS-tutorials/common/serial on  master [$?] via 💎 v2.6.8
+rust-raspi3-OS-tutorials/common/serial on branch master [$?] via 💎 v2.6.8
 ❯ bundle install
 Failed to execute process '/usr/local/bin/bundle'. Reason:
 The file '/usr/local/bin/bundle' specified the interpreter '/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby', which is not an executable command.

@@ -163,7 +163,7 @@ Amarok is the KDE audio player. I have joined the team at version 0.6. I took pa
 
 **Author, overall design, C++ programming.**
 
-A KDE RSS aggregator. I wrote Akregator in the time KDE had no RSS aggregator software. Akregator is highly appreciated by many users. It has earned [Application of the Month](https://web.archive.org/web/20070608163325/https://dot.kde.org/1105456661/) status in January 2005 ([interview](https://web.archive.org/web/20050306090912/http://www.kde.org.uk/apps/akregator/interview.html)). It is now included in main KDE packages. I am no longer an active part of the development team, the version of Akregator you see on github is a new rewrite without my contributions (over 20 years have passed).
+A KDE RSS aggregator. I wrote Akregator in the time KDE had no RSS aggregator software. Akregator is highly appreciated by many users. It has earned [Application of the Month](https://web.archive.org/web/20070608163325/https://dot.kde.org/1105456661/) status in January 2005 ([interview](https://web.archive.org/web/20050306090912/http://www.kde.org.uk/apps/akregator/interview.html)). It is now included in main KDE packages. I am no longer an active part of the development team, the version of Akregator you see on GitHub is a new rewrite without my contributions (over 20 years have passed).
 
 # Hobbies
 
