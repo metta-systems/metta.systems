@@ -29,14 +29,14 @@ template = "resume-with-toc.html"
 
 ## Microsoft [microsoft.com](https://www.microsoft.com/)
 
-**Principal Software Engineer**
+**Principal Software Engineer.**
 *June 2024 &mdash; Present time.*
 
 Developing a suite of SDKs to accelerate migration of core C# services to Rust. My focus areas include open-telemetry and C# interop areas. Working on the [interoptopus](https://github.com/ralfbiedert/interoptopus) project in OSS to improve C#-Rust interop.
 
 ## Twilio [twilio.com](https://www.twilio.com/)
 
-**Principal Software Engineer, Engineering Team Lead**
+**Principal Software Engineer, Engineering Team Lead.**
 *April 2016 &mdash; May 2024.*
 
 Initially maintained an Android Chat SDK, improving JNI layer and fixing bugs. Grew to lead the Conversations SDK team, which included Android, iOS and JavaScript developers producing corresponding platform SDKs.
@@ -52,7 +52,7 @@ Led the effort to document the largely undocumented body of SDK code and convert
 
 Managed teams of outsource developers, set up CI/CD infrastructure, developed iOS (UIKit) and Windows (WPF, Visual Basic) applications.
 
-Implemented a mandatory CI pipeline for all components of the software, speeding up the development cycle and removing the "works on my machine" development approach.
+Implemented a mandatory CI pipeline for all components of the software, speeding up the development cycle; removed the "works on my machine" development mentality.
 
 ## Skype [skype.com](https://www.skype.com/)
 
@@ -83,9 +83,9 @@ Implemented Qt3 version of monitoring software. Integrated with existing framewo
 
 <details>
     <summary>Read more</summary>
-Maintained a large Oil &amp; Gas industry portal web site acting as both a web-programmer (writing PHP and Ruby code) and as a server administrator. I wrote a speed-optimized website statistics analyzer in Ruby. I also did a big upgrade by installing a new Linux system with fresh software and greatly optimized it for speed.<br/>
+Maintained a large Oil &amp; Gas industry portal web site acting as both a web-programmer (writing PHP and Ruby code) and as a server administrator. Wrote a speed-optimized website statistics analyzer in Ruby. Implemented a big system upgrade by installing a new Linux system with fresh software and greatly optimized it for speed.<br/>
 <br/>
-By carefully analyzing logfiles my system was able to achieve better performance and nicer site visitors log detail level than the previous implementation.<br/>
+Achieved better performance of the system by integrating better log files analysis. Improved site visitors log detail level compared to the previous implementation.<br/>
 </details>
 <br/>
 
@@ -96,7 +96,7 @@ By carefully analyzing logfiles my system was able to achieve better performance
 
 <details>
     <summary>Read more</summary>
-Coded PHP for a lot of websites including several web shops. I also took part in a big web-based document flow software project.<br/>
+Coded PHP for a lot of websites including several web shops. Took part in a big web-based document flow software project.<br/>
 <br/>
 Implemented web shop framework in PHP, which was used for several further projects. Created a <a href="https://github.com/berkus/negine">visual table constructor</a> tool for a website backoffice.<br/>
 </details>
@@ -109,7 +109,7 @@ Implemented web shop framework in PHP, which was used for several further projec
 
 <details>
     <summary>Read more</summary>
-Maintained a small network of <a href="https://en.wikipedia.org/wiki/Non-linear_editing#DV">non-linear video editing</a> PC stations. I also wrote software for internal use.<br/>
+Maintained a small network of <a href="https://en.wikipedia.org/wiki/Non-linear_editing#DV">non-linear video editing</a> PC stations. Wrote assorted in-house software.<br/>
 <br/>
 <ul>
 <li>Designed and implemented a small CRM tool in PHP.</li>
@@ -135,27 +135,37 @@ Vesper is a single-address-space nanokernel for Metta. I am exploring a way to m
 
 ## aarch64-cpu <i class="lni lni-github"></i>[rust-embedded/aarch64-cpu](https://github.com/rust-embedded/aarch64-cpu)
 
+**Maintainer, Rust programming.**
+
 Co-maintaining ARM cpu crate as part of Rust Embedded WG. The crate provides essential low-level ARM abstractions for embedded systems and is widely used in the Rust Embedded ecosystem (55 official dependent crates on crates.io).
 
 ## Interoptopus <i class="lni lni-github"></i>[ralfbiedert/interoptopus](https://github.com/ralfbiedert/interoptopus)
+
+**Maintainer, Rust and C# programming.**
 
 Contributing support for C#-Rust ffi interop, implemented `Wire<T>` serialization format to support passing more complex types through the ffi boundary.
 
 ## Criterion <i class="lni lni-github"></i>[criterion-rs/criterion.rs](https://github.com/criterion-rs/criterion.rs/)
 
+**Maintainer, Rust programming.**
+
 Revitalizing criterion through community efforts after it has been in neglect for a long while. Started a new org with the intent of allowing wider community contributions.
 
 ## GG <i class="lni lni-github"></i>[metta-systems/gg](https://github.com/metta-systems/gg)
+
+**Maintainer, Rust and Svelte programming.**
 
 Contributing to GG (a GUI for Jujutsu VCS) by consolidating and staging multiple community PRs in repository while @gulbanana is busy or away. This is mostly a testing playground, with the hope that PRs get merged back into the main repository over time.
 
 ## Pijul <i class="lni lni-pijul"></i>[nest:pijul/pijul](https://nest.pijul.com/pijul/pijul)
 
+**Maintainer, Rust programming.**
+
 Contributing to a powerful distributed VCS based on theory of patches. I work on improving the user experience, command-line interface and adding a GUI.
 
 ## Amarok [amarok.kde.org](https://amarok.kde.org/)
 
-**C++ programming, co-author.**
+**Co-auther, C++ programming.**
 
 Amarok is the KDE audio player. I have joined the team at version 0.6. I took part in localization effort, visual and user interaction design, system architecture design. I am no longer an active part of the development team.
 
@@ -169,4 +179,4 @@ A KDE RSS aggregator. I wrote Akregator in the time KDE had no RSS aggregator so
 
 I am interested in competitive multiplayer games (ARC Raiders ftw!), 3D printing and embedded electronics and software.
 
-I love helping make open source projects easier to maintain - by providing CI pipelines and release-plz publishing, so if you want to be able to easily publish your crates and have them continuously tested and well, give me a shout!
+I love making open source projects easier to maintain - by providing CI pipelines and release-plz publishing, so if you want to be able to easily publish your crates and have them continuously tested and well, give me a shout!
